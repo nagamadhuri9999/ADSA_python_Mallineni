@@ -1,0 +1,56 @@
+# Detailed Notes: Python Variables
+
+## 1. What is a Variable?
+A variable is a named container that stores data in the computer's memory. Instead of using raw data everywhere, you assign the data to a variable and use the variable's name.
+
+- **Analogy:** Think of a variable like a labeled box in a warehouse. If the box is labeled `customer_age`, you know the value inside is the age of the customer.
+
+## 2. Creating Variables
+In Python, you create a variable the moment you assign a value to it using the `=` operator (assignment operator).
+- You do not need to declare the type of a variable beforehand (this is called "dynamic typing"). Python infers the type automatically based on the assigned value.
+
+```python
+# Real-world examples
+user_name = "Alice"       # A string (text)
+session_timeout = 30      # An integer (whole number)
+is_logged_in = True       # A boolean (True/False)
+temperature_f = 98.6      # A float (decimal number)
+```
+
+## 3. Naming Rules and Best Practices
+You cannot name a variable anything you want. Python has strict rules:
+- **Allowed Characters:** Use only letters (a-z, A-Z), numbers (0-9), and underscores (`_`).
+- **No Starting Numbers:** A variable name cannot start with a number (e.g., `1st_place` is invalid, but `place_1` is valid).
+- **No Reserved Keywords:** You cannot use words that Python already uses for syntax (e.g., `if`, `for`, `class`, `def`, `while`, `True`, `False`).
+
+### Best Practices:
+- **Snake Case:** The standard convention in Python is to use lowercase words separated by underscores. Example: `total_sales_amount` instead of `totalSalesAmount`.
+- **Descriptive Names:** Always use names that describe the data. `x = 5` is bad; `days_in_week = 5` is good.
+- **Case Sensitivity:** `Age` and `age` are two completely different variables.
+
+## 4. Reassignment and Dynamic Typing
+Variables in Python can change their values at any time. Furthermore, because Python is dynamically typed, a variable can change its data type if assigned a new value.
+
+```python
+x = 100
+print(x)  # Outputs 100 (Integer)
+
+x = "Now I am text!"
+print(x)  # Outputs "Now I am text!" (String)
+```
+
+## 5. Multiple Assignment
+Python allows you to assign values to multiple variables in a single line, which is useful for keeping code concise.
+
+```python
+# Assigning different values to different variables
+name, age, country = "Ravi", 28, "India"
+
+# Assigning the same value to multiple variables
+x = y = z = 0
+```
+
+## Review Questions
+1. How do you declare a variable in Python?
+2. Why is Python called a dynamically typed language?
+3. Which of the following variable names are invalid and why: `_score`, `total-sum`, `2nd_attempt`, `print`?

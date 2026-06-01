@@ -1,0 +1,56 @@
+# Detailed Notes: Python Operators
+
+Operators are special symbols used to perform operations on values and variables. Python divides operators into several categories based on their function.
+
+## 1. Arithmetic Operators
+Used to perform common mathematical operations.
+- `+` (Addition): Adds values (`3 + 4 = 7`).
+- `-` (Subtraction): Subtracts right operand from left (`7 - 2 = 5`).
+- `*` (Multiplication): Multiplies values (`4 * 5 = 20`).
+- `/` (Division): Divides left operand by right. **Always returns a float** (`10 / 2 = 5.0`).
+- `//` (Integer/Floor Division): Divides and drops the decimal part (`10 // 3 = 3`).
+- `%` (Modulo): Returns the remainder of the division.
+  - *Real-world use:* Checking if a number is even/odd (`num % 2 == 0`) or batching tasks.
+- `**` (Exponentiation): Calculates power (`2 ** 3 = 8`).
+
+## 2. Comparison Operators
+Used to compare two values. They always return a Boolean (`True` or `False`).
+- `==` (Equal to): True if both operands are equal. (`5 == 5` is True).
+  - *Note:* Do not confuse `==` (comparison) with `=` (assignment).
+- `!=` (Not equal to): True if operands are not equal.
+- `>` (Greater than): True if left is greater than right.
+- `<` (Less than): True if left is less than right.
+- `>=` (Greater than or equal to).
+- `<=` (Less than or equal to).
+- *Real-world use:* Checking if a user's password matches the database (`input_pwd == stored_pwd`).
+
+## 3. Logical Operators
+Used to combine multiple conditional statements.
+- `and`: Returns True only if **both** conditions are True.
+  - `(5 > 3) and (10 > 5)` -> True
+- `or`: Returns True if **at least one** condition is True.
+  - `(5 > 3) or (10 < 5)` -> True
+- `not`: Reverses the logical state (True becomes False, False becomes True).
+  - `not(5 > 3)` -> False
+- *Real-world use:* Determining loan eligibility (`income >= 50000 and credit_score >= 700`).
+
+## 4. Assignment Operators
+Used to assign values to variables, often while performing a calculation simultaneously.
+- `=` (Assign): `x = 5`
+- `+=` (Add and assign): `x += 3` is the same as `x = x + 3`.
+- `-=` (Subtract and assign): `x -= 2` is the same as `x = x - 2`.
+- `*=` (Multiply and assign).
+- `/=` (Divide and assign).
+- *Real-world use:* Incrementing a counter in a loop (`counter += 1`).
+
+## 5. Membership Operators
+Used to test if a sequence (like a string, list, or tuple) is present in an object.
+- `in`: Returns True if a sequence with the specified value is present.
+- `not in`: Returns True if a sequence with the specified value is not present.
+- *Real-world use:* Checking if a user's role is allowed to access a page (`current_role in ["admin", "editor"]`).
+
+## Review Questions
+1. What does the modulo operator (`%`) do? Provide an example.
+2. What is the difference between `/` and `//` in Python?
+3. What is the difference between `=` and `==`?
+4. Explain how the logical `and` differs from `or`.
