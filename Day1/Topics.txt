@@ -1,0 +1,14 @@
+What is Python?
+- Interview question: How would you explain Python to someone who has never programmed before?
+Why choose Python?
+- Interview question: Why is Python a popular choice for beginners and for data analysis?
+What are common uses of Python?
+- Interview question: Can you name three real-world applications where Python is commonly used?
+What is Python syntax?
+- Interview question: What are the basic syntax rules you must follow when writing Python code?
+What are variables in Python?
+- Interview question: How do you declare variables in Python, and how are they different from variables in other languages?
+What are data types in Python?
+- Interview question: What built-in data types does Python provide, and when would you use each?
+What are operators in Python?
+- Interview question: What categories of operators exist in Python, and give examples of each.

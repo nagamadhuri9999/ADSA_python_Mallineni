@@ -1,0 +1,195 @@
+Day 1 Notes: Variables, Data Types, and Operators
+
+1. Variables
+-----------
+- A variable is a name that stores a value in memory.
+- In Python, you create a variable by assigning a value with `=`.
+- Example: `score = 85`
+- Python does not require a type declaration. The type is inferred from the value.
+- Variables can be reassigned to new values of any type.
+  - Example: `x = 10` then `x = "hello"`
+
+Naming rules:
+- Use letters, numbers, and underscores.
+- Cannot start with a number.
+- Cannot use Python reserved keywords like `if`, `for`, `while`, `def`, etc.
+- Use descriptive names: `total_sales`, `user_name`, `average_score`.
+
+Best practices:
+- Use lowercase and underscores for normal variables: `sales_total`
+- Keep names meaningful and avoid one-letter names except for counters: `i`, `n`
+- Variables are case-sensitive: `age` and `Age` are different.
+
+Examples:
+```
+name = "Priya"
+age = 22
+price = 199.99
+is_available = True
+```
+
+2. Data Types
+------------
+Python has several built-in data types. The most common ones are:
+
+Numeric types:
+- `int`: whole numbers (e.g. `5`, `0`, `-23`)
+- `float`: decimals (e.g. `3.14`, `-0.5`)
+- `complex`: complex numbers with real and imaginary parts (less common)
+
+String type:
+- `str`: text values enclosed in single or double quotes.
+- Example: `message = "Hello"`
+- Strings are immutable.
+- You can use `+` to combine strings and `*` to repeat them.
+
+Boolean type:
+- `bool`: either `True` or `False`.
+- Commonly used for conditions and comparisons.
+- Example: `is_adult = age >= 18`
+
+Collection types:
+- `list`: ordered, mutable collection. Use square brackets.
+  - Example: `numbers = [10, 20, 30]`
+- `tuple`: ordered, immutable collection. Use parentheses.
+  - Example: `colors = ("red", "green", "blue")`
+- `dict`: key-value pairs, mutable. Use curly braces.
+  - Example: `student = {"name": "Ravi", "age": 20}`
+- `set`: unordered collection of unique values.
+  - Example: `unique_ids = {101, 102, 103}`
+
+Type checking and conversion:
+- Use `type(value)` to see the type.
+- Convert between types using `int()`, `float()`, `str()`, `bool()`.
+- Example:
+  - `num = int("5")`
+  - `price = float("199.99")`
+  - `text = str(100)`
+
+Mutability:
+- Mutable types can change after creation: `list`, `dict`, `set`.
+- Immutable types cannot change: `int`, `float`, `str`, `tuple`, `bool`.
+- Example: `numbers[0] = 50` works for lists but not for tuples.
+
+Examples:
+```
+x = 12          # int
+pi = 3.14        # float
+name = "Asha"  # str
+is_active = True # bool
+fruits = ["apple", "banana"]  # list
+pair = (1, 2)                    # tuple
+details = {"city": "Delhi", "code": 110001}  # dict
+unique = {2, 4, 6}               # set
+```
+
+3. Operators
+-----------
+Operators perform operations on values and variables.
+
+Arithmetic operators:
+- `+` addition: `3 + 4` => `7`
+- `-` subtraction: `7 - 2` => `5`
+- `*` multiplication: `4 * 5` => `20`
+- `/` division: `10 / 2` => `5.0`
+- `//` integer division: `10 // 3` => `3`
+- `%` remainder: `10 % 3` => `1`
+- `**` exponent: `2 ** 3` => `8`
+
+Comparison operators:
+- `==` equal: `a == b`
+- `!=` not equal: `a != b`
+- `>` greater than: `a > b`
+- `<` less than: `a < b`
+- `>=` greater than or equal: `a >= b`
+- `<=` less than or equal: `a <= b`
+
+Logical operators:
+- `and`: true if both conditions are true.
+- `or`: true if at least one condition is true.
+- `not`: reverses the result.
+
+Assignment operators:
+- `=` assign: `x = 10`
+- `+=` add and assign: `x += 5` is `x = x + 5`
+- `-=` subtract and assign: `x -= 2`
+- `*=` multiply and assign: `x *= 3`
+- `/=` divide and assign: `x /= 2`
+- `//=` integer divide and assign: `x //= 2`
+- `%=` remainder and assign: `x %= 3`
+- `**=` exponent and assign: `x **= 2`
+
+Membership operators:
+- `in`: checks if value is inside a container.
+  - Example: `'apple' in fruits`
+- `not in`: checks if value is not inside.
+
+Identity operators:
+- `is`: checks if two variables point to the same object.
+- `is not`: checks if they are different objects.
+
+Examples:
+```
+a = 10
+b = 5
+print(a + b)   # 15
+print(a / b)   # 2.0
+print(a // b)  # 2
+print(a % b)   # 0
+print(a ** 2)  # 100
+
+result = a > b
+print(result)  # True
+
+flag = (a == 10) and (b != 0)
+print(flag)    # True
+
+text = "python"
+print('p' in text)    # True
+print('z' not in text) # True
+```
+
+Practical examples using variables and data types:
+- Calculate total and average sales:
+  ```
+sales_jan = 120
+sales_feb = 150
+sales_mar = 130
+total_sales = sales_jan + sales_feb + sales_mar
+average_sales = total_sales / 3
+print("Total:", total_sales)
+print("Average:", average_sales)
+```
+
+- Compare values:
+  ```
+max_sales = sales_jan
+if sales_feb > max_sales:
+    max_sales = sales_feb
+if sales_mar > max_sales:
+    max_sales = sales_mar
+print("Max sales:", max_sales)
+```
+
+4. Summary
+----------
+- Variables hold values and can change over time.
+- Data types define what kind of values variables can store.
+- Operators let you perform calculations, comparisons, and logical tests.
+- Together, they form the foundation for writing Python programs.
+
+5. Practice questions
+---------------------
+1. What is the difference between `int` and `float`?
+2. How do lists and tuples differ?
+3. Why is Python called a dynamically typed language?
+4. What does `==` do compared to `=`?
+5. Write a Python expression to calculate the remainder when 25 is divided by 4.
+
+6. Interview-style questions
+----------------------------
+- How do you declare a variable in Python? Give an example.
+- What is the difference between mutable and immutable types?
+- Name three Python data types and one example of use for each.
+- What operator would you use to check if two values are equal?
+- Explain the difference between `and` and `or`.

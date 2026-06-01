@@ -1,0 +1,41 @@
+1. What is Python?
+Answer: Python is a high-level, interpreted programming language that is easy to read and write. It is used for web development, data analysis, machine learning, automation, and many other applications.
+
+2. Why choose Python?
+Answer: Python is popular because it has simple syntax, a large standard library, and strong community support. It is also versatile, beginner-friendly, and widely used in data science and analytics.
+
+3. What are common uses of Python?
+Answer: Common uses include web development, data analysis, automation, scripting, machine learning, and scientific computing. Companies also use Python for prototyping and building production applications.
+
+4. What is Python syntax?
+Answer: Python syntax refers to the rules for writing code, such as indentation to define blocks, using `:` after statements like `if`, `for`, and `def`, and the way variables and functions are declared.
+
+5. What are variables in Python?
+Answer: Variables are names that store values, such as numbers or text. In Python, you assign a value using `=`, and the type is inferred automatically.
+
+6. What are data types in Python?
+Answer: Python has built-in data types such as `int`, `float`, `str`, `bool`, `list`, `tuple`, `dict`, and `set`. Each type is used for different kinds of data, like numbers, text, and collections.
+
+7. What are operators in Python?
+Answer: Operators are symbols that perform operations on values. Examples include arithmetic operators like `+`, `-`, `*`, `/`; comparison operators like `==`, `!=`, `>`, `<`; and logical operators like `and`, `or`, `not`.
+
+8. How would you explain Python to someone who has never programmed before?
+Answer: I would say Python is a language that lets you talk to a computer in a way that is close to English. It helps you give instructions step-by-step so the computer can solve problems or analyze information.
+
+9. Why is Python a popular choice for beginners and for data analysis?
+Answer: Python is easy to learn, and it has many libraries for data analysis. It also has strong support from the community and is used by experts, which makes it a great choice for learning and real projects.
+
+10. Can you name three real-world applications where Python is commonly used?
+Answer: Python is used in web development (with frameworks like Django), data science and analytics (with libraries like Pandas), and automation or scripting to speed up repetitive tasks.
+
+11. What are the basic syntax rules you must follow when writing Python code?
+Answer: Use consistent indentation, end control statements with `:`, write strings with quotes, and follow the correct syntax for loops, conditionals, and function definitions.
+
+12. How do you declare variables in Python, and how are they different from variables in other languages?
+Answer: In Python, you declare variables by assigning a value, like `x = 10`. You do not need to specify the type explicitly, unlike some other languages where you must declare a type first.
+
+13. What built-in data types does Python provide, and when would you use each?
+Answer: Use `int` for whole numbers, `float` for decimals, `str` for text, `bool` for true/false values, `list` for ordered collections, `tuple` for immutable ordered collections, `dict` for key-value pairs, and `set` for unique items.
+
+14. What categories of operators exist in Python, and give examples of each?
+Answer: Categories include arithmetic (`+`, `-`, `*`, `/`), comparison (`==`, `!=`, `>`, `<`), logical (`and`, `or`, `not`), assignment (`=`, `+=`, `-=`), and membership (`in`, `not in`).
