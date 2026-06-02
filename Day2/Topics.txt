@@ -1,0 +1,24 @@
+day2 Topics:
+- if else
+  - Decision making using conditional statements
+  - Syntax: if, elif, else
+  - Execute different code paths based on boolean conditions
+- nested if else
+  - Chain decisions to handle multiple cases cleanly
+  - Example: score grading with if, elif, else
+- loops
+  - Repeat actions multiple times using for and while
+  - Use for loops when repeat count is known
+  - Use while loops when termination depends on a condition
+- for loop
+  - Iterate over ranges, sequences, or strings
+  - Common for patterns, multiplication tables, and list traversal
+- while loop
+  - Continue until a condition becomes false
+  - Useful for countdowns, input validation, and unknown repeat counts
+- nested loops
+  - Put one loop inside another for multi-dimensional work
+  - Good for patterns, tables, and grid-based logic
+- star pattern
+  - Use loops and string repetition to draw shapes
+  - Great practice for nested loops and output formatting

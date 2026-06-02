@@ -1,0 +1,60 @@
+Day 2: Python Control Flow and Loops (6-hour online class)
+
+Session goal:
+Teach decision making and looping in Python, build confidence with `if` statements, `for` loops, `while` loops, nested loops, and pattern exercises.
+
+Class structure:
+
+1. Welcome and Day 1 review (30 minutes)
+- Recap Python basics: syntax, variables, data types, and operators.
+- Explain how control flow is the next step for writing useful programs.
+- Confirm Python setup and ready-to-run examples.
+
+2. Introduction to `if else` (40 minutes)
+- Explain how Python chooses code paths based on conditions.
+- Cover syntax: `if`, `elif`, `else`.
+- Show examples with grades, eligibility checks, and boolean logic.
+- Quick exercise: compare two numbers and print the larger one.
+
+3. Nested `if else` and branching logic (40 minutes)
+- Explain nested conditionals and when to use them.
+- Walk through examples with multiple decision levels.
+- Practice: check a number for positive/negative and even/odd.
+
+Break (15 minutes)
+
+4. `for` loop fundamentals (45 minutes)
+- Show `for` loops with `range()` and sequences.
+- Explain `start`, `stop`, and `step` values.
+- Practice: print numbers 1 to 10, print even numbers, and iterate over a string.
+- Exercise: create a multiplication table for 2 or any number.
+
+5. `while` loop fundamentals (45 minutes)
+- Explain condition-based repetition.
+- Show examples: counting up, counting down, and loop termination.
+- Discuss common loop mistakes like infinite loops.
+- Exercise: print numbers from 10 to 1 using a `while` loop.
+
+6. Nested loops and patterns (45 minutes)
+- Explain nested loops and how the inner loop runs fully each time.
+- Practice star patterns and table generation.
+- Demonstrate simple patterns like triangle and square shapes.
+- Exercise: build a star triangle using nested loops.
+
+Break (15 minutes)
+
+7. Problem-solving and practical examples (45 minutes)
+- FizzBuzz walkthrough with `if`, `elif`, and `else`.
+- Multiplication tables using nested loops.
+- Iterating through a string to print each character.
+- Explain debugging and dry run techniques.
+
+8. Review and Q&A (20 minutes)
+- Summarize Day 2 topics and key takeaways.
+- Answer student questions.
+- Highlight how the concepts will be used in future lessons.
+
+9. Homework and practice (15 minutes)
+- Assign problems: countdown, multiplication table, star pattern, FizzBuzz, string iteration.
+- Encourage students to dry run code before executing.
+- Provide tips for practicing Python control flow every day.

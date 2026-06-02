@@ -29,6 +29,27 @@ As we progress through the course, new daily folders (like `Day1`, `Day2`, etc.)
 
 ---
 
+### [Day 2: Python Control Flow and Loops](./Day2/)
+**Goal of the day:** Learn how to make decisions with conditionals, repeat work with loops, and solve pattern problems using nested logic.
+
+**What you will learn in the Day 2 folder:**
+*   **Conditional Statements:** `if`, `elif`, `else`, and nested decision logic.
+*   **Loops:** `for` loops, `while` loops, and using range-based iteration.
+*   **Nested Loops:** How one loop can run inside another to create grids, tables, and patterns.
+*   **Star Patterns:** Practice building visual shapes using loops and string repetition.
+*   **Interview Practice:** 100 interview-style questions with answers for Day 2 topics.
+
+**Key Highlights Inside the `Day2` Folder:**
+1.  **`README.md`**: Start here for Day 2-specific guidance and links.
+2.  **Detailed Notes**: `Day2Notes_Conditional_Loops.txt` explains the theory with examples.
+3.  **Example Code**: `Day2Examples.py` and `Day2_StarPatterns.py` show practical loop and pattern code.
+4.  **Class Plan**: `Day2ClassPlan.txt` lays out the lesson flow and exercises.
+5.  **Interview Prep**: `Day2_Interview_Questions.txt` covers 100 questions for control flow and loops.
+
+👉 **[Click here to go to the Day 2 Materials](./Day2/)**
+
+---
+
 ### How to Use This Repository
 1.  Navigate to the specific day's folder.
 2.  Read the detailed notes (`.txt` files) to understand the theory.
