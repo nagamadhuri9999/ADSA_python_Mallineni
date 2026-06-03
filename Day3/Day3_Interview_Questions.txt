@@ -1,0 +1,161 @@
+50 Python Interview Questions and Answers: Day 3 Topics
+(Loop Control, Strings, Lists, Functions, Scope, Recursion)
+
+=========================================
+SECTION 1: LOOP CONTROL (Q1 - Q10)
+=========================================
+1. What does the `break` statement do?
+Answer: `break` completely terminates the loop it is inside, skipping any remaining iterations.
+
+2. What does the `continue` statement do?
+Answer: `continue` skips the rest of the code in the current iteration and jumps to the next iteration of the loop.
+
+3. What does the `pass` statement do?
+Answer: `pass` is a null operation; it does nothing. It's used as a placeholder when a statement is required syntactically.
+
+4. Can `break` be used outside a loop?
+Answer: No, using `break` outside a loop raises a SyntaxError.
+
+5. What happens to the `else` block of a loop if the loop is terminated by `break`?
+Answer: The `else` block of the loop is skipped.
+
+6. Is `pass` ignored by the interpreter?
+Answer: No, it is executed, but it results in no operation.
+
+7. How do `continue` and `break` differ?
+Answer: `break` exits the loop entirely, while `continue` just skips the current iteration and continues the loop.
+
+8. Can `continue` be used in both `for` and `while` loops?
+Answer: Yes.
+
+9. What is a common use case for `pass`?
+Answer: Writing empty functions, classes, or loops that you plan to implement later.
+
+10. What happens if you use `continue` in a while loop but forget to update the condition variable before it?
+Answer: It can cause an infinite loop because the condition variable is never updated.
+
+=========================================
+SECTION 2: INDEX ERROR AND SEQUENCE OPERATIONS (Q11 - Q30)
+=========================================
+11. What is an IndexError?
+Answer: An exception raised when attempting to access an index that is out of the sequence's valid range.
+
+12. How are strings indexed in Python?
+Answer: Strings are zero-indexed, meaning the first character is at index 0.
+
+13. What is negative indexing?
+Answer: Negative indexing allows accessing elements from the end of the sequence, with -1 being the last element.
+
+14. How do you access the last character of a string `s` without knowing its length?
+Answer: Using `s[-1]`.
+
+15. What is string slicing?
+Answer: Extracting a part of a string using the syntax `[start:stop:step]`.
+
+16. What happens if you omit the `start` parameter in a slice?
+Answer: It defaults to the beginning of the sequence (index 0).
+
+17. What happens if you omit the `stop` parameter in a slice?
+Answer: It defaults to the end of the sequence.
+
+18. How do you reverse a string `s` using slicing?
+Answer: `s[::-1]`
+
+19. Are strings mutable in Python?
+Answer: No, strings are immutable. You cannot change a character by assignment (e.g., `s[0] = 'a'` throws an error).
+
+20. What does string concatenation mean?
+Answer: Joining two or more strings together, typically using the `+` operator.
+
+21. What does string repetition mean?
+Answer: Repeating a string multiple times using the `*` operator.
+
+22. Can you concatenate a string and an integer?
+Answer: No, you must cast the integer to a string first using `str()`.
+
+23. What are lists in Python?
+Answer: Lists are ordered, mutable collections of items.
+
+24. How do you slice the first 3 elements of a list `lst`?
+Answer: `lst[:3]`
+
+25. What is the difference between list indexing and list slicing?
+Answer: Indexing returns a single element, while slicing returns a new list containing a subset of elements.
+
+26. Can you use negative slicing on a list?
+Answer: Yes, e.g., `lst[-3:]` gets the last three elements.
+
+27. Does slicing a list create a new list in memory?
+Answer: Yes, it creates a shallow copy of the sliced portion.
+
+28. How do you concatenate two lists?
+Answer: Using the `+` operator (e.g., `list1 + list2`).
+
+29. What happens if you slice out of bounds (e.g., `lst[0:100]` on a 5-element list)?
+Answer: Python handles it gracefully and returns elements up to the end of the list without throwing an IndexError.
+
+30. Are lists mutable?
+Answer: Yes, you can change, add, or remove elements in a list.
+
+=========================================
+SECTION 3: FUNCTIONS, SCOPE, AND RECURSION (Q31 - Q50)
+=========================================
+31. What is a function?
+Answer: A block of reusable code that performs a specific task and runs when called.
+
+32. How do you define a function in Python?
+Answer: Using the `def` keyword, followed by the function name and parentheses.
+
+33. What is the difference between parameters and arguments?
+Answer: Parameters are the variables in the function definition; arguments are the actual values passed during the function call.
+
+34. What are positional arguments?
+Answer: Arguments passed to a function in the exact order they are defined.
+
+35. What are default arguments?
+Answer: Parameters that assume a default value if a value is not provided in the function call.
+
+36. Can non-default arguments follow default arguments?
+Answer: No, default arguments must come after all non-default arguments.
+
+37. What does `*args` do?
+Answer: It allows a function to accept any number of positional arguments as a tuple.
+
+38. What does `**kwargs` do?
+Answer: It allows a function to accept any number of keyword arguments as a dictionary.
+
+39. What is variable scope?
+Answer: The region of the code where a variable is accessible (Local vs Global).
+
+40. What is a local variable?
+Answer: A variable declared inside a function. It cannot be accessed outside that function.
+
+41. What is a global variable?
+Answer: A variable declared outside of all functions. It can be accessed globally.
+
+42. How do you modify a global variable inside a function?
+Answer: Use the `global` keyword before the variable name inside the function.
+
+43. What happens if a local and global variable have the same name?
+Answer: The local variable shadows the global variable inside the function.
+
+44. What is recursion?
+Answer: When a function calls itself directly or indirectly.
+
+45. What is a base case in recursion?
+Answer: The condition that stops the recursive function from calling itself infinitely.
+
+46. What happens if there is no base case?
+Answer: Infinite recursion occurs, leading to a `RecursionError` (Stack Overflow).
+
+47. When is recursion better than iteration?
+Answer: For problems that naturally divide into smaller subproblems, like tree traversals and certain mathematical sequences.
+
+48. What is the syntax to return a value from a function?
+Answer: Use the `return` statement.
+
+49. What does a function return if there is no `return` statement?
+Answer: It returns `None`.
+
+50. Can a function return multiple values?
+Answer: Yes, by separating them with commas. Python automatically packs them into a tuple.

@@ -1,0 +1,31 @@
+Day 3 Topics:
+- Loop Control Statements
+  - break
+  - continue
+  - pass
+- Error Handling
+  - IndexError
+- String Operations
+  - string indexing
+  - string slicing
+  - negative indexing
+  - negative slicing
+  - string concatenation
+  - string repetition
+- List Operations
+  - list indexing
+  - list slicing
+  - negative indexing
+  - negative slicing
+  - list concatenation
+- Functions
+  - syntax
+  - args and parameters
+  - positional arguments
+  - default arguments
+  - *args
+  - **kwargs
+- Variable Scope
+  - local and global scope
+- Recursion
+  - base cases and recursive steps

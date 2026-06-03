@@ -1,0 +1,63 @@
+Day 3: Control Statements, Data Structures, and Functions (6-hour online class)
+
+Session goal:
+Teach loop control statements, strings and lists manipulation, and function fundamentals including parameters, scope, and recursion.
+
+Class structure:
+
+1. Welcome and Day 2 review (30 minutes)
+- Recap `for` loops, `while` loops, nested loops, and star patterns.
+- Ensure students understand loop flow.
+- Discuss how loops can be interrupted or skipped.
+
+2. Loop Control Statements (45 minutes)
+- Explain `break` to exit loops early.
+- Explain `continue` to skip the current iteration.
+- Introduce `pass` as a placeholder statement.
+- Practice: Print numbers 1-10 but skip 5 (using continue) and stop at 8 (using break).
+
+3. Introduction to IndexError (15 minutes)
+- Discuss what indexes are in sequences.
+- Show what happens when we access an index out of range.
+- Importance of valid indexing.
+
+4. String Operations (60 minutes)
+- String indexing: positive (left to right) and negative (right to left).
+- String slicing: extracting substrings with `start:stop:step`.
+- String concatenation (`+`) and repetition (`*`).
+- Practice: Reverse a string using slicing, extract first and last characters.
+
+Break (15 minutes)
+
+5. List Operations (45 minutes)
+- Introduce lists as mutable collections.
+- List indexing and slicing (similar to strings).
+- List concatenation.
+- Practice: Combine two lists, slice out the middle elements.
+
+6. Functions: Syntax and Parameters (60 minutes)
+- What are functions and why use them (reusability).
+- Defining a function using `def`.
+- Positional arguments and default arguments.
+- Difference between arguments and parameters.
+- Practice: Write a simple function to calculate the area of a rectangle.
+
+Break (15 minutes)
+
+7. Advanced Function Arguments: *args and **kwargs (30 minutes)
+- Explain `*args` for variable number of positional arguments.
+- Explain `**kwargs` for variable number of keyword arguments.
+- Demonstrate with a function that accepts any number of names and prints them.
+
+8. Variable Scope and Recursion (45 minutes)
+- Local vs. Global scope. The `global` keyword.
+- What is recursion? A function calling itself.
+- Importance of a base case.
+- Practice: Factorial using recursion.
+
+9. Review and Q&A (20 minutes)
+- Summarize string/list operations and functions.
+- Address student questions.
+
+10. Homework and practice (15 minutes)
+- Assign problems: Reverse a string, create a list of numbers and slice it, write a function using `*args`, write a recursive Fibonacci function.

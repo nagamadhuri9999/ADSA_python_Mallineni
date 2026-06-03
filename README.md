@@ -50,6 +50,27 @@ As we progress through the course, new daily folders (like `Day1`, `Day2`, etc.)
 
 ---
 
+### [Day 3: Control Statements, Data Structures, and Functions](./Day3/)
+**Goal of the day:** Learn loop control mechanisms, manipulate strings and lists, and understand how to write and use functions effectively.
+
+**What you will learn in the Day 3 folder:**
+*   **Loop Control:** Using `break`, `continue`, and `pass`.
+*   **Strings & Lists:** Indexing, slicing, negative indexing, concatenation, and repetition.
+*   **Functions:** Syntax, parameters, positional/default arguments, `*args`, and `**kwargs`.
+*   **Scope & Recursion:** Local vs global variable scope, and how recursive functions work.
+*   **Interview Practice:** 50 interview-style questions and a quiz for Day 3 topics.
+
+**Key Highlights Inside the `Day3` Folder:**
+1.  **`README.md`**: Start here for Day 3-specific guidance and links.
+2.  **Detailed Notes**: `Day3Notes_Strings_Lists_Functions.txt` explains the theory with examples.
+3.  **Example Code**: `Day3Examples.py` shows practical use cases for strings, lists, and functions.
+4.  **Class Plan**: `Day3ClassPlan.txt` lays out the lesson flow and exercises.
+5.  **Interview Prep**: `Day3_Interview_Questions.txt` and `Day3_Quiz.md` for testing your knowledge.
+
+👉 **[Click here to go to the Day 3 Materials](./Day3/)**
+
+---
+
 ### How to Use This Repository
 1.  Navigate to the specific day's folder.
 2.  Read the detailed notes (`.txt` files) to understand the theory.
