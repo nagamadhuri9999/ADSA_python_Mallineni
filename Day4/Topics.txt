@@ -1,0 +1,13 @@
+Day 4 Topics:
+- String Methods and Problems
+  - Common string methods (lower, upper, split, join, replace, strip, find, count)
+  - String manipulation problems
+- Anagrams
+  - What is an anagram?
+  - Techniques to solve anagram problems (sorting, frequency counting)
+- Recursion in More Detail
+  - Review of base cases and recursive steps
+  - Call stack visualization
+- Recursion Dry Run and Mind Mapping
+  - How to trace a recursive function step by step
+  - Mind mapping a recursion tree (e.g., for Fibonacci)

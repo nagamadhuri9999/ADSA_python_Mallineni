@@ -159,3 +159,159 @@ Answer: It returns `None`.
 
 50. Can a function return multiple values?
 Answer: Yes, by separating them with commas. Python automatically packs them into a tuple.
+
+=========================================
+SECTION 4: ADVANCED LIST AND STRING OPERATIONS (Q51 - Q75)
+=========================================
+51. How do you remove the first element of a list?
+Answer: Using `lst.pop(0)` or `del lst[0]`.
+
+52. What is the difference between `append()` and `extend()`?
+Answer: `append()` adds its argument as a single element to the end of a list. `extend()` iterates over its argument and adds each element to the list.
+
+53. Can you concatenate a string and a list?
+Answer: No, trying to do so results in a TypeError.
+
+54. How do you check if a specific element exists in a list?
+Answer: Using the `in` operator (e.g., `if element in lst:`).
+
+55. How do you check if a specific substring exists in a string?
+Answer: Also using the `in` operator (e.g., `if "sub" in string:`).
+
+56. What happens when you multiply a list by an integer (e.g., `[1, 2] * 3`)?
+Answer: It repeats the list elements (e.g., `[1, 2, 1, 2, 1, 2]`).
+
+57. Can you multiply a list by a float?
+Answer: No, you can only multiply a sequence by an integer.
+
+58. How do you find the minimum and maximum values in a list of numbers?
+Answer: Using the built-in functions `min(lst)` and `max(lst)`.
+
+59. How do you sum all elements in a list of numbers?
+Answer: Using the built-in function `sum(lst)`.
+
+60. What is a shallow copy of a list?
+Answer: A new list object populated with references to the child objects found in the original. It can be created using `lst[:]` or `lst.copy()`.
+
+61. If you modify a nested list inside a shallow copy, does it affect the original list?
+Answer: Yes, because the references to the nested objects are the same.
+
+62. How do you convert a string to a list of characters?
+Answer: By passing the string to the `list()` constructor (e.g., `list("hello")`).
+
+63. Can strings contain numbers?
+Answer: Yes, strings can contain numeric characters (e.g., `"123"`), but they are treated as text.
+
+64. How do you convert a numeric string to an integer?
+Answer: Using the `int()` function.
+
+65. What happens if you try to cast `"hello"` to an int?
+Answer: It raises a ValueError.
+
+66. How do you find the length of a string or list?
+Answer: Using the `len()` function.
+
+67. What is an iterable in Python?
+Answer: Any object capable of returning its members one at a time, such as strings, lists, and tuples.
+
+68. Is it possible to change a character in a string using its index?
+Answer: No, strings are immutable. You must create a new string with the desired change.
+
+69. How do you remove an element from a list by its value?
+Answer: Using `lst.remove(value)`. It removes the first occurrence of the value.
+
+70. What happens if you use `remove()` on a value that is not in the list?
+Answer: It raises a ValueError.
+
+71. How do you insert an element at a specific index in a list?
+Answer: Using `lst.insert(index, value)`.
+
+72. What happens if the index provided to `insert()` is greater than the list length?
+Answer: The value is appended to the end of the list without raising an error.
+
+73. How do you count the occurrences of a specific item in a list?
+Answer: Using the `lst.count(value)` method.
+
+74. How do you reverse a list in-place?
+Answer: Using the `lst.reverse()` method.
+
+75. How does `lst.reverse()` differ from `lst[::-1]`?
+Answer: `reverse()` modifies the original list and returns None. `lst[::-1]` creates and returns a new reversed list, leaving the original unchanged.
+
+=========================================
+SECTION 5: ADVANCED FUNCTIONS AND SCOPE (Q76 - Q100)
+=========================================
+76. Can a function call another function?
+Answer: Yes, a function can call any other function that is defined in the same or outer scope.
+
+77. Can a function return another function?
+Answer: Yes, in Python, functions are first-class objects and can be returned from other functions.
+
+78. What happens if you define a variable inside an `if` block? Is it local to the `if` block?
+Answer: No, Python does not have block-level scope. Variables defined in an `if` block are accessible within the entire function (or global scope if defined outside a function).
+
+79. What is the `nonlocal` keyword used for?
+Answer: It is used in nested functions to declare that a variable refers to a previously bound variable in the closest enclosing scope, excluding globals.
+
+80. What is a lambda function?
+Answer: A small anonymous function defined using the `lambda` keyword, typically for a single, short expression.
+
+81. Can `*args` and `**kwargs` be used together in the same function definition?
+Answer: Yes, but `*args` must appear before `**kwargs`.
+
+82. What does `def my_func(a, b, *args, **kwargs):` mean?
+Answer: It takes two required positional arguments, any number of additional positional arguments as a tuple, and any number of keyword arguments as a dictionary.
+
+83. If a default parameter is a mutable object (like an empty list), what is the danger?
+Answer: The default object is created only once when the function is defined. If you modify it inside the function, the changes persist across subsequent calls.
+
+84. How do you safely use an empty list as a default parameter?
+Answer: Use `None` as the default value, and inside the function, check `if param is None: param = []`.
+
+85. What does the `type()` function do?
+Answer: It returns the type of an object (e.g., `<class 'int'>`, `<class 'str'>`).
+
+86. Can a function have multiple `return` statements?
+Answer: Yes. The function execution ends as soon as it hits any `return` statement.
+
+87. What is the output of a function that returns multiple comma-separated values?
+Answer: A single tuple containing all the values.
+
+88. How do you unpack multiple returned values?
+Answer: Assign them to a comma-separated list of variables (e.g., `x, y = my_func()`).
+
+89. Can you pass a list to a function expecting `*args`?
+Answer: Yes, by unpacking the list in the function call using the `*` operator (e.g., `my_func(*my_list)`).
+
+90. Can you pass a dictionary to a function expecting `**kwargs`?
+Answer: Yes, by unpacking it using `**` (e.g., `my_func(**my_dict)`).
+
+91. What is the call stack limit in Python by default?
+Answer: Typically around 1000, though it can vary by environment.
+
+92. How does a recursive function know when to stop?
+Answer: It stops when it reaches a conditional statement known as the base case.
+
+93. Is it possible for a recursive function to have multiple base cases?
+Answer: Yes, depending on the problem logic (e.g., Fibonacci has base cases for `n=0` and `n=1`).
+
+94. What is a common real-world use case for recursion?
+Answer: Traversing hierarchical data structures like file systems (folders within folders) or HTML/XML documents.
+
+95. How does Python evaluate default arguments?
+Answer: They are evaluated from left to right when the function is defined, not when it is called.
+
+96. Why might you use `pass` inside a function body?
+Answer: To create a stub function that you plan to implement later, avoiding a SyntaxError for an empty block.
+
+97. What happens if you define two functions with the same name in the same file?
+Answer: The second definition overwrites the first one. Python does not support function overloading by signature.
+
+98. Can parameters be passed by name when calling a function?
+Answer: Yes, these are called keyword arguments, e.g., `func(age=25, name="Bob")`.
+
+99. When using keyword arguments, does the order matter?
+Answer: No, as long as all required arguments are provided and they appear after any positional arguments.
+
+100. What is a docstring?
+Answer: A multi-line string placed immediately after a function, class, or module definition to describe its purpose. It can be accessed via the `__doc__` attribute.

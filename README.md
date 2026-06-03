@@ -71,6 +71,36 @@ As we progress through the course, new daily folders (like `Day1`, `Day2`, etc.)
 
 ---
 
+### [Day 4: String Methods, Anagrams, and Advanced Recursion](./Day4/)
+**Goal of the day:** Master built-in string methods, solve string-based algorithm problems (like anagrams), and develop a deep understanding of recursion through dry runs and call stack visualization.
+
+**What you will learn in the Day 4 folder:**
+*   **String Methods:** Using `.lower()`, `.strip()`, `.split()`, `.join()`, `.replace()`, and `.count()`.
+*   **Anagrams:** Solving anagram checks using Sorting and Frequency Dictionaries.
+*   **Advanced Recursion:** Understanding the Call Stack, Winding vs Unwinding phases.
+*   **Dry Runs & Mind Mapping:** Tracing recursive calls step-by-step and drawing recursion trees.
+*   **Interview & Practice:** 50 practice problems, 50 interview-style questions, and a quiz.
+
+**Key Highlights Inside the `Day4` Folder:**
+1.  **`README.md`**: Start here for Day 4-specific guidance and links.
+2.  **Detailed Notes**: `Day4Notes_Strings_Recursion.txt` explains the theory with examples.
+3.  **Example Code**: `Day4Examples.py` shows practical use cases for string methods and recursion tracing.
+4.  **Practice Problems**: `Day4_Practice_Problems.py` provides 50 hands-on coding exercises.
+5.  **Interview Prep**: `Day4_Interview_Questions.txt` and `Day4_Quiz.md` for testing your knowledge.
+
+👉 **[Click here to go to the Day 4 Materials](./Day4/)**
+
+---
+
+### 🏆 [Capstone Project 1: The Smart Text & Anagram Analyzer](./Capstone_1_Text_Analyzer/)
+**Goal:** Apply everything learned in Days 1-4 by building a functional Command Line Interface (CLI) application!
+*   **What you will build:** A tool that takes user text, cleans it of punctuation, counts words, checks for anagrams, and includes a recursive mini-game.
+*   **Why this matters:** It bridges the gap between learning isolated concepts and building an actual, interconnected software application.
+
+👉 **[Click here to go to Capstone Project 1](./Capstone_1_Text_Analyzer/)**
+
+---
+
 ### How to Use This Repository
 1.  Navigate to the specific day's folder.
 2.  Read the detailed notes (`.txt` files) to understand the theory.

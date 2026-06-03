@@ -1,0 +1,113 @@
+Day 4 Notes: String Methods, Anagrams, and Advanced Recursion
+
+1. String Methods
+-----------------
+Strings in Python come with many built-in methods that make manipulation easy. Since strings are immutable, these methods always return a new string and do not modify the original.
+
+Common Methods:
+- `.lower()` / `.upper()`: Converts all characters to lower or upper case.
+- `.strip()`: Removes leading and trailing whitespace (or specific characters).
+- `.split(separator)`: Splits a string into a list of strings based on the separator (default is whitespace).
+- `.join(iterable)`: Joins elements of an iterable (like a list) into a single string using a separator string.
+- `.replace(old, new)`: Replaces occurrences of a substring with another substring.
+- `.find(substring)`: Returns the lowest index where the substring is found. Returns -1 if not found.
+- `.count(substring)`: Returns the number of non-overlapping occurrences of the substring.
+- `.isalpha()` / `.isdigit()` / `.isalnum()`: Checks if all characters in the string are alphabets, digits, or alphanumeric.
+
+Example:
+```python
+text = "  Hello, Python World!  "
+print(text.strip())                # "Hello, Python World!"
+print(text.lower().count('o'))     # 3
+words = text.strip().split(', ')   # ["Hello", "Python World!"]
+print(" - ".join(words))           # "Hello - Python World!"
+```
+
+2. Problem Solving: Anagrams
+----------------------------
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Example: "listen" and "silent".
+
+How to check for anagrams:
+Approach 1: Sorting
+If two strings are anagrams, sorting their characters will produce the exact same sequence.
+```python
+def is_anagram_sort(s1, s2):
+    # Remove spaces and convert to lowercase for accurate comparison
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    return sorted(s1) == sorted(s2)
+```
+Time Complexity: O(N log N) due to sorting.
+
+Approach 2: Character Frequency (Hashing / Dictionary)
+Count the occurrences of each character in both strings. If the counts match, they are anagrams.
+```python
+def is_anagram_freq(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    if len(s1) != len(s2):
+        return False
+    
+    char_count = {}
+    for char in s1:
+        char_count[char] = char_count.get(char, 0) + 1
+        
+    for char in s2:
+        if char not in char_count:
+            return False
+        char_count[char] -= 1
+        if char_count[char] == 0:
+            del char_count[char]
+            
+    return len(char_count) == 0
+```
+Time Complexity: O(N). More efficient than sorting.
+
+3. Recursion in More Detail
+---------------------------
+Recursion is when a function calls itself to solve a smaller instance of the same problem.
+Key components:
+1. Base Case: The condition under which the function stops calling itself.
+2. Recursive Step: The part of the function where it calls itself with a modified parameter, moving closer to the base case.
+
+4. Call Stack Visualization (Dry Run)
+-------------------------------------
+Every time a function is called, a new frame is added to the Call Stack (memory). When the function returns, its frame is popped off the stack.
+
+Dry Running Factorial(3):
+Code:
+```python
+def fact(n):
+    if n == 1: return 1
+    return n * fact(n - 1)
+```
+Stack trace:
+- `fact(3)` is called. Needs `3 * fact(2)`. Pauses.
+  - `fact(2)` is called. Needs `2 * fact(1)`. Pauses.
+    - `fact(1)` is called. Hits base case. Returns `1`.
+  - `fact(2)` resumes: `2 * 1 = 2`. Returns `2`.
+- `fact(3)` resumes: `3 * 2 = 6`. Returns `6`.
+
+5. Mind Mapping a Recursion Tree
+--------------------------------
+For multiple recursive calls (like Fibonacci), a mind map (or tree) helps visualize the execution.
+
+Fibonacci Code:
+```python
+def fib(n):
+    if n <= 1: return n
+    return fib(n-1) + fib(n-2)
+```
+
+Recursion Tree for `fib(4)`:
+```
+                      fib(4)
+                     /      \
+               fib(3)        fib(2)
+              /     \        /    \
+         fib(2)   fib(1)  fib(1) fib(0)
+         /    \
+     fib(1) fib(0)
+```
+Notice how `fib(2)` is calculated multiple times. This visualization helps us identify overlapping subproblems, which leads to advanced optimization techniques like Memoization (Dynamic Programming).

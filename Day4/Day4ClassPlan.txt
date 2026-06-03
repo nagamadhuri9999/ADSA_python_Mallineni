@@ -1,0 +1,55 @@
+Day 4: String Methods, Anagrams, and Advanced Recursion (6-hour online class)
+
+Session goal:
+Master built-in string methods, solve string-based algorithm problems (like anagrams), and develop a deep understanding of recursion through dry runs and call stack visualization.
+
+Class structure:
+
+1. Welcome and Day 3 review (30 minutes)
+- Recap string/list slicing, loop control, and basic functions.
+- Review what recursion is fundamentally.
+
+2. Deep Dive: String Methods (60 minutes)
+- Introduce mutability vs immutability.
+- Demonstrate `.lower()`, `.upper()`, `.strip()`, `.replace()`.
+- Explain `.split()` and `.join()` working together.
+- Practice: Clean up a messy string input (e.g., removing spaces and capitalizing words).
+
+3. Problem Solving: Anagrams (60 minutes)
+- Discuss what an anagram is.
+- Brainstorm solutions with the class.
+- Implement Solution 1: Sorting strings (`sorted()`). Discuss Time Complexity (O(N log N)).
+- Implement Solution 2: Frequency counting with dictionaries. Discuss Time Complexity (O(N)).
+
+Break (15 minutes)
+
+4. Recursion Refresher & The Call Stack (45 minutes)
+- Discuss memory and the Call Stack.
+- Explain what happens when a function calls another function.
+- Relate the Call Stack to Recursion.
+- Show what a Stack Overflow (RecursionError) physically means.
+
+5. Recursion Dry Runs (60 minutes)
+- Pick a simple recursive function (e.g., factorial or sum of array).
+- Trace the variables on paper/whiteboard line by line.
+- Show the "winding" phase (pushing to stack) and "unwinding" phase (popping from stack and returning values).
+- Practice: Have students dry run a recursive string reversal.
+
+Break (15 minutes)
+
+6. Mind Mapping Recursion (Tree Visualization) (45 minutes)
+- Introduce functions with multiple recursive calls (e.g., Fibonacci).
+- Draw the recursion tree on the whiteboard.
+- Show the order of execution (Depth-First).
+- Highlight overlapping subproblems.
+
+7. Practice and Problem Solving (45 minutes)
+- Mix string methods and recursion.
+- Solve: Palindrome check using recursion.
+- Solve: Counting specific characters in a string recursively.
+
+8. Review and Q&A (15 minutes)
+- Summarize string methods and the recursion tree.
+
+9. Homework and practice (15 minutes)
+- Assign practice problems on string manipulation and recursion dry runs.
