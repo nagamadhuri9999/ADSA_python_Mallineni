@@ -4,27 +4,6 @@ Welcome to the **Python Mastery Course**, a comprehensive curriculum designed to
 
 This repository is structured by day. Each day acts as a progressive module complete with Class Notes, Interactive Examples, 100 Interview Questions, 100 Practice Problems, and beautiful UI notes.
 
-## 🏆 Final Capstone Project
-To synthesize the entire curriculum, navigate to the `Final_Capstone/` directory.
-Here you will find the **Student Database Manager**, a Command-Line Interface (CLI) application that combines:
-- **Data Structures (Day 2-4):** Storing students in Lists of Dictionaries.
-- **Control Flow (Day 5):** Interactive `while` loop menu and conditional logic.
-- **Algorithms (Day 7):** Searching for students via **Linear Search** (by name) and **Binary Search** (by ID).
-- **Time Complexity (Day 6):** Extensive Big O Notation commentary proving the efficiency of the code.
-
-Run it using:
-```bash
-python Final_Capstone/main.py
-```
-
-## 🧪 Automated Unit Testing
-Real developers test their code. We have included an automated test suite using Python's built-in `unittest` module in the `tests/` directory.
-
-Run the tests to see the code's resilience under edge cases:
-```bash
-python -m unittest tests.test_database
-```
-
 ---
 
 ## 📚 Curriculum Flow
