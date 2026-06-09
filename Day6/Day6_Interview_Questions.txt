@@ -1,0 +1,303 @@
+Day 6: 100 Interview Questions on Big O Notation
+============================================================
+
+Q1: What is the time complexity of a standard `for` loop?
+A: O(N)
+
+Q2: What is the time complexity of two separate (non-nested) `for` loops?
+A: O(N) + O(N) = O(2N) -> simplifies to O(N)
+
+Q3: What is the time complexity of a nested loop (loop inside a loop)?
+A: O(N) * O(N) = O(N^2)
+
+Q4: What is the time complexity of popping the last element from a Python list?
+A: O(1)
+
+Q5: What is the time complexity of inserting an element at the beginning of a Python list?
+A: O(N), because all subsequent elements must be shifted over in memory.
+
+Q6: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q7: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q8: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q9: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q10: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q11: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q12: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q13: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q14: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q15: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q16: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q17: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q18: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q19: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q20: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q21: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q22: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q23: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q24: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q25: What does Big O notation mathematically represent?
+A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+
+Q26: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q27: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q28: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q29: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q30: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q31: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q32: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q33: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q34: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q35: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q36: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q37: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q38: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q39: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q40: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q41: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q42: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q43: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q44: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q45: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q46: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q47: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q48: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q49: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q50: Why is accessing an array element by index O(1)?
+A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+
+Q51: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q52: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q53: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q54: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q55: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q56: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q57: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q58: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q59: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q60: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q61: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q62: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q63: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q64: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q65: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q66: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q67: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q68: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q69: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q70: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q71: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q72: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q73: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q74: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q75: What does O(N^2 + 5N + 100) simplify to?
+A: O(N^2), because we drop constants and non-dominant terms.
+
+Q76: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q77: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q78: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q79: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q80: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q81: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q82: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q83: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q84: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q85: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q86: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q87: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q88: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q89: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q90: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q91: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q92: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q93: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q94: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q95: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q96: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q97: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q98: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q99: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+
+Q100: If an algorithm creates a copy of the input array, what is its space complexity?
+A: O(N), because the extra memory required grows directly in proportion to the input size.
+

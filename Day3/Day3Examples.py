@@ -31,7 +31,10 @@ word = "Education"
 print(f"Word: {word}")
 print("Positive Index 0:", word[0])
 print("Negative Index -1:", word[-1])
-print("Slicing [0:3]:", word[0:3])
+print("Slicing [0:3] (start < end, step=+1):", word[0:3])
+print("Slicing [3:0] (start > end, step=+1):", repr(word[3:0])) # Empty string
+print("Slicing [3:0:-1] (start > end, step=-1):", word[3:0:-1])
+print("Slicing [0:3:-1] (start < end, step=-1):", repr(word[0:3:-1])) # Empty string
 print("Negative Slicing [-4:-1]:", word[-4:-1])
 print("Reversing [::-1]:", word[::-1])
 

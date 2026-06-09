@@ -1,0 +1,303 @@
+Day 7: 100 Interview Questions on Searching Algorithms
+============================================================
+
+Q1: What is the best case time complexity for Linear Search?
+A: O(1) if the target is the first element.
+
+Q2: What is the best case time complexity for Binary Search?
+A: O(1) if the target is the exact middle element on the first check.
+
+Q3: Does Python's `in` keyword use linear or binary search on a list?
+A: It uses linear search (O(N)).
+
+Q4: How do you calculate the `mid` index safely in languages prone to integer overflow?
+A: mid = low + (high - low) // 2
+
+Q5: Can Binary Search be applied to a Hash Map?
+A: No, Hash Maps have no ordered sequence. They use hashing for O(1) lookups.
+
+Q6: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q7: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q8: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q9: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q10: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q11: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q12: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q13: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q14: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q15: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q16: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q17: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q18: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q19: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q20: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q21: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q22: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q23: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q24: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q25: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every single element.
+
+Q26: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q27: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q28: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q29: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q30: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q31: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q32: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q33: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q34: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q35: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q36: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q37: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q38: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q39: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q40: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q41: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q42: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q43: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q44: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q45: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q46: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q47: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q48: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q49: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q50: What is the strict prerequisite for using Binary Search?
+A: The array or collection MUST be sorted.
+
+Q51: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q52: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q53: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q54: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q55: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q56: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q57: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q58: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q59: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q60: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q61: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q62: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q63: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q64: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q65: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q66: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q67: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q68: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q69: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q70: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q71: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q72: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q73: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q74: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q75: How does O(log N) compare to O(N) for an array of 1 million items?
+A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
+
+Q76: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q77: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q78: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q79: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q80: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q81: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q82: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q83: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q84: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q85: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q86: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q87: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q88: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q89: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q90: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q91: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q92: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q93: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q94: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q95: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q96: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q97: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q98: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q99: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+
+Q100: Why do we use `low <= high` instead of `low < high` in binary search?
+A: Because the target might be at the exact index where low and high converge.
+

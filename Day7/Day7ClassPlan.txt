@@ -1,0 +1,49 @@
+Day 7: Searching Algorithms (6-hour online class)
+
+Session goal:
+Transition from basic list manipulation to formal algorithms. Master the logic, implementation, and time complexity analysis of Linear Search and Binary Search.
+
+Class structure:
+
+1. Welcome and Review (30 minutes)
+- Recap Day 5: List methods, nested loops, and Two Sum.
+- Explain today's focus: Finding an element in a collection quickly.
+
+2. Linear Search Algorithm (60 minutes)
+- Concept: Checking every element one by one.
+- Writing the algorithm iteratively.
+- Time Complexity: Best case O(1), Worst case O(N).
+- When to use: Unsorted data, small datasets.
+- Interview-style question: "Why is linear search the only option for an unsorted linked list?"
+
+3. Implementing Linear Search (45 minutes)
+- Coding standard Linear Search returning index.
+- Variations: Finding all occurrences, counting occurrences.
+- Using Python's built-in `.index()` and `in` operator (and explaining they use Linear Search under the hood).
+
+Break (15 minutes)
+
+4. Introduction to Binary Search (60 minutes)
+- The core requirement: Data MUST be sorted.
+- The divide and conquer approach: High, Low, and Mid pointers.
+- Visualizing the halving process (e.g., guessing a number between 1 and 100).
+- Time Complexity: Best case O(1), Worst case O(log N).
+
+5. Implementing Binary Search Iteratively (45 minutes)
+- Setting up `low = 0` and `high = len(arr) - 1`.
+- The loop condition: `while low <= high:`.
+- Calculating `mid = (low + high) // 2`.
+- Updating pointers based on the target.
+
+Break (15 minutes)
+
+6. Binary Search Recursively (60 minutes)
+- Reviewing recursion concepts from Day 4.
+- Passing `low` and `high` as function arguments.
+- Defining base cases (`low > high` and `arr[mid] == target`).
+
+7. Review, Q&A, and Homework (30 minutes)
+- Comparing Linear vs Binary Search.
+- Answer student questions on O(N) vs O(log N).
+- Assign homework: 100 Practice Problems and 100 Interview Q&A.
+- Prepare for Day 7: Sorting Algorithms.

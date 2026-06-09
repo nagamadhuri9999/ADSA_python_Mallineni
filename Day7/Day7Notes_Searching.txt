@@ -1,0 +1,74 @@
+Day 7 Notes: Searching Algorithms (Linear and Binary Search)
+
+1. Introduction to Searching
+----------------------------
+Searching is the process of finding a specific target element within a collection of data (like a list or array). The two most fundamental searching algorithms in computer science are Linear Search and Binary Search.
+
+2. Linear Search
+----------------
+Linear search (also called sequential search) is the simplest searching algorithm. 
+- Concept: It iterates through the list element by element from the beginning to the end.
+- Prerequisite: None. The list can be sorted or unsorted.
+- Time Complexity:
+  - Best Case: O(1) -> If the target is the very first element.
+  - Worst Case: O(N) -> If the target is the very last element or not in the list at all.
+- Space Complexity: O(1) -> No extra memory needed.
+
+Example:
+```python
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  # Return the index where found
+    return -1 # Return -1 if not found
+```
+
+Python's built-in `target in arr` and `arr.index(target)` both use Linear Search under the hood.
+
+3. Binary Search
+----------------
+Binary search is a much faster divide-and-conquer algorithm.
+- Prerequisite: The list MUST BE SORTED. (This is a hard requirement!).
+- Concept: Instead of checking every element, it checks the middle element. 
+  - If the middle element is the target, we are done.
+  - If the middle element is less than the target, we discard the left half.
+  - If the middle element is greater than the target, we discard the right half.
+- Time Complexity:
+  - Best Case: O(1) -> If the target is exactly in the middle on the first try.
+  - Worst Case: O(log N) -> The list is halved at each step.
+- Space Complexity:
+  - Iterative: O(1)
+  - Recursive: O(log N) due to call stack frames.
+
+Iterative Implementation:
+```python
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    
+    while low <= high:
+        mid = (low + high) // 2
+        
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1 # Target is in the right half
+        else:
+            high = mid - 1 # Target is in the left half
+            
+    return -1
+```
+
+4. Comparing O(N) vs O(log N)
+-----------------------------
+Imagine an array with 1,000,000 elements.
+- Linear Search Worst Case: 1,000,000 checks.
+- Binary Search Worst Case: ~20 checks! (Because 2^20 is approx 1,000,000).
+This is why Binary Search is incredibly powerful for large datasets, as long as the data is sorted.
+
+5. Key Takeaways
+----------------
+- Use Linear Search for small, unsorted datasets.
+- Use Binary Search for large, sorted datasets.
+- Remember the `low <= high` condition to avoid missing the final element.
+- The mid calculation `mid = (low + high) // 2` is standard, though in languages like Java/C++, `low + (high - low) // 2` is preferred to prevent integer overflow. Python handles arbitrarily large integers automatically.

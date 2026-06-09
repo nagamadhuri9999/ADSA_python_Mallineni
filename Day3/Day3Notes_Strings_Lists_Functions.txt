@@ -46,6 +46,8 @@ print(name[10]) # Raises IndexError because "Python" only has indices 0 to 5.
   - Negative indexing: starts from -1 (right to left).
 - Slicing: Extracting a substring using `[start:stop:step]`.
   - `start` is inclusive, `stop` is exclusive.
+  - Positive step (+): You move forward. For output, `start` MUST be less than `stop` (`start < stop`), otherwise you get an empty string.
+  - Negative step (-): You move backward. For output, `start` MUST be greater than `stop` (`start > stop`), otherwise you get an empty string.
 - Concatenation: Joining strings using the `+` operator.
 - Repetition: Repeating strings using the `*` operator.
 
@@ -57,8 +59,13 @@ print(text[0])   # 'P'
 print(text[-1])  # 'n'
 
 # Slicing
-print(text[0:3]) # 'Pyt'
+print(text[0:3]) # 'Pyt' (Positive step, 0 < 3 -> Output)
+print(text[3:0]) # '' (Positive step, 3 > 0 -> Empty Output)
+print(text[3:0:-1]) # 'oht' (Negative step, 3 > 0 -> Output)
+print(text[0:3:-1]) # '' (Negative step, 0 < 3 -> Empty Output)
 print(text[::-1])# 'nohtyP' (Reverses string)
+
+> Note: For 20 concrete examples testing these specific rules on both strings and lists, run `Day3_Slicing_Mastery.py`.
 
 # Concatenation and Repetition
 print("Hello" + " " + "World")

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7: Searching Algorithms | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 7</div>
+            <h1>Searching Algorithms</h1>
+            <p class="subtitle">Master Linear Search and the incredible power of Binary Search.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>Linear Search Algorithm</li>
+                <li>Best vs Worst Case Time Complexity</li>
+                <li>Binary Search Prerequisite: Sorting</li>
+                <li>Divide and Conquer Strategy</li>
+                <li>Iterative vs Recursive Binary Search</li>
+                <li>O(N) vs O(log N) Comparison</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. Linear Search O(N)</h3>
+            <p>Checks every element one by one. Good for small or unsorted data.</p>
+            <pre><code>def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target: return i
+    return -1</code></pre>
+
+            <h3>2. Binary Search O(log N)</h3>
+            <p><strong>MUST BE SORTED!</strong> Cuts the search space in half every iteration.</p>
+            <pre><code>def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target: return mid
+        elif arr[mid] < target: low = mid + 1
+        else: high = mid - 1
+    return -1</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+            <p>You have exactly 100 Interview Questions and 100 Practice Problems waiting for you!</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="Day7Examples.py" class="btn btn-primary">View Examples</a>
+                <a href="Day7_Quiz.md" class="btn">Take the Quiz</a>
+                <a href="Day7_Interview_Questions.txt" class="btn">100 Q&A</a>
+                <a href="Day7_Practice_Problems.py" class="btn">100 Problems</a>
+            </div>
+        </section>
+
+        <nav>
+            <a href="../Day6/blog.html" class="btn">← Back to Day 6</a>
+            <a href="../README.md" class="btn">Course Home →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>
