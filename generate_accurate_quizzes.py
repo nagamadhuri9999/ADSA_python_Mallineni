@@ -26,6 +26,15 @@ def generate_day(day_num, title, concepts):
     problems.append(f"# Day {day_num}: 100 Practice Problems on {title}\n")
     problems.append("# Predict the output or write the solution for each snippet.\n\n")
 
+    # Generic solution snippets based on day
+    solutions = {
+        1: "    # --- SOLUTION ---\n    # Basic logic: variable assignment and operations\n    result = val * 2\n    print(f'Value is {result}')\n    return result\n",
+        2: "    # --- SOLUTION ---\n    # Control flow logic: if/else and loops\n    if val % 2 == 0:\n        val += 10\n    else:\n        for _ in range(3):\n            val += 1\n    return val\n",
+        3: "    # --- SOLUTION ---\n    # Strings, Lists, and Functions logic\n    my_list = [val, val*2, val*3]\n    my_list.append(100)\n    sliced = my_list[1:]\n    return sliced\n",
+        4: "    # --- SOLUTION ---\n    # Advanced string methods and recursion concepts\n    s = str(val)\n    reversed_s = s[::-1]\n    return int(reversed_s) if reversed_s.isdigit() else 0\n",
+        5: "    # --- SOLUTION ---\n    # Problem solving and list comprehensions\n    frequency = {x: list(range(val)).count(x) for x in range(min(val, 10))}\n    return frequency\n"
+    }
+
     counter = 1
     for category_idx, concept in enumerate(concepts):
         problems.append(f"#" + "-"*40 + "\n")
@@ -35,8 +44,8 @@ def generate_day(day_num, title, concepts):
             problems.append(f"def practice_snippet_{counter}():\n")
             problems.append(f"    # Practice implementing: {concept}\n")
             problems.append(f"    val = {i}\n")
-            problems.append(f"    # TODO: Write code applying {concept}\n")
-            problems.append(f"    return val\n\n")
+            problems.append(f"    # TODO: Write code applying {concept}\n\n")
+            problems.append(solutions[day_num] + "\n")
             counter += 1
 
     with open(os.path.join(base_dir, f"Day{day_num}_Practice_Problems.py"), "w", encoding="utf-8") as f:
