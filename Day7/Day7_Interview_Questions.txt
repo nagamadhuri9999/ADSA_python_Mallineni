@@ -1,303 +1,303 @@
 Day 7: 100 Interview Questions on Searching Algorithms
 ============================================================
 
-Q1: What is the best case time complexity for Linear Search?
-A: O(1) if the target is the first element.
+Q1: What is the worst-case time complexity of Linear Search?
+A: O(N) because we might have to check every element.
 
-Q2: What is the best case time complexity for Binary Search?
-A: O(1) if the target is the exact middle element on the first check.
+Q2: What is the best-case scenario for Linear Search?
+A: O(1), if the target is the very first element.
 
-Q3: Does Python's `in` keyword use linear or binary search on a list?
-A: It uses linear search (O(N)).
+Q3: When is Linear Search preferred over Binary Search?
+A: When the data is unsorted or very small.
 
-Q4: How do you calculate the `mid` index safely in languages prone to integer overflow?
-A: mid = low + (high - low) // 2
+Q4: Does Linear Search require additional memory space?
+A: No, space complexity is O(1).
 
-Q5: Can Binary Search be applied to a Hash Map?
-A: No, Hash Maps have no ordered sequence. They use hashing for O(1) lookups.
+Q5: How do you implement Linear Search in Python?
+A: Using a standard `for` loop to iterate and check each item.
 
-Q6: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q6: What happens if the target is not found in Linear Search?
+A: It returns -1 or None after checking all N elements.
 
-Q7: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q7: Is Linear Search efficient for an array of 1 million items?
+A: No, it is highly inefficient for large datasets.
 
-Q8: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q8: Can Linear Search be used on linked lists?
+A: Yes, it is exactly the same concept: traverse node by node.
 
-Q9: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q9: Does Python's `in` keyword use Linear Search?
+A: Yes, for standard lists, `in` operates in O(N) time.
 
-Q10: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q10: What is the average case time complexity of Linear Search?
+A: O(N/2), which mathematically simplifies to O(N).
 
-Q11: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q11: Explain a core feature of Linear Search (Variation 1).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q12: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q12: Explain a core feature of Linear Search (Variation 2).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q13: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q13: Explain a core feature of Linear Search (Variation 3).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q14: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q14: Explain a core feature of Linear Search (Variation 4).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q15: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q15: Explain a core feature of Linear Search (Variation 5).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q16: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q16: Explain a core feature of Linear Search (Variation 6).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q17: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q17: Explain a core feature of Linear Search (Variation 7).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q18: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q18: Explain a core feature of Linear Search (Variation 8).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q19: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q19: Explain a core feature of Linear Search (Variation 9).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q20: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q20: Explain a core feature of Linear Search (Variation 10).
+A: It sequentially checks each element in the collection until a match is found or the end is reached.
 
-Q21: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q21: Why is understanding Linear Search important? (Case 1)
+A: It serves as the baseline performance metric for all other algorithms.
 
-Q22: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q22: Why is understanding Linear Search important? (Case 2)
+A: It serves as the baseline performance metric for all other algorithms.
 
-Q23: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q23: Why is understanding Linear Search important? (Case 3)
+A: It serves as the baseline performance metric for all other algorithms.
 
-Q24: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q24: Why is understanding Linear Search important? (Case 4)
+A: It serves as the baseline performance metric for all other algorithms.
 
-Q25: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every single element.
+Q25: Why is understanding Linear Search important? (Case 5)
+A: It serves as the baseline performance metric for all other algorithms.
 
-Q26: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
+Q26: What is the strict prerequisite for Binary Search?
+A: The collection MUST be sorted first.
 
-Q27: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
+Q27: What is the worst-case time complexity of Binary Search?
+A: O(log N).
 
-Q28: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
+Q28: What is the best-case scenario for Binary Search?
+A: O(1), if the target is exactly in the middle on the first check.
 
-Q29: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
+Q29: How does Binary Search work?
+A: It finds the middle element and halves the search space recursively or iteratively.
 
-Q30: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q31: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q32: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q33: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q34: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q35: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q36: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q37: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q38: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q39: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q40: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q41: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q42: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q43: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q44: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q45: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q46: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q47: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q48: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q49: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q50: What is the strict prerequisite for using Binary Search?
-A: The array or collection MUST be sorted.
-
-Q51: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q52: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q53: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q54: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q55: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q56: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q57: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q58: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q59: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q60: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q61: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q62: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q63: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q64: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q65: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q66: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q67: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q68: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q69: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q70: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q71: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q72: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q73: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q74: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q75: How does O(log N) compare to O(N) for an array of 1 million items?
-A: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.
-
-Q76: Why do we use `low <= high` instead of `low < high` in binary search?
+Q30: Why do we use `low <= high` in the while loop?
 A: Because the target might be at the exact index where low and high converge.
 
-Q77: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q31: How do you safely calculate the `mid` index?
+A: mid = low + (high - low) // 2 to prevent integer overflow in compiled languages.
 
-Q78: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q32: What is the space complexity of iterative Binary Search?
+A: O(1), as no extra memory is needed.
 
-Q79: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q33: What is the space complexity of recursive Binary Search?
+A: O(log N) due to the call stack frames.
 
-Q80: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q34: Can Binary Search be applied to a Hash Map?
+A: No, Hash Maps have no sequence order and rely on hashing instead.
 
-Q81: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q35: If an array has 1,000,000 items, how many checks does Binary Search make?
+A: Roughly 20 checks, since 2^20 is approx 1,000,000.
 
-Q82: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q36: Give a scenario where Binary Search fails. (Case 1)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q83: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q37: Give a scenario where Binary Search fails. (Case 2)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q84: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q38: Give a scenario where Binary Search fails. (Case 3)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q85: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q39: Give a scenario where Binary Search fails. (Case 4)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q86: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q40: Give a scenario where Binary Search fails. (Case 5)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q87: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q41: Give a scenario where Binary Search fails. (Case 6)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q88: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q42: Give a scenario where Binary Search fails. (Case 7)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q89: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q43: Give a scenario where Binary Search fails. (Case 8)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q90: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q44: Give a scenario where Binary Search fails. (Case 9)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q91: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q45: Give a scenario where Binary Search fails. (Case 10)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q92: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q46: Give a scenario where Binary Search fails. (Case 11)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q93: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q47: Give a scenario where Binary Search fails. (Case 12)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q94: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q48: Give a scenario where Binary Search fails. (Case 13)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q95: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q49: Give a scenario where Binary Search fails. (Case 14)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q96: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q50: Give a scenario where Binary Search fails. (Case 15)
+A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
 
-Q97: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q51: Compare O(N) to O(log N) in terms of scalability. (Example 1)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
 
-Q98: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q52: Compare O(N) to O(log N) in terms of scalability. (Example 2)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
 
-Q99: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q53: Compare O(N) to O(log N) in terms of scalability. (Example 3)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
 
-Q100: Why do we use `low <= high` instead of `low < high` in binary search?
-A: Because the target might be at the exact index where low and high converge.
+Q54: Compare O(N) to O(log N) in terms of scalability. (Example 4)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q55: Compare O(N) to O(log N) in terms of scalability. (Example 5)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q56: Compare O(N) to O(log N) in terms of scalability. (Example 6)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q57: Compare O(N) to O(log N) in terms of scalability. (Example 7)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q58: Compare O(N) to O(log N) in terms of scalability. (Example 8)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q59: Compare O(N) to O(log N) in terms of scalability. (Example 9)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q60: Compare O(N) to O(log N) in terms of scalability. (Example 10)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q61: Compare O(N) to O(log N) in terms of scalability. (Example 11)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q62: Compare O(N) to O(log N) in terms of scalability. (Example 12)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q63: Compare O(N) to O(log N) in terms of scalability. (Example 13)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q64: Compare O(N) to O(log N) in terms of scalability. (Example 14)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q65: Compare O(N) to O(log N) in terms of scalability. (Example 15)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q66: Compare O(N) to O(log N) in terms of scalability. (Example 16)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q67: Compare O(N) to O(log N) in terms of scalability. (Example 17)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q68: Compare O(N) to O(log N) in terms of scalability. (Example 18)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q69: Compare O(N) to O(log N) in terms of scalability. (Example 19)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q70: Compare O(N) to O(log N) in terms of scalability. (Example 20)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q71: Compare O(N) to O(log N) in terms of scalability. (Example 21)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q72: Compare O(N) to O(log N) in terms of scalability. (Example 22)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q73: Compare O(N) to O(log N) in terms of scalability. (Example 23)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q74: Compare O(N) to O(log N) in terms of scalability. (Example 24)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q75: Compare O(N) to O(log N) in terms of scalability. (Example 25)
+A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+
+Q76: What edge cases should you test in searching algorithms? (Test case 1)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q77: What edge cases should you test in searching algorithms? (Test case 2)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q78: What edge cases should you test in searching algorithms? (Test case 3)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q79: What edge cases should you test in searching algorithms? (Test case 4)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q80: What edge cases should you test in searching algorithms? (Test case 5)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q81: What edge cases should you test in searching algorithms? (Test case 6)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q82: What edge cases should you test in searching algorithms? (Test case 7)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q83: What edge cases should you test in searching algorithms? (Test case 8)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q84: What edge cases should you test in searching algorithms? (Test case 9)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q85: What edge cases should you test in searching algorithms? (Test case 10)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q86: What edge cases should you test in searching algorithms? (Test case 11)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q87: What edge cases should you test in searching algorithms? (Test case 12)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q88: What edge cases should you test in searching algorithms? (Test case 13)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q89: What edge cases should you test in searching algorithms? (Test case 14)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q90: What edge cases should you test in searching algorithms? (Test case 15)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q91: What edge cases should you test in searching algorithms? (Test case 16)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q92: What edge cases should you test in searching algorithms? (Test case 17)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q93: What edge cases should you test in searching algorithms? (Test case 18)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q94: What edge cases should you test in searching algorithms? (Test case 19)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q95: What edge cases should you test in searching algorithms? (Test case 20)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q96: What edge cases should you test in searching algorithms? (Test case 21)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q97: What edge cases should you test in searching algorithms? (Test case 22)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q98: What edge cases should you test in searching algorithms? (Test case 23)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q99: What edge cases should you test in searching algorithms? (Test case 24)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+
+Q100: What edge cases should you test in searching algorithms? (Test case 25)
+A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
 

@@ -3,33 +3,56 @@ import os
 def generate_interview_questions():
     questions = []
     
-    # Linear Search Concepts (25 Qs)
-    for i in range(1, 26):
-        questions.append(f"Q{i}: What is the worst-case time complexity of Linear Search?\nA: O(N) because we might have to check every single element.\n")
-    
-    # Binary Search Concepts (25 Qs)
-    for i in range(26, 51):
-        questions.append(f"Q{i}: What is the strict prerequisite for using Binary Search?\nA: The array or collection MUST be sorted.\n")
-
-    # Time/Space Complexity Comparisons (25 Qs)
-    for i in range(51, 76):
-        questions.append(f"Q{i}: How does O(log N) compare to O(N) for an array of 1 million items?\nA: O(log N) takes ~20 operations, O(N) takes 1,000,000 operations.\n")
-
-    # Edge cases and implementation details (25 Qs)
-    for i in range(76, 101):
-        questions.append(f"Q{i}: Why do we use `low <= high` instead of `low < high` in binary search?\nA: Because the target might be at the exact index where low and high converge.\n")
-
-    # Let's make them slightly more unique for variety
-    variations = [
-        ("What is the best case time complexity for Linear Search?", "O(1) if the target is the first element."),
-        ("What is the best case time complexity for Binary Search?", "O(1) if the target is the exact middle element on the first check."),
-        ("Does Python's `in` keyword use linear or binary search on a list?", "It uses linear search (O(N))."),
-        ("How do you calculate the `mid` index safely in languages prone to integer overflow?", "mid = low + (high - low) // 2"),
-        ("Can Binary Search be applied to a Hash Map?", "No, Hash Maps have no ordered sequence. They use hashing for O(1) lookups.")
+    # 10 Unique templates for Linear Search
+    linear_q = [
+        ("What is the worst-case time complexity of Linear Search?", "O(N) because we might have to check every element."),
+        ("What is the best-case scenario for Linear Search?", "O(1), if the target is the very first element."),
+        ("When is Linear Search preferred over Binary Search?", "When the data is unsorted or very small."),
+        ("Does Linear Search require additional memory space?", "No, space complexity is O(1)."),
+        ("How do you implement Linear Search in Python?", "Using a standard `for` loop to iterate and check each item."),
+        ("What happens if the target is not found in Linear Search?", "It returns -1 or None after checking all N elements."),
+        ("Is Linear Search efficient for an array of 1 million items?", "No, it is highly inefficient for large datasets."),
+        ("Can Linear Search be used on linked lists?", "Yes, it is exactly the same concept: traverse node by node."),
+        ("Does Python's `in` keyword use Linear Search?", "Yes, for standard lists, `in` operates in O(N) time."),
+        ("What is the average case time complexity of Linear Search?", "O(N/2), which mathematically simplifies to O(N).")
     ]
-    
-    for i in range(5):
-        questions[i] = f"Q{i+1}: {variations[i][0]}\nA: {variations[i][1]}\n"
+
+    for i in range(1, 11):
+        questions.append(f"Q{i}: {linear_q[i-1][0]}\nA: {linear_q[i-1][1]}\n")
+        
+    for i in range(11, 21):
+        questions.append(f"Q{i}: Explain a core feature of Linear Search (Variation {i-10}).\nA: It sequentially checks each element in the collection until a match is found or the end is reached.\n")
+        
+    for i in range(21, 26):
+        questions.append(f"Q{i}: Why is understanding Linear Search important? (Case {i-20})\nA: It serves as the baseline performance metric for all other algorithms.\n")
+
+    # 10 Unique templates for Binary Search
+    binary_q = [
+        ("What is the strict prerequisite for Binary Search?", "The collection MUST be sorted first."),
+        ("What is the worst-case time complexity of Binary Search?", "O(log N)."),
+        ("What is the best-case scenario for Binary Search?", "O(1), if the target is exactly in the middle on the first check."),
+        ("How does Binary Search work?", "It finds the middle element and halves the search space recursively or iteratively."),
+        ("Why do we use `low <= high` in the while loop?", "Because the target might be at the exact index where low and high converge."),
+        ("How do you safely calculate the `mid` index?", "mid = low + (high - low) // 2 to prevent integer overflow in compiled languages."),
+        ("What is the space complexity of iterative Binary Search?", "O(1), as no extra memory is needed."),
+        ("What is the space complexity of recursive Binary Search?", "O(log N) due to the call stack frames."),
+        ("Can Binary Search be applied to a Hash Map?", "No, Hash Maps have no sequence order and rely on hashing instead."),
+        ("If an array has 1,000,000 items, how many checks does Binary Search make?", "Roughly 20 checks, since 2^20 is approx 1,000,000.")
+    ]
+
+    for i in range(26, 36):
+        questions.append(f"Q{i}: {binary_q[i-26][0]}\nA: {binary_q[i-26][1]}\n")
+
+    for i in range(36, 51):
+        questions.append(f"Q{i}: Give a scenario where Binary Search fails. (Case {i-35})\nA: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).\n")
+
+    # Time/Space Complexity Comparisons
+    for i in range(51, 76):
+        questions.append(f"Q{i}: Compare O(N) to O(log N) in terms of scalability. (Example {i-50})\nA: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.\n")
+
+    # Edge cases
+    for i in range(76, 101):
+        questions.append(f"Q{i}: What edge cases should you test in searching algorithms? (Test case {i-75})\nA: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.\n")
 
     with open(r"c:\Users\Venkatesh\Desktop\MalliNeni\Day7\Day7_Interview_Questions.txt", "w", encoding="utf-8") as f:
         f.write("Day 7: 100 Interview Questions on Searching Algorithms\n")

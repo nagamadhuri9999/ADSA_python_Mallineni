@@ -13,291 +13,291 @@ A: O(N), because every existing element must be shifted one position to the righ
 Q4: What is the time complexity of looking up a key in a Python dictionary?
 A: O(1) on average, because dictionaries are implemented as Hash Maps.
 
-Q5: What does Big O notation measure?
+Q5: What is the difference between Time Complexity and Space Complexity in the context of Big O Notation?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q6: How does Big O Notation behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q7: If an algorithm has multiple phases, how do you determine its final Big O Notation?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q8: What is the worst-case scenario for Big O Notation?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q9: Can you optimize an algorithm to improve its Big O Notation?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q10: How do constant multipliers affect Big O Notation?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q11: What does O(1) Constant Time measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q6: What does Big O notation measure?
+Q12: Give an example of an O(1) Constant Time operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
+
+Q13: Why is O(1) Constant Time important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
+
+Q14: Does O(1) Constant Time care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
+
+Q15: What is the difference between Time Complexity and Space Complexity in the context of O(1) Constant Time?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q16: How does O(1) Constant Time behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q17: If an algorithm has multiple phases, how do you determine its final O(1) Constant Time?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q18: What is the worst-case scenario for O(1) Constant Time?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q19: Can you optimize an algorithm to improve its O(1) Constant Time?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q20: How do constant multipliers affect O(1) Constant Time?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q21: What does O(N) Linear Time measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q7: What does Big O notation measure?
+Q22: Give an example of an O(N) Linear Time operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
+
+Q23: Why is O(N) Linear Time important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
+
+Q24: Does O(N) Linear Time care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
+
+Q25: What is the difference between Time Complexity and Space Complexity in the context of O(N) Linear Time?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q26: How does O(N) Linear Time behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q27: If an algorithm has multiple phases, how do you determine its final O(N) Linear Time?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q28: What is the worst-case scenario for O(N) Linear Time?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q29: Can you optimize an algorithm to improve its O(N) Linear Time?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q30: How do constant multipliers affect O(N) Linear Time?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q31: What does O(N^2) Quadratic Time measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q8: What does Big O notation measure?
+Q32: Give an example of an O(N^2) Quadratic Time operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
+
+Q33: Why is O(N^2) Quadratic Time important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
+
+Q34: Does O(N^2) Quadratic Time care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
+
+Q35: What is the difference between Time Complexity and Space Complexity in the context of O(N^2) Quadratic Time?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q36: How does O(N^2) Quadratic Time behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q37: If an algorithm has multiple phases, how do you determine its final O(N^2) Quadratic Time?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q38: What is the worst-case scenario for O(N^2) Quadratic Time?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q39: Can you optimize an algorithm to improve its O(N^2) Quadratic Time?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q40: How do constant multipliers affect O(N^2) Quadratic Time?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q41: What does O(log N) Logarithmic measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q9: What does Big O notation measure?
+Q42: Give an example of an O(log N) Logarithmic operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
+
+Q43: Why is O(log N) Logarithmic important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
+
+Q44: Does O(log N) Logarithmic care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
+
+Q45: What is the difference between Time Complexity and Space Complexity in the context of O(log N) Logarithmic?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q46: How does O(log N) Logarithmic behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q47: If an algorithm has multiple phases, how do you determine its final O(log N) Logarithmic?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q48: What is the worst-case scenario for O(log N) Logarithmic?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q49: Can you optimize an algorithm to improve its O(log N) Logarithmic?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q50: How do constant multipliers affect O(log N) Logarithmic?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q51: What does O(N log N) Linearithmic measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q10: What does Big O notation measure?
+Q52: Give an example of an O(N log N) Linearithmic operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
+
+Q53: Why is O(N log N) Linearithmic important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
+
+Q54: Does O(N log N) Linearithmic care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
+
+Q55: What is the difference between Time Complexity and Space Complexity in the context of O(N log N) Linearithmic?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
+
+Q56: How does O(N log N) Linearithmic behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
+
+Q57: If an algorithm has multiple phases, how do you determine its final O(N log N) Linearithmic?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
+
+Q58: What is the worst-case scenario for O(N log N) Linearithmic?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
+
+Q59: Can you optimize an algorithm to improve its O(N log N) Linearithmic?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
+
+Q60: How do constant multipliers affect O(N log N) Linearithmic?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
+
+Q61: What does O(N^3) Cubic Time measure?
 A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q11: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q62: Give an example of an O(N^3) Cubic Time operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
 
-Q12: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q63: Why is O(N^3) Cubic Time important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
 
-Q13: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q64: Does O(N^3) Cubic Time care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
 
-Q14: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q65: What is the difference between Time Complexity and Space Complexity in the context of O(N^3) Cubic Time?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
 
-Q15: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q66: How does O(N^3) Cubic Time behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
 
-Q16: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q67: If an algorithm has multiple phases, how do you determine its final O(N^3) Cubic Time?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
 
-Q17: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q68: What is the worst-case scenario for O(N^3) Cubic Time?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
 
-Q18: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q69: Can you optimize an algorithm to improve its O(N^3) Cubic Time?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
 
-Q19: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q70: How do constant multipliers affect O(N^3) Cubic Time?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
 
-Q20: Give an example of an O(1) operation.
-A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
+Q71: What does O(2^N) Exponential Time measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q21: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q72: Give an example of an O(2^N) Exponential Time operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
 
-Q22: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q73: Why is O(2^N) Exponential Time important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
 
-Q23: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q74: Does O(2^N) Exponential Time care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
 
-Q24: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q75: What is the difference between Time Complexity and Space Complexity in the context of O(2^N) Exponential Time?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
 
-Q25: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q76: How does O(2^N) Exponential Time behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
 
-Q26: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q77: If an algorithm has multiple phases, how do you determine its final O(2^N) Exponential Time?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
 
-Q27: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q78: What is the worst-case scenario for O(2^N) Exponential Time?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
 
-Q28: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q79: Can you optimize an algorithm to improve its O(2^N) Exponential Time?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
 
-Q29: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q80: How do constant multipliers affect O(2^N) Exponential Time?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
 
-Q30: If you loop through an array and then loop through it again (not nested), what is the time complexity?
-A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
+Q81: What does Space Complexity measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q31: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q82: Give an example of an Space Complexity operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
 
-Q32: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q83: Why is Space Complexity important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
 
-Q33: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q84: Does Space Complexity care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
 
-Q34: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q85: What is the difference between Time Complexity and Space Complexity in the context of Space Complexity?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
 
-Q35: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q86: How does Space Complexity behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
 
-Q36: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q87: If an algorithm has multiple phases, how do you determine its final Space Complexity?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
 
-Q37: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q88: What is the worst-case scenario for Space Complexity?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
 
-Q38: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q89: Can you optimize an algorithm to improve its Space Complexity?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
 
-Q39: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q90: How do constant multipliers affect Space Complexity?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
 
-Q40: What is the time complexity of a nested loop where both loops run N times?
-A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
+Q91: What does Amortized Analysis measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q41: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q92: Give an example of an Amortized Analysis operation.
+A: Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop.
 
-Q42: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q93: Why is Amortized Analysis important in software engineering?
+A: It allows developers to predict scalability and prevent performance bottlenecks before they occur in production.
 
-Q43: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q94: Does Amortized Analysis care about hardware execution speed?
+A: No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates.
 
-Q44: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q95: What is the difference between Time Complexity and Space Complexity in the context of Amortized Analysis?
+A: Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size.
 
-Q45: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q96: How does Amortized Analysis behave for a very small input size?
+A: For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity.
 
-Q46: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q97: If an algorithm has multiple phases, how do you determine its final Amortized Analysis?
+A: You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2).
 
-Q47: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q98: What is the worst-case scenario for Amortized Analysis?
+A: Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute.
 
-Q48: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
+Q99: Can you optimize an algorithm to improve its Amortized Analysis?
+A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies.
 
-Q49: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
-
-Q50: How does O(log N) scale compared to O(N)?
-A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
-
-Q51: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q52: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q53: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q54: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q55: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q56: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q57: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q58: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q59: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q60: What common algorithms run in O(N log N) time?
-A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
-
-Q61: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q62: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q63: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q64: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q65: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q66: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q67: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q68: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q69: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q70: When would you encounter an O(N^3) time complexity?
-A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
-
-Q71: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q72: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q73: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q74: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q75: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q76: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q77: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q78: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q79: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q80: Why is O(2^N) considered extremely inefficient?
-A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
-
-Q81: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q82: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q83: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q84: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q85: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q86: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q87: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q88: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q89: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q90: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q91: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q92: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q93: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q94: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q95: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q96: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q97: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q98: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q99: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
-
-Q100: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q100: How do constant multipliers affect Amortized Analysis?
+A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
 

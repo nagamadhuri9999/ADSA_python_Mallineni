@@ -3,41 +3,33 @@ import os
 def generate_interview_questions():
     questions = []
     
-    # Category 1: Fundamentals of Big O (10 Qs)
-    for i in range(1, 11):
-        questions.append(f"Q{i}: What does Big O notation measure?\nA: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.")
+    # 10 Unique templates for Big O notation concepts
+    templates = [
+        ("What does {concept} measure?", "It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity."),
+        ("Give an example of an {concept} operation.", "Depends on the class: O(1) is array lookup, O(N) is single loop, O(N^2) is nested loop."),
+        ("Why is {concept} important in software engineering?", "It allows developers to predict scalability and prevent performance bottlenecks before they occur in production."),
+        ("Does {concept} care about hardware execution speed?", "No, Big O ignores hardware differences and constant factors, focusing purely on algorithmic growth rates."),
+        ("What is the difference between Time Complexity and Space Complexity in the context of {concept}?", "Time complexity measures operations, while space complexity measures the extra memory allocated relative to input size."),
+        ("How does {concept} behave for a very small input size?", "For small inputs, even inefficient algorithms (like O(N^2)) can run fast. Big O only matters as N approaches infinity."),
+        ("If an algorithm has multiple phases, how do you determine its final {concept}?", "You drop the non-dominant terms. For example, O(N^2) + O(N) simplifies to O(N^2)."),
+        ("What is the worst-case scenario for {concept}?", "Big O generally represents the upper bound, meaning the maximum number of operations an algorithm could possibly execute."),
+        ("Can you optimize an algorithm to improve its {concept}?", "Yes, often by trading space for time (e.g., using Hash Maps) or applying divide-and-conquer strategies."),
+        ("How do constant multipliers affect {concept}?", "They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.")
+    ]
 
-    # Category 2: O(1) Constant Time (10 Qs)
-    for i in range(11, 21):
-        questions.append(f"Q{i}: Give an example of an O(1) operation.\nA: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.")
+    categories = [
+        "Big O Notation", "O(1) Constant Time", "O(N) Linear Time", 
+        "O(N^2) Quadratic Time", "O(log N) Logarithmic", "O(N log N) Linearithmic",
+        "O(N^3) Cubic Time", "O(2^N) Exponential Time", "Space Complexity", "Amortized Analysis"
+    ]
 
-    # Category 3: O(N) Linear Time (10 Qs)
-    for i in range(21, 31):
-        questions.append(f"Q{i}: If you loop through an array and then loop through it again (not nested), what is the time complexity?\nA: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).")
-
-    # Category 4: O(N^2) Quadratic Time (10 Qs)
-    for i in range(31, 41):
-        questions.append(f"Q{i}: What is the time complexity of a nested loop where both loops run N times?\nA: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.")
-
-    # Category 5: O(log N) Logarithmic (10 Qs)
-    for i in range(41, 51):
-        questions.append(f"Q{i}: How does O(log N) scale compared to O(N)?\nA: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).")
-
-    # Category 6: O(N log N) Linearithmic (10 Qs)
-    for i in range(51, 61):
-        questions.append(f"Q{i}: What common algorithms run in O(N log N) time?\nA: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.")
-
-    # Category 7: O(N^3) Cubic Time (10 Qs)
-    for i in range(61, 71):
-        questions.append(f"Q{i}: When would you encounter an O(N^3) time complexity?\nA: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.")
-
-    # Category 8: O(2^N) Exponential Time (10 Qs)
-    for i in range(71, 81):
-        questions.append(f"Q{i}: Why is O(2^N) considered extremely inefficient?\nA: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.")
-
-    # Category 9: Space Complexity (20 Qs)
-    for i in range(81, 101):
-        questions.append(f"Q{i}: If an algorithm creates a copy of the input array, what is its space complexity?\nA: O(N), because the extra memory required grows directly in proportion to the input size.")
+    counter = 1
+    for category in categories:
+        for i, (q, a) in enumerate(templates):
+            formatted_q = q.replace("{concept}", category)
+            formatted_a = a.replace("{concept}", category)
+            questions.append(f"Q{counter}: {formatted_q}\nA: {formatted_a}")
+            counter += 1
 
     # High quality overrides for the first few
     overrides = [

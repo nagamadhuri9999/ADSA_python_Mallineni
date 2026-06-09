@@ -10,13 +10,38 @@ def generate_day(day_num, title, concepts):
     questions.append(f"Day {day_num}: 100 Interview Questions on {title}\n")
     questions.append("="*60 + "\n\n")
     
-    # 10 categories, 10 questions each
+    # 10 Unique question templates to ensure no duplicates
+    q_templates = [
+        ("What is the primary purpose and definition of {concept} in Python?",
+         "It is a core concept that allows developers to write efficient and readable code specific to this domain."),
+        ("Can you provide a common real-world use case for {concept}?",
+         "It is typically used in scenarios where data manipulation, iteration, or specific logic structures are required."),
+        ("What are the most common errors, exceptions, or edge cases associated with {concept}?",
+         "Common pitfalls include off-by-one errors, type mismatches, or unbounded memory usage. Proper validation is key."),
+        ("How does {concept} affect the overall time or space complexity of an algorithm?",
+         "Depending on the exact operation, it can scale linearly O(N), logarithmically O(log N), or operate in constant time O(1)."),
+        ("If you had to explain {concept} to a beginner, how would you describe it?",
+         "I would describe it as a fundamental building block that dictates how data is stored, evaluated, or transformed in the program."),
+        ("What are the industry best practices when implementing {concept}?",
+         "Following PEP-8, maintaining readability, avoiding deeply nested logic, and adding robust docstrings."),
+        ("How does {concept} compare to other similar features or alternatives in Python?",
+         "It is often more Pythonic and optimized under the hood compared to brute-force or legacy alternatives."),
+        ("What happens under the hood in memory when {concept} is executed?",
+         "Python dynamically allocates memory or references existing objects, often utilizing hash maps or dynamic arrays for efficiency."),
+        ("Can {concept} be nested, chained, or combined, and how does that impact code readability?",
+         "Yes, but excessive nesting can lead to 'spaghetti code'. It's best to abstract complex logic into helper functions."),
+        ("What is a common interview trick or trap related to {concept}?",
+         "Interviewers often test if you remember zero-indexing, mutability vs immutability rules, or edge cases like empty inputs.")
+    ]
+
+    # 10 categories, 10 questions each = 100 unique questions
     for category_idx, concept in enumerate(concepts):
         questions.append(f"--- CATEGORY {category_idx + 1}: {concept.upper()} ---\n\n")
-        for i in range(1, 11):
-            q_num = category_idx * 10 + i
-            questions.append(f"Q{q_num}: How do you approach '{concept}' in Python, and what are the common edge cases?\n")
-            questions.append(f"A: Understanding {concept} is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.\n\n")
+        for i, (q_text, a_text) in enumerate(q_templates):
+            q_num = category_idx * 10 + (i + 1)
+            formatted_q = q_text.format(concept=concept)
+            questions.append(f"Q{q_num}: {formatted_q}\n")
+            questions.append(f"A: {a_text}\n\n")
 
     with open(os.path.join(base_dir, f"Day{day_num}_Interview_Questions.txt"), "w", encoding="utf-8") as f:
         f.writelines(questions)
