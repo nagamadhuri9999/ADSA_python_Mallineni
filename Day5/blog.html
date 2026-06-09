@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: Advanced Lists & Problem Solving | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 5</div>
+            <h1>Lists, Inputs & Algorithms</h1>
+            <p class="subtitle">Master advanced list methods, efficient input reading, and classic problem-solving patterns.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>String and List Slicing Review</li>
+                <li>Comprehensive List Methods</li>
+                <li>Reading Competitive Programming Inputs</li>
+                <li>Iteration Problem Solving (Sums & Products)</li>
+                <li>Frequency Counting & Nested Loops for Pairs</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. List Methods Deep Dive</h3>
+            <p>Python lists come with powerful built-in methods. Understanding which methods modify the list in-place versus which return a new object is crucial.</p>
+            <pre><code>nums = [10, 20, 30]
+nums.append(40)      # [10, 20, 30, 40]
+nums.insert(1, 15)   # [10, 15, 20, 30, 40]
+nums.extend([50, 60]) # Adds multiple elements
+nums.pop()           # Removes and returns last element</code></pre>
+
+            <h3>2. Efficient Input Reading</h3>
+            <p>For data analysis or competitive programming, reading inputs cleanly is a standard pattern.</p>
+            <pre><code># Read a space-separated list of numbers
+# Input: 1 2 3 4 5
+nums = list(map(int, input().split()))</code></pre>
+            
+            <h3>3. Frequency Counting</h3>
+            <p>Using dictionaries to count occurrences of elements in a list is a highly efficient O(N) operation.</p>
+            <pre><code>freq = {}
+for num in nums:
+    freq[num] = freq.get(num, 0) + 1</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Detailed Quiz (5 MCQs)</h2>
+            <p>Test your knowledge on Lists and Problem Solving!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                
+                <div>
+                    <h4>1. What is the difference between `.append()` and `.extend()`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) They are identical</li><li>B) `.append()` adds a single element; `.extend()` adds elements from an iterable</li><li>C) `.extend()` adds a single element; `.append()` adds elements from an iterable</li><li>D) `.append()` is for strings, `.extend()` is for lists</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b></p></details>
+                </div>
+
+                <div>
+                    <h4>2. What does `list[::-1]` do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Sorts the list in descending order</li><li>B) Returns a reversed copy of the list</li><li>C) Modifies the list in-place to reverse it</li><li>D) Returns the last element</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Slicing with a negative step reverses the sequence)</p></details>
+                </div>
+
+                <div>
+                    <h4>3. How do you remove the first occurrence of the value `20` from a list?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) list.pop(20)</li><li>B) list.delete(20)</li><li>C) list.remove(20)</li><li>D) del list[20]</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`.remove()` removes by value, `.pop()` removes by index)</p></details>
+                </div>
+                
+                <div>
+                    <h4>4. When finding unique pairs in a list using nested loops, the inner loop index `j` usually starts at:</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 0</li><li>B) i</li><li>C) i + 1</li><li>D) len(list)</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Starting at `i+1` avoids duplicate pairs like (A,B) and (B,A))</p></details>
+                </div>
+
+                <div>
+                    <h4>5. What is the output of `map(int, ["1", "2", "3"])` when converted to a list?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) ["1", "2", "3"]</li><li>B) [1, 2, 3]</li><li>C) Error</li><li>D) "123"</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b></p></details>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
+            <a href="Day5Examples.py" class="btn btn-primary">View Examples</a>
+            <a href="Day5_Quiz.md" class="btn">Take the Quiz</a>
+            <a href="Day5_Interview_Questions.txt" class="btn">Interview Prep</a>
+        </section>
+
+        <nav>
+            <a href="../Day4/blog.html" class="btn">← Back to Day 4</a>
+            <a href="../README.md" class="btn">Course Home →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>

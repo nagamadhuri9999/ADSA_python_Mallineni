@@ -1,33 +1,50 @@
-Day 5 Class Plan
+Day 5: Advanced Lists, Inputs, and Problem Solving (6-hour online class)
 
-Objective: Deep dive into string and list operations, slicing, methods, and practical problem solving involving list iterations and pairs.
+Session goal:
+Master list manipulation using methods, learn to read competitive programming style inputs efficiently, and tackle classical iteration problems (frequencies, sums, and combination pairs).
 
-1. Review (10 mins)
-   - Quickly revisit strings and mutability.
-   
-2. Strings (20 mins)
-   - String indexing (positive and negative).
-   - String slicing (start:stop:step).
-   - Basic string operations (+, *, in).
+Class structure:
 
-3. Lists Indexing & Slicing (25 mins)
-   - Demonstrate that list indexing/slicing is identical to strings.
-   - Show all possible cases (omitting start, omitting stop, negative steps).
+1. Welcome and Review (30 minutes)
+- Recap Day 4: String methods and Recursion trees
+- Address questions from the string algorithms and anagram homework
+- Today's objective: deep dive into list operations and problem-solving patterns.
 
-4. List Methods (25 mins)
-   - Add/Remove: append, insert, extend, pop, remove.
-   - Utility: count, index, sort, reverse.
-   - Mutating vs Returning new lists.
+2. Reviewing String vs List Slicing (45 minutes)
+- Reinforce that slicing mechanics `[start:stop:step]` apply to both.
+- Revisit positive and negative indexing.
+- Reversing a list using `[::-1]`.
+- Interview-style question: "Why does reversing a list via slicing create a new object, whereas `.reverse()` modifies it in place?"
 
-5. Reading Inputs (15 mins)
-   - input() returns a string.
-   - int(input()) for single integers.
-   - map(int, input().split()) for multiple values.
-   - list(map(...)) for converting input to lists.
+3. List Methods Deep Dive (60 minutes)
+- Adding elements: `.append()`, `.insert()`, `.extend()`
+- Removing elements: `.remove()`, `.pop()`, `.clear()`
+- Utility methods: `.count()`, `.index()`, `.sort()`, `.reverse()`
+- Mutating lists in place vs returning new lists.
+- Interview-style question: "What is the specific difference between `.append()` and `.extend()`?"
 
-6. Problem Solving & Dry Run (25 mins)
-   - Sum all numbers in a list.
-   - Product of all numbers.
-   - Sum of squares.
-   - Frequency counting using dictionaries.
-   - Printing all combination pairs (nested loops).
+Break (15 minutes)
+
+4. Reading Different Types of Inputs (45 minutes)
+- Understanding `input()` always returns strings.
+- Reading standard single inputs: `n = int(input())`
+- Reading space-separated multiple inputs: `x, y = map(int, input().split())`
+- Converting input streams directly into lists: `arr = list(map(int, input().split()))`
+
+5. Iteration Problem Solving: Sums and Products (45 minutes)
+- Summing all numbers in a list using an accumulator variable.
+- Finding the product of all numbers (handling 0 gracefully).
+- Calculating the sum of squares.
+
+Break (15 minutes)
+
+6. Advanced Problem Solving: Frequencies and Pairs (60 minutes)
+- Frequency counting: Iterating through a list and updating a dictionary tally.
+- Nested loops for pairs: Finding all unique combinations of two elements in an array.
+- Avoiding duplicate pairs by managing inner loop indices (`for j in range(i+1, n)`).
+
+7. Review, Q&A, and Homework (30 minutes)
+- Review key concepts from the entire 5-day module.
+- Answer final questions on lists and inputs.
+- Assign homework: Test-driven practice problems and final quiz.
+- Closing thoughts on ADSA Python Fundamentals.

@@ -1,60 +1,60 @@
-Day 2: Python Control Flow and Loops (6-hour online class)
+Day 2: Control Flow in Python (6-hour online class)
 
 Session goal:
-Teach decision making and looping in Python, build confidence with `if` statements, `for` loops, `while` loops, nested loops, and pattern exercises.
+Master decision-making and repetition in Python. By the end of this session, students will be able to write programs that make choices using `if`/`else` and repeat actions using `for` and `while` loops, applying them to pattern generation.
 
 Class structure:
 
-1. Welcome and Day 1 review (30 minutes)
-- Recap Python basics: syntax, variables, data types, and operators.
-- Explain how control flow is the next step for writing useful programs.
-- Confirm Python setup and ready-to-run examples.
+1. Welcome and Review (30 minutes)
+- Recap Day 1: variables, data types, and operators
+- Answer any lingering questions from the homework
+- Outline today's objectives: giving programs the ability to make choices and repeat themselves.
 
-2. Introduction to `if else` (40 minutes)
-- Explain how Python chooses code paths based on conditions.
-- Cover syntax: `if`, `elif`, `else`.
-- Show examples with grades, eligibility checks, and boolean logic.
-- Quick exercise: compare two numbers and print the larger one.
+2. Conditional Statements (`if`, `elif`, `else`) (60 minutes)
+- Introduction to boolean logic and decision branches
+- The `if` statement syntax and indentation rules
+- Handling multiple conditions with `elif` and `else`
+- Example: Grading system based on student scores
+- Interview-style question: "How do you handle multiple conflicting conditions in Python without writing nested if statements everywhere?"
 
-3. Nested `if else` and branching logic (40 minutes)
-- Explain nested conditionals and when to use them.
-- Walk through examples with multiple decision levels.
-- Practice: check a number for positive/negative and even/odd.
-
-Break (15 minutes)
-
-4. `for` loop fundamentals (45 minutes)
-- Show `for` loops with `range()` and sequences.
-- Explain `start`, `stop`, and `step` values.
-- Practice: print numbers 1 to 10, print even numbers, and iterate over a string.
-- Exercise: create a multiplication table for 2 or any number.
-
-5. `while` loop fundamentals (45 minutes)
-- Explain condition-based repetition.
-- Show examples: counting up, counting down, and loop termination.
-- Discuss common loop mistakes like infinite loops.
-- Exercise: print numbers from 10 to 1 using a `while` loop.
-
-6. Nested loops and patterns (45 minutes)
-- Explain nested loops and how the inner loop runs fully each time.
-- Practice star patterns and table generation.
-- Demonstrate simple patterns like triangle and square shapes.
-- Exercise: build a star triangle using nested loops.
+3. Nested If-Else Statements (45 minutes)
+- When and why to use nested conditionals
+- Maintaining readability with proper indentation
+- Example: Checking age and ID status for building access
+- Common pitfalls: "dangling else" logic errors
 
 Break (15 minutes)
 
-7. Problem-solving and practical examples (45 minutes)
-- FizzBuzz walkthrough with `if`, `elif`, and `else`.
-- Multiplication tables using nested loops.
-- Iterating through a string to print each character.
-- Explain debugging and dry run techniques.
+4. Introduction to Loops (45 minutes)
+- Why do we need loops? The DRY (Don't Repeat Yourself) principle
+- The difference between definite (`for`) and indefinite (`while`) loops
+- Interview-style question: "When would you choose a while loop over a for loop in a data analysis task?"
 
-8. Review and Q&A (20 minutes)
-- Summarize Day 2 topics and key takeaways.
-- Answer student questions.
-- Highlight how the concepts will be used in future lessons.
+5. The `for` Loop (45 minutes)
+- Iterating over ranges using `range()`
+- Iterating over sequences (like strings)
+- Using the loop variable to perform calculations
+- Example: Generating multiplication tables
 
-9. Homework and practice (15 minutes)
-- Assign problems: countdown, multiplication table, star pattern, FizzBuzz, string iteration.
-- Encourage students to dry run code before executing.
-- Provide tips for practicing Python control flow every day.
+6. The `while` Loop (45 minutes)
+- Syntax and condition checking
+- Preventing infinite loops (updating the condition)
+- Example: User input validation (keep asking until correct)
+
+Break (15 minutes)
+
+7. Nested Loops and Star Patterns (45 minutes)
+- Putting loops inside loops: How the inner and outer loops interact
+- Why nested loops are useful for grids, matrices, and coordinates
+- Practical exercise: Printing a right-angled triangle and a square using star (`*`) characters
+- Understanding `print("*", end="")` and newline management
+
+8. Review, Q&A, and Homework (30 minutes)
+- Review key concepts from Day 2
+- Answer student questions
+- Assign homework: practice problems on loops and conditionals
+- Prepare for Day 3: Break/continue, error handling, lists, and functions
+
+Optional homework ideas:
+- Write a program that prints a full pyramid star pattern.
+- Build a simple number guessing game using a `while` loop and `if`/`else` checks.
