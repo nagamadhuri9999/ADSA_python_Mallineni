@@ -30,6 +30,7 @@ This repository is structured by day. Each day acts as a progressive module comp
 
 ### Day 6: Time & Space Complexity (Big O Notation)
 - The language of performance. Understanding O(1), O(N), O(N^2), O(N log N), and Space Complexity.
+- Includes LeetCode Practice Tasks targeting Time Complexity optimization (e.g., Two Sum, Count Primes).
 
 ### Day 7: Searching Algorithms
 - Translating theoretical Big O into practice: The slow O(N) Linear Search vs the incredibly fast O(log N) Binary Search.

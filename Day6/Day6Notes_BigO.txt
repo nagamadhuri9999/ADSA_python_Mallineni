@@ -1,4 +1,4 @@
-Day 6 Notes: Time and Space Complexity (Big O Notation)
+Day 6 Notes: Time and Space Complexity (Big O Notation), Linear Search, Prime/Factor Optimizations, Nested Loops
 
 1. What is Big O Notation?
 --------------------------
@@ -39,3 +39,42 @@ If an algorithm has an O(N^2) step and an O(N) step, O(N^2) + O(N) becomes simpl
 Space complexity measures how much EXTRA memory an algorithm uses relative to the input size.
 - O(1) Space: You use a few variables (like `count` or `total_sum`) but you don't create new arrays that grow.
 - O(N) Space: You create a brand new list or dictionary that copies the input data or grows alongside it.
+
+5. Linear Search
+----------------
+Linear search is an algorithm that searches for a target value in a list by checking each element sequentially.
+- Time Complexity: O(N) in the worst case (the target is at the end or not present).
+- Best Case: O(1) (the target is the first element).
+- Space Complexity: O(1)
+
+6. Code Optimizations: Factors and Prime Numbers
+------------------------------------------------
+A brute force approach to finding factors or checking for prime numbers involves looping from 1 to N.
+- Time Complexity: O(N)
+Optimization: Factors come in pairs (e.g., for N=36, factors are 1*36, 2*18, 3*12, 4*9, 6*6).
+The largest number you ever need to check is the square root of N. 
+- Optimized Time Complexity: O(sqrt(N)). This is significantly faster for large numbers!
+
+7. Nested Loops Dry Run
+-----------------------
+When analyzing O(N^2) complexity, it helps to dry run a nested loop.
+Example:
+for i in range(3):       # Outer loop runs 3 times (i = 0, 1, 2)
+    for j in range(3):   # Inner loop runs 3 times for EVERY outer loop iteration
+        print(i, j)
+
+Dry Run:
+- i = 0: 
+    - j = 0 -> prints (0, 0)
+    - j = 1 -> prints (0, 1)
+    - j = 2 -> prints (0, 2)
+- i = 1: 
+    - j = 0 -> prints (1, 0)
+    - j = 1 -> prints (1, 1)
+    - j = 2 -> prints (1, 2)
+- i = 2: 
+    - j = 0 -> prints (2, 0)
+    - j = 1 -> prints (2, 1)
+    - j = 2 -> prints (2, 2)
+
+Total executions = 3 * 3 = 9 times. (N * N)
