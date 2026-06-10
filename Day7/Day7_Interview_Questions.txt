@@ -1,303 +1,303 @@
-Day 7: 100 Interview Questions on Searching Algorithms
+Day 7: 100 Interview Questions on Space Complexity and Sorting
 ============================================================
 
-Q1: What is the worst-case time complexity of Linear Search?
-A: O(N) because we might have to check every element.
+Q1: What does Space Complexity measure?
+A: It measures the amount of extra memory an algorithm uses relative to the input size.
 
-Q2: What is the best-case scenario for Linear Search?
-A: O(1), if the target is the very first element.
+Q2: What is the difference between Auxiliary Space and Space Complexity?
+A: Auxiliary space is the extra or temporary space used by an algorithm. Space complexity includes both auxiliary space and space used by the input.
 
-Q3: When is Linear Search preferred over Binary Search?
-A: When the data is unsorted or very small.
+Q3: What does O(1) space complexity mean?
+A: It means the algorithm uses a constant amount of extra memory, regardless of input size.
 
-Q4: Does Linear Search require additional memory space?
-A: No, space complexity is O(1).
+Q4: Do in-place sorting algorithms use O(N) space?
+A: No, in-place sorting algorithms typically use O(1) auxiliary space.
 
-Q5: How do you implement Linear Search in Python?
-A: Using a standard `for` loop to iterate and check each item.
+Q5: What happens to space complexity if we create a copy of an array of size N?
+A: The space complexity becomes O(N).
 
-Q6: What happens if the target is not found in Linear Search?
-A: It returns -1 or None after checking all N elements.
+Q6: What is the prerequisite for Binary Search?
+A: The array must be sorted.
 
-Q7: Is Linear Search efficient for an array of 1 million items?
-A: No, it is highly inefficient for large datasets.
-
-Q8: Can Linear Search be used on linked lists?
-A: Yes, it is exactly the same concept: traverse node by node.
-
-Q9: Does Python's `in` keyword use Linear Search?
-A: Yes, for standard lists, `in` operates in O(N) time.
-
-Q10: What is the average case time complexity of Linear Search?
-A: O(N/2), which mathematically simplifies to O(N).
-
-Q11: Explain a core feature of Linear Search (Variation 1).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q12: Explain a core feature of Linear Search (Variation 2).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q13: Explain a core feature of Linear Search (Variation 3).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q14: Explain a core feature of Linear Search (Variation 4).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q15: Explain a core feature of Linear Search (Variation 5).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q16: Explain a core feature of Linear Search (Variation 6).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q17: Explain a core feature of Linear Search (Variation 7).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q18: Explain a core feature of Linear Search (Variation 8).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q19: Explain a core feature of Linear Search (Variation 9).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q20: Explain a core feature of Linear Search (Variation 10).
-A: It sequentially checks each element in the collection until a match is found or the end is reached.
-
-Q21: Why is understanding Linear Search important? (Case 1)
-A: It serves as the baseline performance metric for all other algorithms.
-
-Q22: Why is understanding Linear Search important? (Case 2)
-A: It serves as the baseline performance metric for all other algorithms.
-
-Q23: Why is understanding Linear Search important? (Case 3)
-A: It serves as the baseline performance metric for all other algorithms.
-
-Q24: Why is understanding Linear Search important? (Case 4)
-A: It serves as the baseline performance metric for all other algorithms.
-
-Q25: Why is understanding Linear Search important? (Case 5)
-A: It serves as the baseline performance metric for all other algorithms.
-
-Q26: What is the strict prerequisite for Binary Search?
-A: The collection MUST be sorted first.
-
-Q27: What is the worst-case time complexity of Binary Search?
+Q7: What is the worst-case time complexity of Binary Search?
 A: O(log N).
 
-Q28: What is the best-case scenario for Binary Search?
-A: O(1), if the target is exactly in the middle on the first check.
+Q8: What is the space complexity of iterative Binary Search?
+A: O(1).
 
-Q29: How does Binary Search work?
-A: It finds the middle element and halves the search space recursively or iteratively.
+Q9: What is the space complexity of recursive Binary Search?
+A: O(log N) due to the call stack.
 
-Q30: Why do we use `low <= high` in the while loop?
-A: Because the target might be at the exact index where low and high converge.
+Q10: How does Binary Search work?
+A: It repeatedly divides the search interval in half.
 
-Q31: How do you safely calculate the `mid` index?
-A: mid = low + (high - low) // 2 to prevent integer overflow in compiled languages.
+Q11: Explain the core concept of Bubble Sort.
+A: It repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
 
-Q32: What is the space complexity of iterative Binary Search?
-A: O(1), as no extra memory is needed.
+Q12: What is the worst-case time complexity of Bubble Sort?
+A: O(N^2).
 
-Q33: What is the space complexity of recursive Binary Search?
-A: O(log N) due to the call stack frames.
+Q13: What is the best-case time complexity of Bubble Sort?
+A: O(N) when the array is already sorted and an early-exit optimization is used.
 
-Q34: Can Binary Search be applied to a Hash Map?
-A: No, Hash Maps have no sequence order and rely on hashing instead.
+Q14: What is the space complexity of Bubble Sort?
+A: O(1) because it sorts in-place.
 
-Q35: If an array has 1,000,000 items, how many checks does Binary Search make?
-A: Roughly 20 checks, since 2^20 is approx 1,000,000.
+Q15: Why is Bubble Sort rarely used in practice?
+A: Its O(N^2) average and worst-case time complexity makes it highly inefficient for large datasets.
 
-Q36: Give a scenario where Binary Search fails. (Case 1)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q16: Explain the core concept of Selection Sort.
+A: It divides the array into sorted and unsorted parts. It repeatedly selects the smallest element from the unsorted part and swaps it with the first unsorted element.
 
-Q37: Give a scenario where Binary Search fails. (Case 2)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q17: What is the worst-case time complexity of Selection Sort?
+A: O(N^2).
 
-Q38: Give a scenario where Binary Search fails. (Case 3)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q18: Does Selection Sort have an O(N) best case like Bubble Sort?
+A: No, Selection Sort is always O(N^2) even if the array is sorted, because it still scans the remaining elements to find the minimum.
 
-Q39: Give a scenario where Binary Search fails. (Case 4)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q19: What is the space complexity of Selection Sort?
+A: O(1) because it sorts in-place.
 
-Q40: Give a scenario where Binary Search fails. (Case 5)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q20: When might Selection Sort be preferred over Bubble Sort?
+A: When writing to memory is expensive, as Selection Sort makes at most O(N) swaps compared to Bubble Sort's O(N^2) swaps.
 
-Q41: Give a scenario where Binary Search fails. (Case 6)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q21: Explain the core concept of Insertion Sort.
+A: It builds the final sorted array one element at a time by taking one element and inserting it into its correct position in the already sorted part.
 
-Q42: Give a scenario where Binary Search fails. (Case 7)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q22: What is the worst-case time complexity of Insertion Sort?
+A: O(N^2).
 
-Q43: Give a scenario where Binary Search fails. (Case 8)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q23: What is the best-case time complexity of Insertion Sort?
+A: O(N) when the array is already sorted, because the inner loop immediately breaks.
 
-Q44: Give a scenario where Binary Search fails. (Case 9)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q24: What is the space complexity of Insertion Sort?
+A: O(1) because it sorts in-place.
 
-Q45: Give a scenario where Binary Search fails. (Case 10)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q25: Why is Insertion Sort useful in practice?
+A: It is highly efficient for small data sets or data that is already substantially sorted.
 
-Q46: Give a scenario where Binary Search fails. (Case 11)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q26: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q47: Give a scenario where Binary Search fails. (Case 12)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q27: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q48: Give a scenario where Binary Search fails. (Case 13)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q28: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q49: Give a scenario where Binary Search fails. (Case 14)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q29: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q50: Give a scenario where Binary Search fails. (Case 15)
-A: It fails if the data is unsorted or if random access is not O(1) (like in a standard linked list).
+Q30: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q51: Compare O(N) to O(log N) in terms of scalability. (Example 1)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q31: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q52: Compare O(N) to O(log N) in terms of scalability. (Example 2)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q32: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q53: Compare O(N) to O(log N) in terms of scalability. (Example 3)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q33: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q54: Compare O(N) to O(log N) in terms of scalability. (Example 4)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q34: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q55: Compare O(N) to O(log N) in terms of scalability. (Example 5)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q35: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q56: Compare O(N) to O(log N) in terms of scalability. (Example 6)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q36: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q57: Compare O(N) to O(log N) in terms of scalability. (Example 7)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q37: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q58: Compare O(N) to O(log N) in terms of scalability. (Example 8)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q38: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q59: Compare O(N) to O(log N) in terms of scalability. (Example 9)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q39: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q60: Compare O(N) to O(log N) in terms of scalability. (Example 10)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q40: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q61: Compare O(N) to O(log N) in terms of scalability. (Example 11)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q41: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q62: Compare O(N) to O(log N) in terms of scalability. (Example 12)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q42: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q63: Compare O(N) to O(log N) in terms of scalability. (Example 13)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q43: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q64: Compare O(N) to O(log N) in terms of scalability. (Example 14)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q44: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q65: Compare O(N) to O(log N) in terms of scalability. (Example 15)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q45: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q66: Compare O(N) to O(log N) in terms of scalability. (Example 16)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q46: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q67: Compare O(N) to O(log N) in terms of scalability. (Example 17)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q47: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q68: Compare O(N) to O(log N) in terms of scalability. (Example 18)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q48: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q69: Compare O(N) to O(log N) in terms of scalability. (Example 19)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q49: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q70: Compare O(N) to O(log N) in terms of scalability. (Example 20)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q50: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q71: Compare O(N) to O(log N) in terms of scalability. (Example 21)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q51: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q72: Compare O(N) to O(log N) in terms of scalability. (Example 22)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q52: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q73: Compare O(N) to O(log N) in terms of scalability. (Example 23)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q53: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q74: Compare O(N) to O(log N) in terms of scalability. (Example 24)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q54: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q75: Compare O(N) to O(log N) in terms of scalability. (Example 25)
-A: O(log N) grows extremely slowly, making it incredibly superior to O(N) for large input sizes.
+Q55: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q76: What edge cases should you test in searching algorithms? (Test case 1)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q56: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q77: What edge cases should you test in searching algorithms? (Test case 2)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q57: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q78: What edge cases should you test in searching algorithms? (Test case 3)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q58: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q79: What edge cases should you test in searching algorithms? (Test case 4)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q59: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q80: What edge cases should you test in searching algorithms? (Test case 5)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q60: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q81: What edge cases should you test in searching algorithms? (Test case 6)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q61: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q82: What edge cases should you test in searching algorithms? (Test case 7)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q62: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q83: What edge cases should you test in searching algorithms? (Test case 8)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q63: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q84: What edge cases should you test in searching algorithms? (Test case 9)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q64: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q85: What edge cases should you test in searching algorithms? (Test case 10)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q65: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q86: What edge cases should you test in searching algorithms? (Test case 11)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q66: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q87: What edge cases should you test in searching algorithms? (Test case 12)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q67: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q88: What edge cases should you test in searching algorithms? (Test case 13)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q68: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q89: What edge cases should you test in searching algorithms? (Test case 14)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q69: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q90: What edge cases should you test in searching algorithms? (Test case 15)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q70: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q91: What edge cases should you test in searching algorithms? (Test case 16)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q71: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q92: What edge cases should you test in searching algorithms? (Test case 17)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q72: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q93: What edge cases should you test in searching algorithms? (Test case 18)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q73: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q94: What edge cases should you test in searching algorithms? (Test case 19)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q74: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q95: What edge cases should you test in searching algorithms? (Test case 20)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q75: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q96: What edge cases should you test in searching algorithms? (Test case 21)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q76: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q97: What edge cases should you test in searching algorithms? (Test case 22)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q77: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q98: What edge cases should you test in searching algorithms? (Test case 23)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q78: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q99: What edge cases should you test in searching algorithms? (Test case 24)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q79: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 
-Q100: What edge cases should you test in searching algorithms? (Test case 25)
-A: Empty arrays, arrays with 1 element, target at the beginning, target at the end, and target completely missing.
+Q80: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q81: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q82: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q83: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q84: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q85: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q86: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q87: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q88: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q89: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q90: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q91: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q92: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q93: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q94: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q95: Discuss a specific trade-off of Bubble Sort.
+A: While Bubble Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q96: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q97: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q98: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q99: Discuss a specific trade-off of Selection Sort.
+A: While Selection Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
+
+Q100: Discuss a specific trade-off of Insertion Sort.
+A: While Insertion Sort has a space complexity of O(1), its time complexity is O(N^2), making it suitable only for small datasets.
 

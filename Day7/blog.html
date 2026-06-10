@@ -3,70 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 7: Searching Algorithms | Python Course</title>
+    <title>Day 7: Space Complexity & Sorting</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="day-badge">Day 7</div>
-            <h1>Searching Algorithms</h1>
-            <p class="subtitle">Master Linear Search and the incredible power of Binary Search.</p>
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1>Day 7: Space Complexity & Sorting Algorithms</h1>
+            <p class="subtitle">Understanding memory efficiency and O(N^2) sorting techniques</p>
         </header>
 
         <section class="glass-card">
-            <h2>Today's Topics</h2>
+            <h2>Topics Covered Today</h2>
+            <div class="topics-grid">
+                <div class="topic-item">Space Complexity vs Time Complexity</div>
+                <div class="topic-item">O(1) Auxiliary Space</div>
+                <div class="topic-item">Binary Search Review</div>
+                <div class="topic-item">Bubble Sort</div>
+                <div class="topic-item">Selection Sort</div>
+                <div class="topic-item">Insertion Sort</div>
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Space Complexity</h2>
+            <p>While Time Complexity answers "How fast does it run?", Space Complexity answers "How much extra memory does it need?". We often measure auxiliary space (extra space beyond the input). All three sorting algorithms learned today operate in-place, meaning they have a space complexity of O(1).</p>
+        </section>
+
+        <section class="glass-card">
+            <h2>Sorting Algorithms</h2>
+            <p>We covered three classic O(N^2) sorting algorithms:</p>
             <ul>
-                <li>Linear Search Algorithm</li>
-                <li>Best vs Worst Case Time Complexity</li>
-                <li>Binary Search Prerequisite: Sorting</li>
-                <li>Divide and Conquer Strategy</li>
-                <li>Iterative vs Recursive Binary Search</li>
-                <li>O(N) vs O(log N) Comparison</li>
+                <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements. Simple but slow.</li>
+                <li><strong>Selection Sort:</strong> Finds the minimum element and places it at the start. Minimizes swaps compared to Bubble Sort.</li>
+                <li><strong>Insertion Sort:</strong> Builds a sorted array one element at a time. Very efficient for small or nearly sorted arrays.</li>
             </ul>
         </section>
 
         <section class="glass-card">
-            <h2>Key Concepts</h2>
-            
-            <h3>1. Linear Search O(N)</h3>
-            <p>Checks every element one by one. Good for small or unsorted data.</p>
-            <pre><code>def linear_search(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target: return i
-    return -1</code></pre>
-
-            <h3>2. Binary Search O(log N)</h3>
-            <p><strong>MUST BE SORTED!</strong> Cuts the search space in half every iteration.</p>
-            <pre><code>def binary_search(arr, target):
-    low, high = 0, len(arr) - 1
-    while low <= high:
-        mid = (low + high) // 2
-        if arr[mid] == target: return mid
-        elif arr[mid] < target: low = mid + 1
-        else: high = mid - 1
-    return -1</code></pre>
-        </section>
-
-        <section class="glass-card">
             <h2>Resources & Practice</h2>
-            <p>You have exactly 100 Interview Questions and 100 Practice Problems waiting for you!</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="Day7Examples.py" class="btn btn-primary">View Examples</a>
-                <a href="Day7_Quiz.md" class="btn">Take the Quiz</a>
-                <a href="Day7_Interview_Questions.txt" class="btn">100 Q&A</a>
-                <a href="Day7_Practice_Problems.py" class="btn">100 Problems</a>
+            <div class="resources-links">
+                <a href="Day7ClassPlan.txt" class="btn">View Class Plan</a>
+                <a href="Day7Notes_Searching_Sorting.txt" class="btn">View Notes</a>
+                <a href="Day7Examples.py" class="btn">Code Examples</a>
+                <a href="Day7_Practice_Problems.py" class="btn">100 Practice Problems</a>
+                <a href="Day7_Interview_Questions.txt" class="btn">100 Interview Q&A</a>
+                <a href="Day7_Quiz.md" class="btn">Take Quiz</a>
             </div>
         </section>
-
-        <nav>
-            <a href="../Day6/blog.html" class="btn">← Back to Day 6</a>
-            <a href="../README.md" class="btn">Course Home →</a>
-        </nav>
-
-        <footer>
-            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
-        </footer>
     </div>
 </body>
 </html>

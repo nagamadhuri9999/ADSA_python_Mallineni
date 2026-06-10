@@ -1,0 +1,11 @@
+Day 7 Topics:
+- Space Complexity Basics
+  - O(1) constant space
+  - Auxiliary vs Input space
+- Searching Algorithms
+  - Binary Search review
+- Sorting Algorithms
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+- Time and Space Complexity of Sorting Algorithms
