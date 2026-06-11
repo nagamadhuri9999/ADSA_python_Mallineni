@@ -1,0 +1,17 @@
+# Day 8: Top 15 Interview Questions on Advanced Sorting Algorithms
+
+1. Explain the Divide and Conquer strategy. How does Merge Sort use it?
+2. What is the time complexity of Merge Sort, and why is it O(N log N) in all cases?
+3. What is the space complexity of Merge Sort? Why is it not considered an "in-place" sort?
+4. Explain how the Partition function works in Quick Sort.
+5. Why is the worst-case time complexity of Quick Sort O(N^2)? How can you mitigate this?
+6. In practice, why is Quick Sort generally faster than Merge Sort for sorting arrays?
+7. What does it mean for a sorting algorithm to be "Stable"? 
+8. Which sorting algorithms are stable, and which are unstable? Provide examples.
+9. How would you sort an array of 0s, 1s, and 2s in a single pass? (Dutch National Flag problem)
+10. If you are sorting a Singly Linked List, would you prefer Merge Sort or Quick Sort? Why?
+11. How does Python's built-in `sort()` and `sorted()` work under the hood? (Hint: Timsort)
+12. What is Timsort? Explain briefly how it combines Merge Sort and Insertion Sort.
+13. If memory space is extremely constrained, which sorting algorithm would you choose?
+14. How would you find the Kth largest element in an unsorted array without fully sorting the array?
+15. Explain how to merge overlapping intervals. Why is sorting the intervals by their start time a necessary first step?

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 Blog: Advanced Sorting Algorithms</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; }
+        h1, h2 { color: #2c3e50; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .highlight { border-left: 4px solid #3498db; padding-left: 10px; background: #e8f4f8; padding: 10px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <h1>Day 8: Mastering Advanced Sorting Algorithms</h1>
+    <p>Welcome to the summary of <strong>Day 8</strong>! Today, we leveled up our algorithmic skills by diving into the <em>Divide and Conquer</em> paradigm, exploring some of the most efficient sorting algorithms used in computer science: <strong>Merge Sort</strong> and <strong>Quick Sort</strong>.</p>
+    
+    <h2>The Divide and Conquer Paradigm</h2>
+    <div class="highlight">
+        <p>Divide and Conquer is a strategy that breaks a large problem into smaller, manageable subproblems, solves them recursively, and then combines the results.</p>
+    </div>
+
+    <h2>Merge Sort vs. Quick Sort</h2>
+    <ul>
+        <li><strong>Merge Sort:</strong> Consistently operates in <code>O(N log N)</code> time. It is a <em>stable</em> sort but requires <code>O(N)</code> auxiliary space because of the merging step. It's the go-to algorithm when stability is required or when sorting linked lists.</li>
+        <li><strong>Quick Sort:</strong> Often the fastest algorithm in practice for sorting arrays in memory. It operates in <code>O(N log N)</code> average time and requires only <code>O(log N)</code> space. However, it is an <em>unstable</em> sort and can degrade to <code>O(N^2)</code> if a poor pivot is chosen.</li>
+    </ul>
+
+    <h2>Sorting Complexities at a Glance</h2>
+    <p>We spent significant time comparing the time, space, and stability of all five sorting algorithms we've learned so far (Bubble, Selection, Insertion, Merge, Quick). Understanding these trade-offs is crucial for systems design and technical interviews!</p>
+
+    <h2>Practice Makes Perfect</h2>
+    <p>We applied our knowledge to solve classic LeetCode problems like <em>Sort Colors</em> (Dutch National Flag problem) and <em>Merge Intervals</em>. Sorting isn't just about organizing data; it's often the crucial first step to optimizing complex search and grouping problems!</p>
+
+    <p>Keep practicing, and see you on Day 9!</p>
+</body>
+</html>

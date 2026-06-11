@@ -1,0 +1,7 @@
+Day 8 Topics:
+- Advanced Sorting Algorithms Overview
+- The Divide and Conquer Paradigm
+- Merge Sort (Algorithm, Implementation, Complexity)
+- Quick Sort (Algorithm, Partitioning, Implementation, Complexity)
+- Comprehensive Sorting Complexity Comparison (Time & Space)
+- Stable vs. Unstable Sorting Methods
