@@ -15,22 +15,30 @@ Welcome to Day 7! Today we transition from Searching algorithms into Space Compl
 - **Day7_Quiz.md**: Multiple-choice assessment.
 - **blog.html**: Daily summary for the student blog.
 
-## Day 7 Tasks: Implement & Analyze Sorting
+## Day 7 Tasks: Array Operations, Searching, and Sorting
 
-### Task 1: Sorting Algorithm Visualizer Simulator
-#### Objective
-Implement a program that uses Bubble Sort to sort a list of numbers, but prints the state of the array after every swap, simulating a visualizer.
+### 1. Array Manipulation Problems
+Write Python programs to solve the following array operations:
+- Find the minimum and maximum values in a list.
+- Find the second minimum and second maximum values.
+- Find the 3 maximum and 3 minimum values.
+- Print values at even indices.
+- Print values at indices that are perfect squares (0, 1, 4, 9, ...).
+- Print values at indices that are perfect cubes (0, 1, 8, 27, ...).
+- Print values at `(index * index) + 1` indices.
+- Find the maximum value among elements at even indices and the maximum value among elements at odd indices.
+- Check whether a given list is sorted or not.
 
-#### Instructions
-1. Prompt the user for a space-separated list of integers.
-2. Implement Bubble Sort.
-3. Every time two elements are swapped, print the current state of the array.
-4. Keep a counter of total swaps and print it at the end.
+### 2. Binary Search Practice (LeetCode)
+Solve the following Binary Search problems on LeetCode:
+- [704. Binary Search](https://leetcode.com/problems/binary-search/)
+- [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 
-### Task 2: Insertion Sort on Strings
-#### Objective
-Apply sorting algorithms to non-integer data.
-
-#### Instructions
-1. Write an Insertion Sort algorithm that sorts a list of strings based on their length, shortest to longest.
-2. If two strings have the same length, sort them alphabetically.
+### 3. Sorting Practice (LeetCode Easy)
+Solve the following Sorting-based easy problems on LeetCode:
+- [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+- [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+- [169. Majority Element](https://leetcode.com/problems/majority-element/)
+- [268. Missing Number](https://leetcode.com/problems/missing-number/)
+- [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
