@@ -300,4 +300,3 @@ A: Yes, often by trading space for time (e.g., using Hash Maps) or applying divi
 
 Q100: How do constant multipliers affect Amortized Analysis?
 A: They don't. O(5N) simplifies to O(N) because constants are ignored in asymptotic analysis.
-

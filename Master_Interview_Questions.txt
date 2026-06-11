@@ -1,7 +1,6 @@
 MASTER INTERVIEW QUESTIONS COLLECTION
 ======================================
 
-
 ==================================================
 --- Day1 Interview Questions ---
 ==================================================
@@ -324,7 +323,6 @@ Answer: It performs a bit-by-bit logical AND operation on integers. (Generally m
 
 100. If x = 5, what does x *= 3 evaluate to?
 Answer: x becomes 15.
-
 
 ==================================================
 --- Day2 Interview Questions ---
@@ -781,7 +779,6 @@ for i in range(1, 6):
 print(numbers)
 ```
 
-
 ==================================================
 --- Day3 Interview Questions ---
 ==================================================
@@ -1103,7 +1100,6 @@ Answer: No, as long as all required arguments are provided and they appear after
 
 100. What is a docstring?
 Answer: A multi-line string placed immediately after a function, class, or module definition to describe its purpose. It can be accessed via the `__doc__` attribute.
-
 
 ==================================================
 --- Day4 Interview Questions ---
@@ -1427,7 +1423,6 @@ Answer: Yes, `@functools.lru_cache` or `@functools.cache` can automatically memo
 100. If you do a dry run of `fib(3)`, how many frames are pushed to the stack in total?
 Answer: `fib(3)` calls `fib(2)` and `fib(1)`. `fib(2)` calls `fib(1)` and `fib(0)`. Total calls including the first is 5 frames pushed to the stack overall.
 
-
 ==================================================
 --- Day5 Interview Questions ---
 ==================================================
@@ -1453,4 +1448,3 @@ for item in lst:
 
 5. How do you generate all unique pairs from an array of numbers?
 Answer: Use two nested loops. The outer loop runs from `i = 0` to `len(arr)-1`, and the inner loop runs from `j = i + 1` to `len(arr)-1`. This ensures each pair `(arr[i], arr[j])` is generated exactly once.
-

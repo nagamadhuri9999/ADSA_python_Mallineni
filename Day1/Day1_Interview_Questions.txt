@@ -320,4 +320,3 @@ A: Yes, but excessive nesting can lead to 'spaghetti code'. It's best to abstrac
 
 Q100: What is a common interview trick or trap related to Arithmetic & Comparison Operators?
 A: Interviewers often test if you remember zero-indexing, mutability vs immutability rules, or edge cases like empty inputs.
-
