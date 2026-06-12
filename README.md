@@ -35,5 +35,12 @@ This repository is structured by day. Each day acts as a progressive module comp
 ### Day 7: Searching Algorithms
 - Translating theoretical Big O into practice: The slow O(N) Linear Search vs the incredibly fast O(log N) Binary Search.
 
+### Day 8: Object Oriented Programming (OOP)
+- Classes, Objects, `__init__`, encapsulation, inheritance, and magic methods.
+
+### Day 9: Sorting Algorithms & Visualizer Academy
+- Deep dive into **Merge Sort** and **Quick Sort**.
+- Explore the **[God-Level Sorting Visualizer Academy](https://sorting-visualizer-academy.vercel.app)** built to perfectly trace recursive trees, call stacks, and array partitioning interactively.
+
 ---
 *Built with ❤️ for rapid Python proficiency.*
