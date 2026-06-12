@@ -1,31 +1,38 @@
 export function getBubbleSortAnimations(array) {
   const animations = [];
   if (array.length <= 1) return animations;
-  const auxiliaryArray = array.slice();
-  bubbleSortHelper(auxiliaryArray, animations);
-  return animations;
-}
-
-function bubbleSortHelper(mainArray, animations) {
-  const n = mainArray.length;
+  let n = array.length;
+  animations.push({ type: 'line', line: 1 });
   for (let i = 0; i < n - 1; i++) {
+    animations.push({ type: 'line', line: 2 });
+    let swapped = false;
+    animations.push({ type: 'line', line: 3 });
     for (let j = 0; j < n - i - 1; j++) {
-      // compare: highlight
+      animations.push({ type: 'line', line: 4 });
+      animations.push({ type: 'line', line: 5 });
       animations.push({ type: 'compare', indices: [j, j + 1] });
-      
-      if (mainArray[j] > mainArray[j + 1]) {
-        // swap
-        animations.push({ type: 'swap', indices: [j, j + 1], values: [mainArray[j + 1], mainArray[j]] });
-        let temp = mainArray[j];
-        mainArray[j] = mainArray[j + 1];
-        mainArray[j + 1] = temp;
-      }
-      
-      // uncompare: unhighlight
       animations.push({ type: 'uncompare', indices: [j, j + 1] });
+      if (array[j] > array[j + 1]) {
+        animations.push({ type: 'line', line: 7 });
+        animations.push({ type: 'swap', indices: [j, j + 1], values: [array[j + 1], array[j]] });
+        let temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+        swapped = true;
+        animations.push({ type: 'line', line: 8 });
+      }
     }
-    // element is at its final position
-    animations.push({ type: 'sorted', indices: [n - 1 - i] });
+    animations.push({ type: 'line', line: 9 });
+    if (!swapped) {
+      animations.push({ type: 'line', line: 10 });
+      break;
+    }
   }
-  animations.push({ type: 'sorted', indices: [0] });
+  animations.push({ type: 'line', line: 11 });
+  
+  // Mark all as sorted at the end
+  for (let i = 0; i < array.length; i++) {
+    animations.push({ type: 'sorted', indices: [i] });
+  }
+  return animations;
 }

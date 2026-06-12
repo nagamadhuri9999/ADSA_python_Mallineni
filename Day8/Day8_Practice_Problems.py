@@ -110,6 +110,41 @@ def find_kth_largest(nums, k):
     return nums[-k]
 
 
+# ==========================================
+# PROBLEM 6: Factorial using Recursion
+# ==========================================
+def factorial(n):
+    # Base Case
+    if n == 0 or n == 1:
+        return 1
+    # Recursive Case
+    return n * factorial(n - 1)
+
+
+# ==========================================
+# PROBLEM 7: Fibonacci using Recursion
+# ==========================================
+def fibonacci(n):
+    # Base Cases
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    # Recursive Case
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+# ==========================================
+# PROBLEM 8: Sum of Array using Recursion
+# ==========================================
+def sum_array(arr):
+    # Base Case
+    if len(arr) == 0:
+        return 0
+    # Recursive Case: First element + sum of the rest
+    return arr[0] + sum_array(arr[1:])
+
+
 if __name__ == "__main__":
     print("Testing Merge Sort:")
     arr1 = [38, 27, 43, 3, 9, 82, 10]
@@ -130,3 +165,12 @@ if __name__ == "__main__":
     print("\nTesting Kth Largest Element (k=2):")
     nums = [3,2,1,5,6,4]
     print(find_kth_largest(nums, 2))
+
+    print("\nTesting Factorial (5!):")
+    print(factorial(5))
+
+    print("\nTesting Fibonacci (7th number):")
+    print(fibonacci(7))
+
+    print("\nTesting Sum of Array ([1, 2, 3, 4, 5]):")
+    print(sum_array([1, 2, 3, 4, 5]))

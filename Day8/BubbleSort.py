@@ -1,10 +1,17 @@
-#BubbleSort
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-    return arr
+def BubbleSort(nums):
+    L=len(nums)
+    c=0
+    for j in range(L):
+        swapped=False
+        for i in range(L-1-j):
+            c+=1
+            if nums[i] > nums[i+1]:
+                nums[i], nums[i+1] = nums[i+1], nums[i]
+                swapped=True
+            print(c,j,i,nums)
+        if not swapped:
+            break
+    return nums
 
-print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))
+nums = [2,4,1,9]
+print(BubbleSort(nums))

@@ -1,5 +1,7 @@
 Day 8 Topics:
 - Advanced Sorting Algorithms Overview
+- Introduction to Recursion (Base Case, Recursive Case, Call Stack)
+- Recursion vs Iteration
 - The Divide and Conquer Paradigm
 - Merge Sort (Algorithm, Implementation, Complexity)
 - Quick Sort (Algorithm, Partitioning, Implementation, Complexity)

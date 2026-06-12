@@ -1,6 +1,8 @@
 # Day 8 Class Plan: Advanced Sorting Algorithms (6 Hours)
 
-## Hour 1: The Divide & Conquer Paradigm and Merge Sort
+## Hour 1: Introduction to Recursion & Divide and Conquer
+- What is Recursion? (Base Case, Recursive Case).
+- Visualizing the Call Stack.
 - Concept of Divide and Conquer.
 - Introduction to Merge Sort.
 - Visualizing the merging process.

@@ -15,3 +15,6 @@
 13. If memory space is extremely constrained, which sorting algorithm would you choose?
 14. How would you find the Kth largest element in an unsorted array without fully sorting the array?
 15. Explain how to merge overlapping intervals. Why is sorting the intervals by their start time a necessary first step?
+16. What is Recursion? What are the two necessary conditions for a recursive function?
+17. What is a "Stack Overflow" error, and how does it relate to recursion?
+18. Compare Recursion with Iteration (loops). When would you prefer one over the other?

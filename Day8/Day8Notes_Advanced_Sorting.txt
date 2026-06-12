@@ -1,6 +1,19 @@
 # Day 8 Notes: Advanced Sorting Algorithms & Complexity
 
-## 1. The Divide & Conquer Paradigm
+## 1. Introduction to Recursion
+Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem.
+It is the foundation of many advanced algorithms, including Divide and Conquer.
+
+A recursive function must have two essential parts:
+1. **Base Case**: The condition under which the function stops calling itself to prevent an infinite loop (Stack Overflow).
+2. **Recursive Case**: The part of the function where it calls itself with a modified, smaller input, moving towards the base case.
+
+**Example: Factorial**
+`5! = 5 * 4!`, which means `n! = n * (n-1)!`.
+
+---
+
+## 2. The Divide & Conquer Paradigm
 Divide and Conquer is a fundamental algorithmic strategy that involves three steps:
 1. **Divide**: Break the problem into smaller, non-overlapping subproblems.
 2. **Conquer**: Solve the subproblems recursively.
