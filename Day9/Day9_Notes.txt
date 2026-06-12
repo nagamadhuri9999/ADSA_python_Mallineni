@@ -1,0 +1,46 @@
+# Day 9 Notes: Deep Dive into Advanced Sorting
+
+## 1. The Mathematics of Merge Sort (Why O(N log N)?)
+Have you ever wondered why Merge Sort is exactly `O(N log N)`?
+- **The Tree Depth (log N)**: Every time we split the array in half, we create a new level in the recursion tree. If an array has `N` elements, we can halve it `log2(N)` times before we reach single-element arrays. So, the depth of the tree is `log N`.
+- **The Work per Level (N)**: At every level of the tree, we must merge the sub-arrays back together. Across any single level, the total number of elements being merged is exactly `N`. Merging takes linear time, so the work done at each level is `O(N)`.
+- **Total Work**: `Tree Depth` * `Work per Level` = `(log N) * (N)` = `O(N log N)`.
+
+## 2. Counting Inversions using Merge Sort
+An "inversion" in an array is a pair of elements `(i, j)` such that `i < j` but `arr[i] > arr[j]`. It essentially measures how far the array is from being sorted.
+- A sorted array has 0 inversions.
+- A reverse-sorted array has maximum inversions `N(N-1)/2`.
+**How Merge Sort helps**:
+While merging two sorted halves (Left and Right), if `Left[i] > Right[j]`, it means `Left[i]` and *all remaining elements* in the Left half are greater than `Right[j]`. We can count all these inversions in `O(N log N)` time instead of `O(N^2)`!
+
+## 3. Quick Sort: Lomuto vs. Hoare Partitioning
+Quick Sort relies entirely on its `partition` function.
+
+**Lomuto Partition Scheme**:
+- Easy to implement.
+- Usually picks the last element as the pivot.
+- Maintains an index `i` for elements smaller than the pivot.
+- **Drawback**: Can perform poorly and degrade to O(N^2) if the array is already sorted or contains many duplicates.
+
+**Hoare Partition Scheme**:
+- Harder to implement but more efficient.
+- Uses two pointers (left and right) that move toward each other.
+- Stops and swaps when they find elements on the wrong side of the pivot.
+- **Advantage**: Does 3x fewer swaps than Lomuto on average and handles arrays with all identical elements much better.
+
+## 4. QuickSelect (O(N) Average Time)
+If you need to find the Kth smallest or largest element in an array, fully sorting it takes `O(N log N)`.
+**QuickSelect** optimizes this by only recursing into the half of the partition where the Kth element is known to reside!
+- If the pivot ends up exactly at index K, you've found the element!
+- If the pivot's index > K, recurse only on the left side.
+- If the pivot's index < K, recurse only on the right side.
+This drops the average time complexity from `O(N log N)` down to **O(N)**.
+
+## 5. Real World Sorting (TimSort)
+In the real world, you rarely write Merge Sort or Quick Sort from scratch.
+Python's `sort()` and Java's `Arrays.sort()` use **Timsort**.
+Timsort is a hybrid sorting algorithm derived from Merge Sort and Insertion Sort:
+1. It scans the array for already sorted sub-arrays (called "runs").
+2. If a run is too small, it uses Insertion Sort to boost its size.
+3. It then merges these runs using a highly optimized Merge Sort algorithm.
+Because it capitalizes on existing order, Timsort can run in **O(N)** time on arrays that are mostly sorted!

@@ -1,0 +1,12 @@
+# Day 9: Top Interview Questions on Advanced Sorting Deep Dive
+
+1. Explain the mathematical proof behind Merge Sort's O(N log N) time complexity using the recursion tree method.
+2. What is an "inversion" in an array? How can Merge Sort be modified to count the exact number of inversions efficiently?
+3. Compare the Lomuto and Hoare partition schemes in Quick Sort. Which one is generally preferred in practice and why?
+4. What happens to Quick Sort (with Lomuto partitioning) if the array consists entirely of identical elements? How does Hoare partitioning handle this scenario better?
+5. Explain the QuickSelect algorithm. Why is its average time complexity O(N) rather than O(N log N)?
+6. Why is QuickSelect's worst-case time complexity O(N^2), and how can you mitigate this?
+7. In a multi-threaded or distributed environment, would you prefer Merge Sort or Quick Sort? Why?
+8. What is Timsort? Explain the concept of "runs" and how Timsort takes advantage of partially sorted data.
+9. Why doesn't Python or Java simply use Quick Sort as their default array sorting algorithm?
+10. If an interviewer asks you to sort an array that is larger than the available RAM (e.g., sorting 100GB of data on a machine with 16GB RAM), which algorithmic paradigm would you use? (Hint: External Merge Sort).

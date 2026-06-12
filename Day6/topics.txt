@@ -1,0 +1,5 @@
+Searching Algorithms
+
+Linear Search and Binary search and its practice problems
+
+revise string methods and problemes solving and list methods

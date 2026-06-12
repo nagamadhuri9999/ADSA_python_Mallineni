@@ -1,0 +1,7 @@
+Day 9 Topics:
+- Deep Dive: Divide and Conquer Mechanics
+- Advanced Merge Sort: Counting Inversions
+- Quick Sort: Lomuto vs. Hoare Partition Schemes
+- QuickSelect Algorithm for Kth Smallest/Largest
+- Space and Time Complexity Mathematical Proofs
+- Real-World Sorting: TimSort and Language Implementations

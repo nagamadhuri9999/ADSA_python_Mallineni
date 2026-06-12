@@ -9,3 +9,18 @@ Day 7 Topics:
   - Selection Sort
   - Insertion Sort
 - Time and Space Complexity of Sorting Algorithms
+
+
+problems:
+find min ,find max,find second min ,second max,
+find 3 max and 3 min ,
+print even index values,
+print square index values,print cube index values 
+print square indeex+1 values ,
+find even index max and odd max .
+check whether list is sorted or not:
+
+binary search problems in leetcode 
+704,35,69
+
+sorting based leetcode easy questions links
