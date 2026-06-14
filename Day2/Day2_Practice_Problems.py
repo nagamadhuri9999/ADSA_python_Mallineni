@@ -1,1443 +1,248 @@
-# Day 2: 100 Practice Problems on Conditionals, Loops & Nested Flow
-# Predict the output or write the solution for each snippet.
+# Day 2 Practice Problems: Control Flow (Conditionals & Loops)
+# Fill in the TODOs in each problem. Check the bottom of the snippet for the solution.
 
-#----------------------------------------
-# CATEGORY 1: IF, ELIF, ELSE CONDITIONS
-#----------------------------------------
+def problem_1_if():
+    # TODO: Create a variable 'temperature' = 35.
+    # TODO: Write an if statement that prints "It's a hot day!" if temperature is greater than 30.
+    pass
 
-def practice_snippet_1():
-    # Practice implementing: if, elif, else Conditions
-    val = 1
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_2():
-    # Practice implementing: if, elif, else Conditions
-    val = 2
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_3():
-    # Practice implementing: if, elif, else Conditions
-    val = 3
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_4():
-    # Practice implementing: if, elif, else Conditions
-    val = 4
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_5():
-    # Practice implementing: if, elif, else Conditions
-    val = 5
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_6():
-    # Practice implementing: if, elif, else Conditions
-    val = 6
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_7():
-    # Practice implementing: if, elif, else Conditions
-    val = 7
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_8():
-    # Practice implementing: if, elif, else Conditions
-    val = 8
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_9():
-    # Practice implementing: if, elif, else Conditions
-    val = 9
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_10():
-    # Practice implementing: if, elif, else Conditions
-    val = 10
-    # TODO: Write code applying if, elif, else Conditions
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 2: NESTED IF-ELSE
-#----------------------------------------
-
-def practice_snippet_11():
-    # Practice implementing: Nested if-else
-    val = 1
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_12():
-    # Practice implementing: Nested if-else
-    val = 2
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_13():
-    # Practice implementing: Nested if-else
-    val = 3
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_14():
-    # Practice implementing: Nested if-else
-    val = 4
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_15():
-    # Practice implementing: Nested if-else
-    val = 5
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_16():
-    # Practice implementing: Nested if-else
-    val = 6
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_17():
-    # Practice implementing: Nested if-else
-    val = 7
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_18():
-    # Practice implementing: Nested if-else
-    val = 8
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_19():
-    # Practice implementing: Nested if-else
-    val = 9
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_20():
-    # Practice implementing: Nested if-else
-    val = 10
-    # TODO: Write code applying Nested if-else
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 3: DECISION MAKING LOGIC
-#----------------------------------------
-
-def practice_snippet_21():
-    # Practice implementing: Decision Making Logic
-    val = 1
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_22():
-    # Practice implementing: Decision Making Logic
-    val = 2
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_23():
-    # Practice implementing: Decision Making Logic
-    val = 3
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_24():
-    # Practice implementing: Decision Making Logic
-    val = 4
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_25():
-    # Practice implementing: Decision Making Logic
-    val = 5
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_26():
-    # Practice implementing: Decision Making Logic
-    val = 6
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_27():
-    # Practice implementing: Decision Making Logic
-    val = 7
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_28():
-    # Practice implementing: Decision Making Logic
-    val = 8
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_29():
-    # Practice implementing: Decision Making Logic
-    val = 9
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_30():
-    # Practice implementing: Decision Making Logic
-    val = 10
-    # TODO: Write code applying Decision Making Logic
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 4: INTRO TO LOOPS (REPEAT ACTIONS)
-#----------------------------------------
-
-def practice_snippet_31():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 1
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_32():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 2
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
+    # temperature = 35
+    # if temperature > 30:
+    #     print("It's a hot day!")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_33():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 3
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_34():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 4
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_35():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 5
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_36():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 6
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_37():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 7
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_38():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 8
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_39():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 9
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_40():
-    # Practice implementing: Intro to Loops (Repeat Actions)
-    val = 10
-    # TODO: Write code applying Intro to Loops (Repeat Actions)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 5: FOR LOOPS (RANGES & SEQUENCES)
-#----------------------------------------
-
-def practice_snippet_41():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 1
-    # TODO: Write code applying for Loops (Ranges & Sequences)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_42():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 2
-    # TODO: Write code applying for Loops (Ranges & Sequences)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_43():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 3
-    # TODO: Write code applying for Loops (Ranges & Sequences)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_44():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 4
-    # TODO: Write code applying for Loops (Ranges & Sequences)
+def problem_2_if_else():
+    # TODO: Create a variable 'is_raining' = True.
+    # TODO: If it's raining, print "Take an umbrella", else print "Enjoy the sun".
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_45():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 5
-    # TODO: Write code applying for Loops (Ranges & Sequences)
+    # is_raining = True
+    # if is_raining:
+    #     print("Take an umbrella")
+    # else:
+    #     print("Enjoy the sun")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_46():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 6
-    # TODO: Write code applying for Loops (Ranges & Sequences)
-
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_47():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 7
-    # TODO: Write code applying for Loops (Ranges & Sequences)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_48():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 8
-    # TODO: Write code applying for Loops (Ranges & Sequences)
+def problem_3_elif():
+    # TODO: Create a variable 'score' = 85.
+    # TODO: if score >= 90 print "A", elif score >= 80 print "B", else print "C".
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_49():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 9
-    # TODO: Write code applying for Loops (Ranges & Sequences)
+    # score = 85
+    # if score >= 90:
+    #     print("A")
+    # elif score >= 80:
+    #     print("B")
+    # else:
+    #     print("C")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_50():
-    # Practice implementing: for Loops (Ranges & Sequences)
-    val = 10
-    # TODO: Write code applying for Loops (Ranges & Sequences)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 6: WHILE LOOPS
-#----------------------------------------
-
-def practice_snippet_51():
-    # Practice implementing: while Loops
-    val = 1
-    # TODO: Write code applying while Loops
+def problem_4_nested_if():
+    # TODO: Create variables 'is_weekend' = True and 'has_money' = False.
+    # TODO: If it's the weekend, check if you have money. If yes, print "Go to movies", else print "Stay home".
+    # If not the weekend, print "Go to work".
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_52():
-    # Practice implementing: while Loops
-    val = 2
-    # TODO: Write code applying while Loops
+    # is_weekend = True
+    # has_money = False
+    # if is_weekend:
+    #     if has_money:
+    #         print("Go to movies")
+    #     else:
+    #         print("Stay home")
+    # else:
+    #     print("Go to work")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_53():
-    # Practice implementing: while Loops
-    val = 3
-    # TODO: Write code applying while Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_54():
-    # Practice implementing: while Loops
-    val = 4
-    # TODO: Write code applying while Loops
+def problem_5_multiple_conditions():
+    # TODO: Create 'age' = 25 and 'has_license' = True.
+    # TODO: Print "Can drive" ONLY IF age is >= 18 AND has_license is True.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_55():
-    # Practice implementing: while Loops
-    val = 5
-    # TODO: Write code applying while Loops
+    # age = 25
+    # has_license = True
+    # if age >= 18 and has_license:
+    #     print("Can drive")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_56():
-    # Practice implementing: while Loops
-    val = 6
-    # TODO: Write code applying while Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_57():
-    # Practice implementing: while Loops
-    val = 7
-    # TODO: Write code applying while Loops
+def problem_6_for_loop_range():
+    # TODO: Use a for loop and range() to print numbers from 1 to 5 (inclusive).
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_58():
-    # Practice implementing: while Loops
-    val = 8
-    # TODO: Write code applying while Loops
+    # for i in range(1, 6):
+    #     print(i)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_59():
-    # Practice implementing: while Loops
-    val = 9
-    # TODO: Write code applying while Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_60():
-    # Practice implementing: while Loops
-    val = 10
-    # TODO: Write code applying while Loops
+def problem_7_for_loop_list():
+    # TODO: Create a list 'fruits' = ["apple", "banana", "cherry"].
+    # TODO: Use a for loop to print each fruit.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 7: WHILE LOOP TERMINATIONS
-#----------------------------------------
-
-def practice_snippet_61():
-    # Practice implementing: while Loop Terminations
-    val = 1
-    # TODO: Write code applying while Loop Terminations
+    # fruits = ["apple", "banana", "cherry"]
+    # for fruit in fruits:
+    #     print(fruit)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_62():
-    # Practice implementing: while Loop Terminations
-    val = 2
-    # TODO: Write code applying while Loop Terminations
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_63():
-    # Practice implementing: while Loop Terminations
-    val = 3
-    # TODO: Write code applying while Loop Terminations
+def problem_8_for_loop_string():
+    # TODO: Use a for loop to iterate over the string "Python" and print each letter on a new line.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_64():
-    # Practice implementing: while Loop Terminations
-    val = 4
-    # TODO: Write code applying while Loop Terminations
+    # for letter in "Python":
+    #     print(letter)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_65():
-    # Practice implementing: while Loop Terminations
-    val = 5
-    # TODO: Write code applying while Loop Terminations
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_66():
-    # Practice implementing: while Loop Terminations
-    val = 6
-    # TODO: Write code applying while Loop Terminations
+def problem_9_while_loop():
+    # TODO: Create a variable 'count' = 3.
+    # TODO: Use a while loop to print 'count' and decrement it by 1 as long as it is > 0.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_67():
-    # Practice implementing: while Loop Terminations
-    val = 7
-    # TODO: Write code applying while Loop Terminations
+    # count = 3
+    # while count > 0:
+    #     print(count)
+    #     count -= 1
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_68():
-    # Practice implementing: while Loop Terminations
-    val = 8
-    # TODO: Write code applying while Loop Terminations
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_69():
-    # Practice implementing: while Loop Terminations
-    val = 9
-    # TODO: Write code applying while Loop Terminations
+def problem_10_break_statement():
+    # TODO: Loop from 1 to 10 using for i in range(1, 11).
+    # TODO: If i equals 5, break out of the loop immediately. Print 'i' in each iteration.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_70():
-    # Practice implementing: while Loop Terminations
-    val = 10
-    # TODO: Write code applying while Loop Terminations
+    # for i in range(1, 11):
+    #     if i == 5:
+    #         break
+    #     print(i)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 8: NESTED LOOPS (MULTI-DIMENSIONAL)
-#----------------------------------------
-
-def practice_snippet_71():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 1
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_72():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 2
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+def problem_11_continue_statement():
+    # TODO: Loop from 1 to 5.
+    # TODO: If the number is 3, use 'continue' to skip printing it. Print all other numbers.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_73():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 3
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+    # for i in range(1, 6):
+    #     if i == 3:
+    #         continue
+    #     print(i)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_74():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 4
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_75():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 5
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+def problem_12_nested_loops():
+    # TODO: Create two lists: colors = ["red", "blue"] and items = ["car", "bike"].
+    # TODO: Use a nested loop to print every combination (e.g., "red car").
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_76():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 6
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+    # colors = ["red", "blue"]
+    # items = ["car", "bike"]
+    # for color in colors:
+    #     for item in items:
+    #         print(color, item)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_77():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 7
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_78():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 8
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+def problem_13_sum_with_loop():
+    # TODO: Create a variable 'total' = 0.
+    # TODO: Use a for loop to add all numbers from 1 to 10 to 'total'. Print the final 'total'.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_79():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 9
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
+    # total = 0
+    # for i in range(1, 11):
+    #     total += i
+    # print(total)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_80():
-    # Practice implementing: Nested Loops (Multi-dimensional)
-    val = 10
-    # TODO: Write code applying Nested Loops (Multi-dimensional)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 9: PATTERN DRAWING USING LOOPS
-#----------------------------------------
-
-def practice_snippet_81():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 1
-    # TODO: Write code applying Pattern Drawing using Loops
+def problem_14_even_numbers_range():
+    # TODO: Use a for loop with a step size in range() to print all even numbers from 2 to 10.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_82():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 2
-    # TODO: Write code applying Pattern Drawing using Loops
+    # for i in range(2, 11, 2):
+    #     print(i)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_83():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 3
-    # TODO: Write code applying Pattern Drawing using Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_84():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 4
-    # TODO: Write code applying Pattern Drawing using Loops
+def problem_15_while_true():
+    # TODO: Use a 'while True:' loop and a variable 'x' starting at 1.
+    # TODO: Break out of the loop when 'x' reaches 4. Print 'x' and increment it each time.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_85():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 5
-    # TODO: Write code applying Pattern Drawing using Loops
+    # x = 1
+    # while True:
+    #     print(x)
+    #     if x == 4:
+    #         break
+    #     x += 1
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_86():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 6
-    # TODO: Write code applying Pattern Drawing using Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_87():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 7
-    # TODO: Write code applying Pattern Drawing using Loops
+def problem_16_pattern_square():
+    # TODO: Use a nested loop to print a 3x3 square of asterisks (*).
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_88():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 8
-    # TODO: Write code applying Pattern Drawing using Loops
+    # for i in range(3):
+    #     for j in range(3):
+    #         print("*", end=" ")
+    #     print()
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_89():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 9
-    # TODO: Write code applying Pattern Drawing using Loops
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_90():
-    # Practice implementing: Pattern Drawing using Loops
-    val = 10
-    # TODO: Write code applying Pattern Drawing using Loops
+def problem_17_pattern_triangle():
+    # TODO: Use a loop to print a right-angle triangle of asterisks with 4 rows.
+    # Row 1: 1 star. Row 4: 4 stars.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-#----------------------------------------
-# CATEGORY 10: STAR PATTERN EXAMPLES
-#----------------------------------------
-
-def practice_snippet_91():
-    # Practice implementing: Star Pattern Examples
-    val = 1
-    # TODO: Write code applying Star Pattern Examples
+    # for i in range(1, 5):
+    #     print("*" * i)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_92():
-    # Practice implementing: Star Pattern Examples
-    val = 2
-    # TODO: Write code applying Star Pattern Examples
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_93():
-    # Practice implementing: Star Pattern Examples
-    val = 3
-    # TODO: Write code applying Star Pattern Examples
+def problem_18_loop_else():
+    # TODO: Loop from 1 to 3. 
+    # TODO: Add an 'else' block to the 'for' loop that prints "Loop finished without breaking".
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_94():
-    # Practice implementing: Star Pattern Examples
-    val = 4
-    # TODO: Write code applying Star Pattern Examples
+    # for i in range(1, 4):
+    #     print(i)
+    # else:
+    #     print("Loop finished without breaking")
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_95():
-    # Practice implementing: Star Pattern Examples
-    val = 5
-    # TODO: Write code applying Star Pattern Examples
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_96():
-    # Practice implementing: Star Pattern Examples
-    val = 6
-    # TODO: Write code applying Star Pattern Examples
+def problem_19_list_filtering():
+    # TODO: You have nums = [1, 5, 8, 10, 15].
+    # TODO: Use a for loop and an if statement to print ONLY numbers greater than 9.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_97():
-    # Practice implementing: Star Pattern Examples
-    val = 7
-    # TODO: Write code applying Star Pattern Examples
+    # nums = [1, 5, 8, 10, 15]
+    # for n in nums:
+    #     if n > 9:
+    #         print(n)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_98():
-    # Practice implementing: Star Pattern Examples
-    val = 8
-    # TODO: Write code applying Star Pattern Examples
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_99():
-    # Practice implementing: Star Pattern Examples
-    val = 9
-    # TODO: Write code applying Star Pattern Examples
+def problem_20_counting_vowels():
+    # TODO: You have a string 'word' = "education".
+    # TODO: Use a for loop to count how many vowels (a,e,i,o,u) are in the word. Print the final count.
+    pass
 
     # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
-
-def practice_snippet_100():
-    # Practice implementing: Star Pattern Examples
-    val = 10
-    # TODO: Write code applying Star Pattern Examples
+    # word = "education"
+    # count = 0
+    # for char in word:
+    #     if char in "aeiou":
+    #         count += 1
+    # print(count)
 
-    # --- SOLUTION ---
-    # Control flow logic: if/else and loops
-    if val % 2 == 0:
-        val += 10
-    else:
-        for _ in range(3):
-            val += 1
-    return val
 
+if __name__ == "__main__":
+    print("Welcome to Day 2 Practice Problems!")
+    print("Fill in the code for each function and call them here to test your answers.")
+    # problem_1_if()

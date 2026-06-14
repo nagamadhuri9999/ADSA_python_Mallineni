@@ -1,1143 +1,620 @@
-# Day 1: 100 Practice Problems on Python Basics, Uses, Variables & Data Types
-# Predict the output or write the solution for each snippet.
+# Day 1 Practice Problems: Python Fundamentals, Variables, Data Types & Operators
+# Fill in the TODOs in each problem. Check the bottom of the snippet for the solution.
 
-#----------------------------------------
-# CATEGORY 1: PYTHON INTRODUCTION & DEFINITION
-#----------------------------------------
+def problem_1_basics():
+    # TODO: Print "Hello, Python!" to the console
+    pass
 
-def practice_snippet_1():
-    # Practice implementing: Python Introduction & Definition
-    val = 1
-    # TODO: Write code applying Python Introduction & Definition
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_2():
-    # Practice implementing: Python Introduction & Definition
-    val = 2
-    # TODO: Write code applying Python Introduction & Definition
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_3():
-    # Practice implementing: Python Introduction & Definition
-    val = 3
-    # TODO: Write code applying Python Introduction & Definition
+    # print("Hello, Python!")
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_4():
-    # Practice implementing: Python Introduction & Definition
-    val = 4
-    # TODO: Write code applying Python Introduction & Definition
+def problem_2_variables():
+    # TODO: Create a variable called 'user_age' and set it to 25.
+    # TODO: Create a variable called 'user_name' and set it to "Alice".
+    # TODO: Print a message saying "Alice is 25 years old."
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # user_age = 25
+    # user_name = "Alice"
+    # print(user_name, "is", user_age, "years old.")
 
-def practice_snippet_5():
-    # Practice implementing: Python Introduction & Definition
-    val = 5
-    # TODO: Write code applying Python Introduction & Definition
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_6():
-    # Practice implementing: Python Introduction & Definition
-    val = 6
-    # TODO: Write code applying Python Introduction & Definition
+def problem_3_datatypes():
+    # TODO: Create a variable 'price' with the value 19.99
+    # TODO: Use the built-in type() function to print the data type of 'price'
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # price = 19.99
+    # print(type(price))
 
-def practice_snippet_7():
-    # Practice implementing: Python Introduction & Definition
-    val = 7
-    # TODO: Write code applying Python Introduction & Definition
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_4_type_casting():
+    # TODO: You have a string variable: str_num = "50"
+    # TODO: Convert it into an integer, add 10 to it, and print the result.
+    str_num = "50"
+    pass
 
-def practice_snippet_8():
-    # Practice implementing: Python Introduction & Definition
-    val = 8
-    # TODO: Write code applying Python Introduction & Definition
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_9():
-    # Practice implementing: Python Introduction & Definition
-    val = 9
-    # TODO: Write code applying Python Introduction & Definition
+    # num = int(str_num)
+    # result = num + 10
+    # print(result)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_10():
-    # Practice implementing: Python Introduction & Definition
-    val = 10
-    # TODO: Write code applying Python Introduction & Definition
+def problem_5_arithmetic():
+    # TODO: Calculate the total bill for 3 coffees.
+    # Each coffee is $4.50. The tax is a flat $1.50.
+    # Store the result in 'total_bill' and print it.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # coffee_price = 4.50
+    # num_coffees = 3
+    # tax = 1.50
+    # total_bill = (coffee_price * num_coffees) + tax
+    # print(total_bill)
 
-#----------------------------------------
-# CATEGORY 2: REASONS TO CHOOSE PYTHON
-#----------------------------------------
 
-def practice_snippet_11():
-    # Practice implementing: Reasons to Choose Python
-    val = 1
-    # TODO: Write code applying Reasons to Choose Python
+def problem_6_modulo():
+    # TODO: Create a variable 'number' and set it to 15.
+    # TODO: Use the modulo operator (%) to find the remainder when 'number' is divided by 2.
+    # Print the remainder.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_12():
-    # Practice implementing: Reasons to Choose Python
-    val = 2
-    # TODO: Write code applying Reasons to Choose Python
+    # number = 15
+    # remainder = number % 2
+    # print(remainder)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_13():
-    # Practice implementing: Reasons to Choose Python
-    val = 3
-    # TODO: Write code applying Reasons to Choose Python
+def problem_7_lists():
+    # TODO: Create a list named 'fruits' containing "apple", "banana", and "cherry".
+    # TODO: Print the second item in the list ("banana").
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # fruits = ["apple", "banana", "cherry"]
+    # print(fruits[1])
 
-def practice_snippet_14():
-    # Practice implementing: Reasons to Choose Python
-    val = 4
-    # TODO: Write code applying Reasons to Choose Python
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_15():
-    # Practice implementing: Reasons to Choose Python
-    val = 5
-    # TODO: Write code applying Reasons to Choose Python
+def problem_8_dictionaries():
+    # TODO: Create a dictionary named 'student' with keys "name" and "grade".
+    # Set "name" to "John" and "grade" to "A".
+    # TODO: Print the student's grade.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # student = {"name": "John", "grade": "A"}
+    # print(student["grade"])
 
-def practice_snippet_16():
-    # Practice implementing: Reasons to Choose Python
-    val = 6
-    # TODO: Write code applying Reasons to Choose Python
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_9_comparison():
+    # TODO: You have a saved password "secret123" and an input password "secret123".
+    # TODO: Create a variable 'is_match' that uses the equality operator (==) to compare them.
+    # Print 'is_match'.
+    saved_pwd = "secret123"
+    input_pwd = "secret123"
+    pass
 
-def practice_snippet_17():
-    # Practice implementing: Reasons to Choose Python
-    val = 7
-    # TODO: Write code applying Reasons to Choose Python
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_18():
-    # Practice implementing: Reasons to Choose Python
-    val = 8
-    # TODO: Write code applying Reasons to Choose Python
+    # is_match = (saved_pwd == input_pwd)
+    # print(is_match)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_19():
-    # Practice implementing: Reasons to Choose Python
-    val = 9
-    # TODO: Write code applying Reasons to Choose Python
+def problem_10_logical():
+    # TODO: To get a discount, a customer must be a member (is_member = True)
+    # AND must have spent over $50 (spent = 60).
+    # TODO: Create a boolean variable 'gets_discount' using logical operators and print it.
+    is_member = True
+    spent = 60
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # gets_discount = is_member and (spent > 50)
+    # print(gets_discount)
 
-def practice_snippet_20():
-    # Practice implementing: Reasons to Choose Python
-    val = 10
-    # TODO: Write code applying Reasons to Choose Python
+def problem_11_string_formatting():
+    # TODO: Use an f-string to print "My favorite language is Python." 
+    # Use the variable provided below inside the f-string.
+    language = "Python"
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(f"My favorite language is {language}.")
 
-#----------------------------------------
-# CATEGORY 3: COMMON APPLICATIONS & REAL-WORLD USES
-#----------------------------------------
 
-def practice_snippet_21():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 1
-    # TODO: Write code applying Common Applications & Real-World Uses
+def problem_12_string_methods():
+    # TODO: Convert the string 'shout' to uppercase using a string method and print it.
+    shout = "hello"
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(shout.upper())
 
-def practice_snippet_22():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 2
-    # TODO: Write code applying Common Applications & Real-World Uses
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_23():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 3
-    # TODO: Write code applying Common Applications & Real-World Uses
+def problem_13_length():
+    # TODO: Use a built-in function to print the number of characters in the word "Supercalifragilisticexpialidocious".
+    word = "Supercalifragilisticexpialidocious"
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(len(word))
 
-def practice_snippet_24():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 4
-    # TODO: Write code applying Common Applications & Real-World Uses
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_25():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 5
-    # TODO: Write code applying Common Applications & Real-World Uses
+def problem_14_tuples():
+    # TODO: Create a tuple named 'coordinates' containing the numbers 10 and 20.
+    # TODO: Try to assign the value 30 to the first element (index 0). Watch it fail! (Tuples are immutable)
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # coordinates = (10, 20)
+    # # coordinates[0] = 30 # This will raise a TypeError!
 
-def practice_snippet_26():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 6
-    # TODO: Write code applying Common Applications & Real-World Uses
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_15_sets():
+    # TODO: Create a set named 'unique_numbers' with the values: 1, 1, 2, 3, 3, 4.
+    # Print the set. Notice how duplicates are automatically removed!
+    pass
 
-def practice_snippet_27():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 7
-    # TODO: Write code applying Common Applications & Real-World Uses
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_28():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 8
-    # TODO: Write code applying Common Applications & Real-World Uses
+    # unique_numbers = {1, 1, 2, 3, 3, 4}
+    # print(unique_numbers)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_29():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 9
-    # TODO: Write code applying Common Applications & Real-World Uses
+def problem_16_swap():
+    # TODO: Swap the values of 'a' and 'b' without using a third temporary variable.
+    # Print 'a' and 'b' to verify they swapped.
+    a = 100
+    b = 200
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # a, b = b, a
+    # print(a, b)
 
-def practice_snippet_30():
-    # Practice implementing: Common Applications & Real-World Uses
-    val = 10
-    # TODO: Write code applying Common Applications & Real-World Uses
 
+def problem_17_assignment_operator():
+    # TODO: Use the '+=' assignment operator to add 50 to 'score'. Print 'score'.
+    score = 10
+    pass
+
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # score += 50
+    # print(score)
 
-#----------------------------------------
-# CATEGORY 4: PYTHON SYNTAX RULES
-#----------------------------------------
 
-def practice_snippet_31():
-    # Practice implementing: Python Syntax Rules
-    val = 1
-    # TODO: Write code applying Python Syntax Rules
+def problem_18_membership_operator():
+    # TODO: Check if the letter "z" is in the string "alphabet" using the 'in' operator.
+    # Print the boolean result.
+    word = "alphabet"
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_32():
-    # Practice implementing: Python Syntax Rules
-    val = 2
-    # TODO: Write code applying Python Syntax Rules
+    # print("z" in word)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_33():
-    # Practice implementing: Python Syntax Rules
-    val = 3
-    # TODO: Write code applying Python Syntax Rules
+def problem_19_identity_operator():
+    # TODO: Create two variables: list1 = [1, 2] and list2 = [1, 2].
+    # TODO: Use the 'is' operator to check if they are the exact same object in memory. Print the result.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # list1 = [1, 2]
+    # list2 = [1, 2]
+    # print(list1 is list2) # Returns False because they are two distinct lists in memory!
 
-def practice_snippet_34():
-    # Practice implementing: Python Syntax Rules
-    val = 4
-    # TODO: Write code applying Python Syntax Rules
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_35():
-    # Practice implementing: Python Syntax Rules
-    val = 5
-    # TODO: Write code applying Python Syntax Rules
+def problem_20_precedence():
+    # TODO: Calculate the result of 10 + 5 * 2. 
+    # TODO: Now use parentheses to force the addition to happen first. Print both results.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(10 + 5 * 2)       # Output: 20
+    # print((10 + 5) * 2)     # Output: 30
 
-def practice_snippet_36():
-    # Practice implementing: Python Syntax Rules
-    val = 6
-    # TODO: Write code applying Python Syntax Rules
+def problem_21_string_slicing():
+    # TODO: Create a variable 'text' = "Python Programming".
+    # TODO: Slice the string to extract just the word "Python" and print it.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # text = "Python Programming"
+    # print(text[0:6])
 
-def practice_snippet_37():
-    # Practice implementing: Python Syntax Rules
-    val = 7
-    # TODO: Write code applying Python Syntax Rules
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_38():
-    # Practice implementing: Python Syntax Rules
-    val = 8
-    # TODO: Write code applying Python Syntax Rules
+def problem_22_dict_keys():
+    # TODO: You have a dictionary: car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+    # TODO: Print only the keys of the dictionary.
+    car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(car.keys())
 
-def practice_snippet_39():
-    # Practice implementing: Python Syntax Rules
-    val = 9
-    # TODO: Write code applying Python Syntax Rules
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_23_dict_values():
+    # TODO: Using the same 'car' dictionary, print only the values.
+    car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+    pass
 
-def practice_snippet_40():
-    # Practice implementing: Python Syntax Rules
-    val = 10
-    # TODO: Write code applying Python Syntax Rules
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(car.values())
 
-#----------------------------------------
-# CATEGORY 5: DECLARING VARIABLES
-#----------------------------------------
 
-def practice_snippet_41():
-    # Practice implementing: Declaring Variables
-    val = 1
-    # TODO: Write code applying Declaring Variables
+def problem_24_list_append():
+    # TODO: Create a list 'colors' = ["red", "green"].
+    # TODO: Add "blue" to the end of the list and print the list.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_42():
-    # Practice implementing: Declaring Variables
-    val = 2
-    # TODO: Write code applying Declaring Variables
+    # colors = ["red", "green"]
+    # colors.append("blue")
+    # print(colors)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_43():
-    # Practice implementing: Declaring Variables
-    val = 3
-    # TODO: Write code applying Declaring Variables
+def problem_25_type_error():
+    # TODO: Try to concatenate a string "Age: " and an integer 25 using the '+' operator.
+    # TODO: Watch it fail! Fix it by converting the integer to a string first, then print it.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # # print("Age: " + 25) # This raises a TypeError!
+    # print("Age: " + str(25))
 
-def practice_snippet_44():
-    # Practice implementing: Declaring Variables
-    val = 4
-    # TODO: Write code applying Declaring Variables
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_45():
-    # Practice implementing: Declaring Variables
-    val = 5
-    # TODO: Write code applying Declaring Variables
+def problem_26_boolean_math():
+    # TODO: In Python, True is 1 and False is 0. 
+    # TODO: Print the result of True + True.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(True + True) # Outputs 2
 
-def practice_snippet_46():
-    # Practice implementing: Declaring Variables
-    val = 6
-    # TODO: Write code applying Declaring Variables
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_27_floor_division():
+    # TODO: Calculate 10 divided by 3 using standard division (/) and print it.
+    # TODO: Calculate 10 divided by 3 using floor division (//) and print it. Notice the difference!
+    pass
 
-def practice_snippet_47():
-    # Practice implementing: Declaring Variables
-    val = 7
-    # TODO: Write code applying Declaring Variables
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_48():
-    # Practice implementing: Declaring Variables
-    val = 8
-    # TODO: Write code applying Declaring Variables
+    # print(10 / 3)   # Outputs 3.3333333333333335
+    # print(10 // 3)  # Outputs 3
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_49():
-    # Practice implementing: Declaring Variables
-    val = 9
-    # TODO: Write code applying Declaring Variables
+def problem_28_exponentiation():
+    # TODO: Calculate 2 to the power of 5 using the exponentiation operator (**) and print it.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(2 ** 5)   # Outputs 32
+
 
-def practice_snippet_50():
-    # Practice implementing: Declaring Variables
-    val = 10
-    # TODO: Write code applying Declaring Variables
+def problem_29_dynamic_typing():
+    # TODO: Create a variable 'x' and assign it the integer 100.
+    # TODO: Reassign 'x' to the string "Now I'm a string!" and print 'x'. This demonstrates dynamic typing.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # x = 100
+    # x = "Now I'm a string!"
+    # print(x)
 
-#----------------------------------------
-# CATEGORY 6: BUILT-IN DATA TYPES OVERVIEW
-#----------------------------------------
 
-def practice_snippet_51():
-    # Practice implementing: Built-in Data Types Overview
-    val = 1
-    # TODO: Write code applying Built-in Data Types Overview
+def problem_30_string_repetition():
+    # TODO: Use the multiplication operator (*) to print a string of 20 dashes ("-").
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print("-" * 20)
 
-def practice_snippet_52():
-    # Practice implementing: Built-in Data Types Overview
-    val = 2
-    # TODO: Write code applying Built-in Data Types Overview
+def problem_31_negative_indexing():
+    # TODO: Create a list 'letters' = ["a", "b", "c", "d", "e"].
+    # TODO: Use negative indexing to print the last element ("e") of the list.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # letters = ["a", "b", "c", "d", "e"]
+    # print(letters[-1])
 
-def practice_snippet_53():
-    # Practice implementing: Built-in Data Types Overview
-    val = 3
-    # TODO: Write code applying Built-in Data Types Overview
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_32_list_membership():
+    # TODO: Create a list 'vowels' = ["a", "e", "i", "o", "u"].
+    # TODO: Check if the letter "x" is in the 'vowels' list using 'in' and print the boolean result.
+    pass
 
-def practice_snippet_54():
-    # Practice implementing: Built-in Data Types Overview
-    val = 4
-    # TODO: Write code applying Built-in Data Types Overview
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_55():
-    # Practice implementing: Built-in Data Types Overview
-    val = 5
-    # TODO: Write code applying Built-in Data Types Overview
+    # vowels = ["a", "e", "i", "o", "u"]
+    # print("x" in vowels)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_56():
-    # Practice implementing: Built-in Data Types Overview
-    val = 6
-    # TODO: Write code applying Built-in Data Types Overview
+def problem_33_delete_variable():
+    # TODO: Create a variable 'temp_data' = 500.
+    # TODO: Delete the variable using the 'del' keyword. 
+    # Try printing it afterwards to see the NameError (comment out the print so the script runs).
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # temp_data = 500
+    # del temp_data
+    # # print(temp_data) # This would raise a NameError
 
-def practice_snippet_57():
-    # Practice implementing: Built-in Data Types Overview
-    val = 7
-    # TODO: Write code applying Built-in Data Types Overview
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_58():
-    # Practice implementing: Built-in Data Types Overview
-    val = 8
-    # TODO: Write code applying Built-in Data Types Overview
+def problem_34_multiline_strings():
+    # TODO: Create a multiline string using triple quotes (""") containing a short poem or message.
+    # Print the multiline string.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # message = """This is a
+    # multiline string
+    # in Python!"""
+    # print(message)
 
-def practice_snippet_59():
-    # Practice implementing: Built-in Data Types Overview
-    val = 9
-    # TODO: Write code applying Built-in Data Types Overview
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_35_boolean_casting():
+    # TODO: Use bool() to cast an empty string "" to a boolean and print it.
+    # TODO: Use bool() to cast a non-empty string "Python" to a boolean and print it.
+    pass
 
-def practice_snippet_60():
-    # Practice implementing: Built-in Data Types Overview
-    val = 10
-    # TODO: Write code applying Built-in Data Types Overview
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(bool(""))       # Outputs False
+    # print(bool("Python")) # Outputs True
 
-#----------------------------------------
-# CATEGORY 7: NUMERIC TYPES (INT, FLOAT)
-#----------------------------------------
 
-def practice_snippet_61():
-    # Practice implementing: Numeric Types (int, float)
-    val = 1
-    # TODO: Write code applying Numeric Types (int, float)
+def problem_36_multiple_assignment():
+    # TODO: Assign the values 10, 20, and 30 to variables x, y, and z in a single line of code.
+    # Print x, y, and z.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_62():
-    # Practice implementing: Numeric Types (int, float)
-    val = 2
-    # TODO: Write code applying Numeric Types (int, float)
+    # x, y, z = 10, 20, 30
+    # print(x, y, z)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_63():
-    # Practice implementing: Numeric Types (int, float)
-    val = 3
-    # TODO: Write code applying Numeric Types (int, float)
+def problem_37_update_dictionary():
+    # TODO: Create a dictionary 'user' = {"name": "Bob", "age": 30}.
+    # TODO: Update the "age" key to 31 and print the updated dictionary.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_64():
-    # Practice implementing: Numeric Types (int, float)
-    val = 4
-    # TODO: Write code applying Numeric Types (int, float)
+    # user = {"name": "Bob", "age": 30}
+    # user["age"] = 31
+    # print(user)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_65():
-    # Practice implementing: Numeric Types (int, float)
-    val = 5
-    # TODO: Write code applying Numeric Types (int, float)
+def problem_38_modify_list():
+    # TODO: Create a list 'scores' = [80, 90, 100].
+    # TODO: Modify the first element (index 0) to be 85 instead of 80. Print the list.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # scores = [80, 90, 100]
+    # scores[0] = 85
+    # print(scores)
 
-def practice_snippet_66():
-    # Practice implementing: Numeric Types (int, float)
-    val = 6
-    # TODO: Write code applying Numeric Types (int, float)
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_67():
-    # Practice implementing: Numeric Types (int, float)
-    val = 7
-    # TODO: Write code applying Numeric Types (int, float)
+def problem_39_id_function():
+    # TODO: Create variables 'a' = 10 and 'b' = 10.
+    # TODO: Print the memory identity of both variables using the id() function. They should be the same!
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # a = 10
+    # b = 10
+    # print(id(a), id(b))
 
-def practice_snippet_68():
-    # Practice implementing: Numeric Types (int, float)
-    val = 8
-    # TODO: Write code applying Numeric Types (int, float)
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_40_comparison_chaining():
+    # TODO: Create a variable 'age' = 25.
+    # TODO: Check if 'age' is between 18 and 30 (inclusive) by chaining comparison operators (e.g., 18 <= age <= 30).
+    # Print the boolean result.
+    pass
 
-def practice_snippet_69():
-    # Practice implementing: Numeric Types (int, float)
-    val = 9
-    # TODO: Write code applying Numeric Types (int, float)
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # age = 25
+    # print(18 <= age <= 30)
 
-def practice_snippet_70():
-    # Practice implementing: Numeric Types (int, float)
-    val = 10
-    # TODO: Write code applying Numeric Types (int, float)
+def problem_41_none_type():
+    # TODO: Create a variable 'empty_val' and assign it the special 'None' value.
+    # Print the type of 'empty_val'.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # empty_val = None
+    # print(type(empty_val))
 
-#----------------------------------------
-# CATEGORY 8: STRING TYPES
-#----------------------------------------
 
-def practice_snippet_71():
-    # Practice implementing: String Types
-    val = 1
-    # TODO: Write code applying String Types
+def problem_42_list_length():
+    # TODO: Create a list 'guests' = ["Alice", "Bob", "Charlie", "David"].
+    # TODO: Use the len() function to print how many guests are in the list.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_72():
-    # Practice implementing: String Types
-    val = 2
-    # TODO: Write code applying String Types
+    # guests = ["Alice", "Bob", "Charlie", "David"]
+    # print(len(guests))
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_73():
-    # Practice implementing: String Types
-    val = 3
-    # TODO: Write code applying String Types
+def problem_43_dict_get():
+    # TODO: You have a dictionary 'config' = {"theme": "dark"}.
+    # TODO: Use the .get() method to safely fetch the "font_size". It shouldn't crash if it doesn't exist!
+    # Print the result.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # config = {"theme": "dark"}
+    # print(config.get("font_size")) # Outputs None
 
-def practice_snippet_74():
-    # Practice implementing: String Types
-    val = 4
-    # TODO: Write code applying String Types
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_75():
-    # Practice implementing: String Types
-    val = 5
-    # TODO: Write code applying String Types
+def problem_44_string_replace_chaining():
+    # TODO: You have string 'text' = "I like apples and apples".
+    # TODO: Chain the .replace() method to replace "apples" with "bananas", and then "like" with "love".
+    # Print the final string.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # text = "I like apples and apples"
+    # final_text = text.replace("apples", "bananas").replace("like", "love")
+    # print(final_text)
 
-def practice_snippet_76():
-    # Practice implementing: String Types
-    val = 6
-    # TODO: Write code applying String Types
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_77():
-    # Practice implementing: String Types
-    val = 7
-    # TODO: Write code applying String Types
+def problem_45_modulo_last_digit():
+    # TODO: You have a number 'num' = 12345.
+    # TODO: Use the modulo operator (%) to extract and print the very last digit of the number.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # num = 12345
+    # print(num % 10) # Outputs 5
 
-def practice_snippet_78():
-    # Practice implementing: String Types
-    val = 8
-    # TODO: Write code applying String Types
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_46_exponentiation_sqrt():
+    # TODO: Calculate the square root of 64 using ONLY the exponentiation operator (**) and print it.
+    pass
 
-def practice_snippet_79():
-    # Practice implementing: String Types
-    val = 9
-    # TODO: Write code applying String Types
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(64 ** 0.5) # Outputs 8.0
+
 
-def practice_snippet_80():
-    # Practice implementing: String Types
-    val = 10
-    # TODO: Write code applying String Types
+def problem_47_fstring_math():
+    # TODO: Use an f-string to print the result of 5 + 7 directly inside the string.
+    # Expected output: "5 + 7 is 12"
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(f"5 + 7 is {5 + 7}")
 
-#----------------------------------------
-# CATEGORY 9: OPERATORS OVERVIEW
-#----------------------------------------
 
-def practice_snippet_81():
-    # Practice implementing: Operators Overview
-    val = 1
-    # TODO: Write code applying Operators Overview
+def problem_48_list_slicing_reverse():
+    # TODO: You have a list 'nums' = [1, 2, 3, 4, 5].
+    # TODO: Use list slicing with a negative step to print the list in reverse order.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # nums = [1, 2, 3, 4, 5]
+    # print(nums[::-1])
 
-def practice_snippet_82():
-    # Practice implementing: Operators Overview
-    val = 2
-    # TODO: Write code applying Operators Overview
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_49_single_element_tuple():
+    # TODO: Create a tuple named 'single' containing just the number 99.
+    # Hint: Without a comma, Python thinks it's just a number in parentheses!
+    # Print the type of 'single' to verify it is a tuple.
+    pass
 
-def practice_snippet_83():
-    # Practice implementing: Operators Overview
-    val = 3
-    # TODO: Write code applying Operators Overview
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_84():
-    # Practice implementing: Operators Overview
-    val = 4
-    # TODO: Write code applying Operators Overview
+    # single = (99,)
+    # print(type(single))
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_85():
-    # Practice implementing: Operators Overview
-    val = 5
-    # TODO: Write code applying Operators Overview
+def problem_50_set_operations():
+    # TODO: Create two sets: set_a = {1, 2, 3} and set_b = {3, 4, 5}.
+    # TODO: Find the intersection (common items) using the '&' operator and print it.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # set_a = {1, 2, 3}
+    # set_b = {3, 4, 5}
+    # print(set_a & set_b)
 
-def practice_snippet_86():
-    # Practice implementing: Operators Overview
-    val = 6
-    # TODO: Write code applying Operators Overview
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_87():
-    # Practice implementing: Operators Overview
-    val = 7
-    # TODO: Write code applying Operators Overview
+def problem_51_isalnum():
+    # TODO: Check if the string "Python3" contains only letters and numbers using .isalnum()
+    # Print the boolean result.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print("Python3".isalnum())
 
-def practice_snippet_88():
-    # Practice implementing: Operators Overview
-    val = 8
-    # TODO: Write code applying Operators Overview
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_52_not_in_operator():
+    # TODO: Check if the word "error" is NOT IN the string "All systems nominal."
+    # Print the boolean result.
+    pass
 
-def practice_snippet_89():
-    # Practice implementing: Operators Overview
-    val = 9
-    # TODO: Write code applying Operators Overview
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print("error" not in "All systems nominal.")
+
 
-def practice_snippet_90():
-    # Practice implementing: Operators Overview
-    val = 10
-    # TODO: Write code applying Operators Overview
+def problem_53_inequality_operator():
+    # TODO: You have 'a' = 10 and 'b' = 20.
+    # TODO: Use the inequality operator (!=) to check if they are different and print the result.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # a = 10
+    # b = 20
+    # print(a != b)
 
-#----------------------------------------
-# CATEGORY 10: ARITHMETIC & COMPARISON OPERATORS
-#----------------------------------------
 
-def practice_snippet_91():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 1
-    # TODO: Write code applying Arithmetic & Comparison Operators
+def problem_54_floor_div_negative():
+    # TODO: Calculate -10 divided by 3 using floor division (//) and print it.
+    # Note how floor division rounds DOWN to the nearest integer!
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(-10 // 3) # Outputs -4, not -3!
 
-def practice_snippet_92():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 2
-    # TODO: Write code applying Arithmetic & Comparison Operators
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+def problem_55_string_join():
+    # TODO: You have a list of words: words = ["Python", "is", "awesome"]
+    # TODO: Use the .join() method to combine them into a single string separated by spaces. Print it.
+    pass
 
-def practice_snippet_93():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 3
-    # TODO: Write code applying Arithmetic & Comparison Operators
-
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
-
-def practice_snippet_94():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 4
-    # TODO: Write code applying Arithmetic & Comparison Operators
+    # words = ["Python", "is", "awesome"]
+    # print(" ".join(words))
 
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_95():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 5
-    # TODO: Write code applying Arithmetic & Comparison Operators
+def problem_56_string_split():
+    # TODO: You have a CSV string: data = "apple,banana,cherry"
+    # TODO: Use the .split() method to break it into a list of fruits and print the list.
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # data = "apple,banana,cherry"
+    # print(data.split(","))
 
-def practice_snippet_96():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 6
-    # TODO: Write code applying Arithmetic & Comparison Operators
-
-    # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
 
-def practice_snippet_97():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 7
-    # TODO: Write code applying Arithmetic & Comparison Operators
+def problem_57_empty_list_bool():
+    # TODO: Cast an empty list [] to a boolean using bool() and print it.
+    # Empty sequences evaluate to False in Python!
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(bool([])) # Outputs False
 
-def practice_snippet_98():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 8
-    # TODO: Write code applying Arithmetic & Comparison Operators
 
+def problem_58_type_comparison():
+    # TODO: Create a variable 'x' = 50.
+    # TODO: Check if the type of 'x' is exactly equal to 'int' and print the result.
+    pass
+
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # x = 50
+    # print(type(x) == int)
 
-def practice_snippet_99():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 9
-    # TODO: Write code applying Arithmetic & Comparison Operators
 
+def problem_59_multi_variable_same_value():
+    # TODO: Assign the value 0 to variables 'a', 'b', and 'c' in a single line of code.
+    # Print 'a', 'b', and 'c'.
+    pass
+
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # a = b = c = 0
+    # print(a, b, c)
+
 
-def practice_snippet_100():
-    # Practice implementing: Arithmetic & Comparison Operators
-    val = 10
-    # TODO: Write code applying Arithmetic & Comparison Operators
+def problem_60_short_circuit_logic():
+    # TODO: Python stops evaluating 'and' / 'or' as soon as the result is known.
+    # TODO: Print the result of (False and (10 / 0 == 0)). It won't crash!
+    pass
 
     # --- SOLUTION ---
-    # Basic logic: variable assignment and operations
-    result = val * 2
-    print(f'Value is {result}')
-    return result
+    # print(False and (10 / 0 == 0)) # Outputs False without raising ZeroDivisionError
 
+if __name__ == "__main__":
+    print("Welcome to Day 1 Practice Problems!")
+    print("Fill in the code for each function and call them here to test your answers.")
+    # problem_1_basics()

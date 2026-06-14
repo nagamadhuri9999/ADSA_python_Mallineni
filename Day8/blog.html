@@ -3,36 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 8 Blog: Advanced Sorting Algorithms</title>
+    <title>Day 8: Advanced Sorting & Divide and Conquer</title>
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; }
-        h1, h2 { color: #2c3e50; }
-        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
-        .highlight { border-left: 4px solid #3498db; padding-left: 10px; background: #e8f4f8; padding: 10px; margin: 15px 0; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .markdown-body h2 { color: #38bdf8; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background-color: #1e293b; color: #e2e8f0; }
+        .quiz-option { cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #334155; }
+        .quiz-correct { background-color: #166534 !important; border-color: #22c55e !important; }
+        .quiz-wrong { background-color: #991b1b !important; border-color: #ef4444 !important; }
     </style>
 </head>
-<body>
-    <h1>Day 8: Mastering Advanced Sorting Algorithms</h1>
-    <p>Welcome to the summary of <strong>Day 8</strong>! Today, we leveled up our algorithmic skills by diving into the <em>Divide and Conquer</em> paradigm, exploring some of the most efficient sorting algorithms used in computer science: <strong>Merge Sort</strong> and <strong>Quick Sort</strong>.</p>
-    
-    <h2>The Divide and Conquer Paradigm</h2>
-    <div class="highlight">
-        <p>Divide and Conquer is a strategy that breaks a large problem into smaller, manageable subproblems, solves them recursively, and then combines the results.</p>
-    </div>
+<body class="antialiased min-h-screen p-6">
 
-    <h2>Merge Sort vs. Quick Sort</h2>
-    <ul>
-        <li><strong>Merge Sort:</strong> Consistently operates in <code>O(N log N)</code> time. It is a <em>stable</em> sort but requires <code>O(N)</code> auxiliary space because of the merging step. It's the go-to algorithm when stability is required or when sorting linked lists.</li>
-        <li><strong>Quick Sort:</strong> Often the fastest algorithm in practice for sorting arrays in memory. It operates in <code>O(N log N)</code> average time and requires only <code>O(log N)</code> space. However, it is an <em>unstable</em> sort and can degrade to <code>O(N^2)</code> if a poor pivot is chosen.</li>
-    </ul>
+<div class="max-w-4xl mx-auto">
 
-    <h2>Sorting Complexities at a Glance</h2>
-    <p>We spent significant time comparing the time, space, and stability of all five sorting algorithms we've learned so far (Bubble, Selection, Insertion, Merge, Quick). Understanding these trade-offs is crucial for systems design and technical interviews!</p>
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+            Day 8: Divide and Conquer
+        </h1>
+        <p class="text-xl text-slate-400">Breaking the O(n^2) barrier with Merge Sort and Quick Sort.</p>
+    </header>
 
-    <h2>Practice Makes Perfect</h2>
-    <p>We applied our knowledge to solve classic LeetCode problems like <em>Sort Colors</em> (Dutch National Flag problem) and <em>Merge Intervals</em>. Sorting isn't just about organizing data; it's often the crucial first step to optimizing complex search and grouping problems!</p>
+    <!-- Main Notes Section -->
+    <main class="glass-panel rounded-2xl p-8 mb-10 markdown-body shadow-2xl">
+        <h2>1. The Divide and Conquer Paradigm</h2>
+        <p>This is a powerful algorithmic technique where you break a problem into smaller subproblems, solve those subproblems recursively, and then combine the solutions.</p>
 
-    <p>Keep practicing, and see you on Day 9!</p>
+        <h2>2. Visualizing Merge Sort</h2>
+        <p>Merge Sort splits the array in half until it reaches single elements, then merges them back together in sorted order. Time Complexity: <strong>O(n log n)</strong>.</p>
+        
+        <div class="my-6 bg-slate-900 rounded-lg p-4 flex justify-center">
+            <div class="mermaid">
+            graph TD
+                A["[38, 27, 43, 3]"] -->|"Divide"| B["[38, 27]"]
+                A -->|"Divide"| C["[43, 3]"]
+                B --> D["[38]"]
+                B --> E["[27]"]
+                C --> F["[43]"]
+                C --> G["[3]"]
+                
+                D -.->|"Merge"| H["[27, 38]"]
+                E -.->|"Merge"| H
+                F -.->|"Merge"| I["[3, 43]"]
+                G -.->|"Merge"| I
+                
+                H -.->|"Merge"| J["[3, 27, 38, 43]"]
+                I -.->|"Merge"| J
+                
+                style J fill:#1e293b,stroke:#22c55e
+            </div>
+        </div>
+
+        <pre><code class="language-python">
+# The crucial merge step
+def merge(left, right):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+        </code></pre>
+
+        <h2>3. Merge Sort vs Quick Sort</h2>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Best Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Merge Sort</strong></td><td>O(n log n)</td><td>O(n log n)</td><td>O(n)</td></tr>
+                <tr><td><strong>Quick Sort</strong></td><td>O(n log n)</td><td>O(n^2)</td><td>O(log n)</td></tr>
+            </tbody>
+        </table>
+        <p><em>Quick Sort is usually faster in practice because it operates in-place, reducing memory overhead, despite its theoretical worst-case.</em></p>
+    </main>
+
+    <!-- Interactive Quiz Section -->
+    <section class="glass-panel rounded-2xl p-8 mb-10 shadow-2xl">
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">Interactive Quiz</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the worst-case Time Complexity of Quick Sort?",
+            options: ["O(n log n)", "O(n)", "O(n^2)", "O(1)"],
+            correct: 2
+        },
+        {
+            question: "What is the Space Complexity of Merge Sort?",
+            options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+            correct: 1
+        },
+        {
+            question: "In Quick Sort, what is a 'Pivot'?",
+            options: ["The sorted array.", "An element chosen to partition the array.", "The base case of recursion.", "A built-in Python function."],
+            correct: 1
+        }
+    ];
+
+    const quizContainer = document.getElementById('quiz-container');
+
+    quizData.forEach((q, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'mb-8 pb-8 border-b border-slate-700 last:border-0';
+        
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-xl font-semibold mb-4';
+        qTitle.textContent = `${index + 1}. ${q.question}`;
+        qBlock.appendChild(qTitle);
+
+        const optionsGrid = document.createElement('div');
+        optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+        q.options.forEach((opt, optIndex) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option text-left p-4 rounded-lg border border-slate-600 bg-slate-800 font-medium w-full';
+            btn.textContent = opt;
+            btn.onclick = () => {
+                Array.from(optionsGrid.children).forEach(b => b.disabled = true);
+                if (optIndex === q.correct) {
+                    btn.classList.add('quiz-correct');
+                } else {
+                    btn.classList.add('quiz-wrong');
+                    optionsGrid.children[q.correct].classList.add('quiz-correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
+        });
+
+        qBlock.appendChild(optionsGrid);
+        quizContainer.appendChild(qBlock);
+    });
+</script>
+
 </body>
 </html>

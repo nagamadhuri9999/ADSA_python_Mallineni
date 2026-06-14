@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9: Advanced Sorting Mechanics</title>
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .markdown-body h2 { color: #38bdf8; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background-color: #1e293b; color: #e2e8f0; }
+        .quiz-option { cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #334155; }
+        .quiz-correct { background-color: #166534 !important; border-color: #22c55e !important; }
+        .quiz-wrong { background-color: #991b1b !important; border-color: #ef4444 !important; }
+    </style>
+</head>
+<body class="antialiased min-h-screen p-6">
+
+<div class="max-w-4xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+            Day 9: Sorting Mechanics
+        </h1>
+        <p class="text-xl text-slate-400">QuickSelect, Inversions, and Timsort.</p>
+    </header>
+
+    <!-- Main Notes Section -->
+    <main class="glass-panel rounded-2xl p-8 mb-10 markdown-body shadow-2xl">
+        <h2>1. QuickSelect Algorithm</h2>
+        <p>QuickSelect is used to find the K-th smallest or largest element in an unsorted array in <strong>O(n)</strong> average time.</p>
+        <p>Instead of recursively sorting both sides of the pivot like Quick Sort, QuickSelect only recurses into the side that contains the K-th element!</p>
+
+        <pre><code class="language-python">
+def quickselect(arr, k):
+    if len(arr) == 1: return arr[0]
+
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    mid = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+
+    if k <= len(left):
+        return quickselect(left, k)
+    elif k <= len(left) + len(mid):
+        return pivot
+    else:
+        return quickselect(right, k - len(left) - len(mid))
+        </code></pre>
+
+        <h2>2. Counting Inversions</h2>
+        <p>An inversion is a pair `(i, j)` where `i < j` but `arr[i] > arr[j]`. It measures how "unsorted" an array is. We can count them in O(n log n) time by modifying the merge step of Merge Sort.</p>
+        
+        <div class="my-6 bg-slate-900 rounded-lg p-4 flex justify-center">
+            <div class="mermaid">
+            graph LR
+                A["Left: [3, 5]"] --- M((MERGE))
+                B["Right: [1, 4]"] --- M
+                M -->|"1 is smaller than 3! Since 3 and 5 remain in Left, we found 2 inversions: (3,1) and (5,1)"| C["Result: [1...]"]
+            </div>
+        </div>
+
+        <h2>3. Timsort</h2>
+        <p>Timsort is Python's built-in sorting algorithm (`sort()`). It is a highly optimized hybrid of <strong>Merge Sort</strong> and <strong>Insertion Sort</strong>. It achieves O(n) best-case time by identifying existing "runs" (already sorted sub-arrays) in the data.</p>
+    </main>
+
+    <!-- Interactive Quiz Section -->
+    <section class="glass-panel rounded-2xl p-8 mb-10 shadow-2xl">
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">Interactive Quiz</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the average time complexity of QuickSelect?",
+            options: ["O(log n)", "O(n)", "O(n log n)", "O(n^2)"],
+            correct: 1
+        },
+        {
+            question: "Timsort is a hybrid of which two algorithms?",
+            options: ["Quick Sort & Heap Sort", "Merge Sort & Insertion Sort", "Selection Sort & Bubble Sort", "Quick Sort & Bubble Sort"],
+            correct: 1
+        },
+        {
+            question: "What does an 'inversion' in an array measure?",
+            options: ["The number of negative numbers.", "How many times a loop runs.", "How far the array is from being fully sorted.", "The depth of the recursive call stack."],
+            correct: 2
+        }
+    ];
+
+    const quizContainer = document.getElementById('quiz-container');
+
+    quizData.forEach((q, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'mb-8 pb-8 border-b border-slate-700 last:border-0';
+        
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-xl font-semibold mb-4';
+        qTitle.textContent = `${index + 1}. ${q.question}`;
+        qBlock.appendChild(qTitle);
+
+        const optionsGrid = document.createElement('div');
+        optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+        q.options.forEach((opt, optIndex) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option text-left p-4 rounded-lg border border-slate-600 bg-slate-800 font-medium w-full';
+            btn.textContent = opt;
+            btn.onclick = () => {
+                Array.from(optionsGrid.children).forEach(b => b.disabled = true);
+                if (optIndex === q.correct) {
+                    btn.classList.add('quiz-correct');
+                } else {
+                    btn.classList.add('quiz-wrong');
+                    optionsGrid.children[q.correct].classList.add('quiz-correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
+        });
+
+        qBlock.appendChild(optionsGrid);
+        quizContainer.appendChild(qBlock);
+    });
+</script>
+
+</body>
+</html>

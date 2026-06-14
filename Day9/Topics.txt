@@ -1,7 +1,21 @@
-Day 9 Topics:
-- Deep Dive: Divide and Conquer Mechanics
-- Advanced Merge Sort: Counting Inversions
-- Quick Sort: Lomuto vs. Hoare Partition Schemes
-- QuickSelect Algorithm for Kth Smallest/Largest
-- Space and Time Complexity Mathematical Proofs
-- Real-World Sorting: TimSort and Language Implementations
+# Day 9: Advanced Sorting Mechanics & Optimization
+
+## 1. Deep Dive: Divide and Conquer Mechanics
+- The Master Theorem overview (understanding why Merge Sort is O(n log n)).
+- Avoiding recursion limits.
+
+## 2. Advanced Merge Sort: Counting Inversions
+- Using Merge Sort to count "out of order" pairs in O(n log n) time.
+- Applications in recommendation engines and measuring array "sortedness".
+
+## 3. Quick Sort Partition Schemes
+- **Lomuto Partition Scheme:** Easier to implement, often uses the last element as pivot.
+- **Hoare Partition Scheme:** Two pointers moving towards each other, fewer swaps, more efficient in practice.
+
+## 4. QuickSelect Algorithm
+- Finding the Kth smallest/largest element without fully sorting the array.
+- Average Time Complexity: O(n).
+
+## 5. Real-World Sorting: Timsort
+- How Python's `sort()` and `sorted()` work under the hood.
+- Hybrid approach: combining Merge Sort and Insertion Sort.

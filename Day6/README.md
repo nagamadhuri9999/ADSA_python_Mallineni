@@ -1,28 +1,34 @@
-# Day 6: Time and Space Complexity (Big O Notation)
+# Day 6: Searching Algorithms & Big O Notation
 
-Welcome to Day 6! Today's focus is entirely on understanding algorithmic performance independent of hardware. You will learn to classify algorithms using Big O Notation and evaluate code snippets for their Time and Space Complexity.
+Welcome to Day 6! Today we step into the core of computer science: analyzing how efficient our code is using Big O Notation, and applying it to Searching Algorithms.
 
-## 📂 Directory Contents
+## 🎯 Today's Topics
 
-Here is a guide to the files maintained in this folder for Day 6:
-
-### 📖 Teaching Materials & Notes
-*   **[`Day6ClassPlan.txt`](./Day6ClassPlan.txt)** - The complete schedule and session plan for the 6-hour online class.
-*   **[`Day6Notes_BigO.txt`](./Day6Notes_BigO.txt)** - Detailed notes explaining O(1), O(log N), O(N), and O(N^2), as well as Space Complexity. *Recently updated to include Linear Search and algorithm optimizations for Factors and Prime Numbers (reducing O(N) to O(sqrt(N))).*
-*   **[`Day6Examples.py`](./Day6Examples.py)** - Python code examples demonstrating all the Time and Space Complexities covered in the notes, including nested loops dry runs and optimized prime/factor algorithms.
-
-### 📝 Practice & Assessments
-*   **[`Day6_Practice_Problems.py`](./Day6_Practice_Problems.py)** - 100 practice code snippets. Your task is to identify the Time and Space complexity for each.
-*   **[`Day6_Interview_Questions.txt`](./Day6_Interview_Questions.txt)** - 100 high-quality Q&A interview questions covering Big O Notation to prepare you for technical interviews.
-*   **[`Day6_Quiz.md`](./Day6_Quiz.md)** - A short multiple-choice quiz to test your fundamental understanding.
-
-### 💻 LeetCode Integration
-*   **[`Day6_LeetCode_Tasks.md`](./Day6_LeetCode_Tasks.md)** - Descriptions of LeetCode problems (Two Sum, Count Primes, Valid Perfect Square) specifically chosen to test your ability to optimize time and space complexity.
-*   **[`Day6_LeetCode_Tasks.py`](./Day6_LeetCode_Tasks.py)** - Python starter code templates for the LeetCode problems.
-
-### 🌐 Other
-*   **[`blog.html`](./blog.html)** - An HTML blog post/UI rendering of today's concepts.
-*   **[`generate_day6.py`](./generate_day6.py)** - The automation script used to generate these course materials.
+1. **Big O Notation**
+   - Understanding Time Complexity: O(1), O(log n), O(n), O(n^2).
+2. **Linear Search**
+   - Checking elements one by one (O(n)).
+3. **Binary Search**
+   - The "Divide and Conquer" approach for sorted arrays (O(log n)).
 
 ---
-**Goal for today**: Move beyond writing code that "just works" to writing code that is efficient, scalable, and optimized!
+
+## 📚 Learning Materials
+
+- **📝 Notes:** [Day6_Detailed_Notes.md](Day6_Detailed_Notes.md) - Comprehensive, visual notes with Mermaid diagrams and dry runs.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
+
+## 🎓 Practice & Evaluation
+
+- **🛠️ Practice Problems:** [Day6_Practice_Problems.py](Day6_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax.
+- **🧠 Quiz:** [Day6_Quiz.md](Day6_Quiz.md) - A 35-question test on today's concepts.
+- **🏆 Capstone Task:** [Day6_Task.md](Day6_Task.md) - Build "The Phonebook Searcher"!
+- **💻 Leetcode Integration:** [Day6_Leetcode.py](Day6_Leetcode.py) - 3 real Leetcode problems carefully mapped to today's topics (with solutions!).
+- **❓ Interview Prep:** [Day6_Interview_Questions.txt](Day6_Interview_Questions.txt) - Essential interview questions for Day 6.
+
+## 📂 Code Examples
+
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges.
+
+---
+*Happy coding! Keep reviewing the dry runs to master how binary search halves the array step-by-step.*

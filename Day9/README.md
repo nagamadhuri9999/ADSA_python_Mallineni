@@ -1,32 +1,36 @@
-# Day 9: Sorting Algorithms & Visualizer Academy
+# Day 9: Advanced Sorting Mechanics & Optimization
 
-Welcome to Day 9 of the Python Mastery Course! 
+Welcome to Day 9! Today we dig deeper into the mechanics of sorting algorithms, exploring how small tweaks to Quick Sort create powerful new algorithms (like QuickSelect), and looking at how Python actually sorts your data under the hood.
 
-In this module, we take a deep dive into two of the most powerful and commonly used divide-and-conquer sorting algorithms: **Merge Sort** and **Quick Sort**.
+## 🎯 Today's Topics
 
-## 🚀 Interactive Learning: Sorting Visualizer Academy
-
-To truly master the mechanics, recursive calls, and partitioning logic behind these algorithms, we have built a **God-Level Sorting Visualizer Academy**. 
-
-👉 **[Launch Sorting Visualizer Academy](https://sorting-visualizer-academy.vercel.app)**
-
-### Visualizer Features:
-- **Synchronized Code Panel:** Highlights the exact line of Python code currently being executed.
-- **Live Call Stack:** Tracks active parameters (`low`, `high`, `mid`, etc.) and return values as the recursion unfolds.
-- **Interactive Recursion Tree:** Visually builds the branching logic so you can *see* the divide-and-conquer strategy.
-- **Dynamic Array Partitioning:** Color-coded array bars that highlight pointers (`i`, `j`), active arrays, and the Pivot element in real-time.
+1. **QuickSelect Algorithm**
+   - Finding the K-th smallest/largest element in O(n) average time.
+2. **Counting Inversions**
+   - Modifying Merge Sort to measure how "unsorted" an array is.
+3. **Partition Schemes**
+   - Lomuto vs. Hoare partitioning.
+4. **Timsort**
+   - How Python's `sort()` achieves blazing fast O(n) best-case time.
 
 ---
-## Topics Covered Today
 
-### 1. Merge Sort (Out-of-place)
-- Understanding the `mid` calculation.
-- The recursive splitting process (`left` and `right`).
-- The `merge` function logic and index management.
+## 📚 Learning Materials
 
-### 2. Quick Sort (Lomuto Partitioning)
-- How to choose a pivot element.
-- The `partition` function mechanics using `i` and `j` pointers.
-- Recursive left and right sorting around the pivot.
+- **📝 Notes:** [Day9_Detailed_Notes.md](Day9_Detailed_Notes.md) - Comprehensive notes on QuickSelect and Timsort.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
 
-Happy Sorting! 🧠
+## 🎓 Practice & Evaluation
+
+- **🛠️ Practice Problems:** [Day9_Practice_Problems.py](Day9_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax of these advanced algorithms.
+- **🧠 Quiz:** [Day9_Quiz.md](Day9_Quiz.md) - A 35-question test on today's mechanics.
+- **🏆 Capstone Task:** [Day9_Task.md](Day9_Task.md) - Build "The QuickSelector Median Finder"!
+- **💻 Leetcode Integration:** [Day9_Leetcode.py](Day9_Leetcode.py) - 2 real Leetcode problems applying QuickSelect (with solutions!).
+- **❓ Interview Prep:** [Day9_Interview_Questions.txt](Day9_Interview_Questions.txt) - Essential interview questions for Day 9.
+
+## 📂 Code Examples
+
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges.
+
+---
+*Happy coding! QuickSelect is a secret weapon in many coding interviews.*

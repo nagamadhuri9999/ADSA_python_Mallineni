@@ -1,24 +1,32 @@
-day2 Topics:
-- if else
-  - Decision making using conditional statements
-  - Syntax: if, elif, else
-  - Execute different code paths based on boolean conditions
-- nested if else
-  - Chain decisions to handle multiple cases cleanly
-  - Example: score grading with if, elif, else
-- loops
-  - Repeat actions multiple times using for and while
-  - Use for loops when repeat count is known
-  - Use while loops when termination depends on a condition
-- for loop
-  - Iterate over ranges, sequences, or strings
-  - Common for patterns, multiplication tables, and list traversal
-- while loop
-  - Continue until a condition becomes false
-  - Useful for countdowns, input validation, and unknown repeat counts
-- nested loops
-  - Put one loop inside another for multi-dimensional work
-  - Good for patterns, tables, and grid-based logic
-- star pattern
-  - Use loops and string repetition to draw shapes
-  - Great practice for nested loops and output formatting
+# Day 2: Control Flow (Conditionals & Loops)
+
+1. Conditional Statements (if, elif, else)
+   - Decision making based on boolean conditions.
+   - Syntax and indentation rules for `if`, `elif`, and `else`.
+
+2. Nested Conditionals
+   - Chaining and embedding decisions to handle complex scenarios.
+   - Example: Grading systems.
+
+3. Introduction to Loops
+   - Understanding iteration and why we use loops (DRY principle).
+   - Differences between `for` and `while` loops.
+
+4. The `for` Loop
+   - Iterating over ranges, sequences (lists), and strings.
+   - Using the `range()` function.
+
+5. The `while` Loop
+   - Executing blocks of code as long as a condition is true.
+   - Managing state and avoiding infinite loops.
+
+6. Nested Loops
+   - Putting loops inside loops for multi-dimensional operations.
+   - Ideal for grids, matrices, and pattern printing.
+
+7. Loop Control Statements
+   - `break`: Exiting a loop early.
+   - `continue`: Skipping the current iteration.
+
+8. Practical Exercise: Star Patterns
+   - Using nested loops and string repetition to draw visual shapes in the console.

@@ -1,33 +1,36 @@
-# Day 4: String Methods, Anagrams, and Advanced Recursion
+# Day 4: String Methods, Anagrams, and Recursion
 
-This folder contains the Day 4 course materials for Python, focusing on built-in string methods, solving string-based algorithms like anagrams, and understanding the Call Stack via recursion dry runs and mind mapping.
+Welcome to Day 4! Today we supercharge our string manipulation skills, solve classic interview problems like Anagrams, and dive deeper into the mind-bending world of Recursion.
 
-## 🔗 Important Class Links
-- **Whiteboard (tldraw)**: [Link to whiteboard here]
-- **Feedback Form**: [Submit Feedback here]
+## 🎯 Today's Topics
 
-## Contents
+1. **Essential String Methods**
+   - Transforming case, stripping whitespace, splitting, replacing, and joining.
+2. **Solving Anagrams**
+   - Approach 1: Sorting.
+   - Approach 2: Frequency Counting (Hash Maps).
+3. **Deep Dive: Recursion**
+   - Visualizing the Call Stack.
+   - Understanding overlapping subproblems (e.g., Fibonacci).
 
-- `Topics.txt` - The list of Day 4 topics covered in class.
-- `Day4Notes_Strings_Recursion.txt` - Detailed Day 4 notes with theory on string methods, anagrams, and the call stack.
-- `Day4ClassPlan.txt` - The class structure and lesson plan for the Day 4 session.
-- `Day4Examples.py` - Example Python code demonstrating string manipulation, anagram checks, and recursion tracing.
-- `Day4_Practice_Problems.py` - 50 basic practice problems and solutions for string methods and recursion.
-- `Day4_Interview_Questions.txt` - 50 interview-style questions and answers for Day 4 topics.
-- `Day4_Quiz.md` - A quick quiz on Day 4 topics with answers.
+---
 
-## What you will learn
+## 📚 Learning Materials
 
-- How to use Python's built-in string methods (`strip()`, `split()`, `join()`, `replace()`, etc.).
-- The concept of Anagrams and how to solve them using Sorting (O(N log N)) and Frequency Counting (O(N)).
-- How the Call Stack works in memory during function calls.
-- How to perform a dry run of a recursive function.
-- How to draw a recursion tree (mind map) and identify overlapping subproblems.
+- **📝 Notes:** [Day4_Detailed_Notes.md](Day4_Detailed_Notes.md) - Comprehensive, visual notes with Mermaid diagrams and dry runs.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
 
-## How to use these files
+## 🎓 Practice & Evaluation
 
-1. Read `Day4Notes_Strings_Recursion.txt` to grasp the underlying theory and logic.
-2. Open `Day4Examples.py` and run the scripts to see the methods and recursion traces in action.
-3. Test your coding skills by working through `Day4_Practice_Problems.py`.
-4. Review `Day4_Interview_Questions.txt` to prepare for technical interviews.
-5. Take the `Day4_Quiz.md` to quickly check your understanding.
+- **🛠️ Practice Problems:** [Day4_Practice_Problems.py](Day4_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax.
+- **🧠 Quiz:** [Day4_Quiz.md](Day4_Quiz.md) - A 35-question test on today's concepts.
+- **🏆 Capstone Task:** [Day4_Task.md](Day4_Task.md) - Build an "Anagram Detective" grouping program!
+- **💻 Leetcode Integration:** [Day4_Leetcode.py](Day4_Leetcode.py) - 3 real Leetcode problems carefully mapped to today's topics (with solutions!).
+- **❓ Interview Prep:** [Day4_Interview_Questions.txt](Day4_Interview_Questions.txt) - Essential interview questions for Day 4.
+
+## 📂 Code Examples
+
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges.
+
+---
+*Happy coding! Keep reviewing the dry runs to master how Python executes recursion step-by-step.*

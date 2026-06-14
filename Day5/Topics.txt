@@ -1,19 +1,17 @@
-Day 5 Topics:
-- String Basics
-  - String slicing
-  - String indexing and its types (positive and negative)
-  - String operations
-- List Basics
-  - List slicing (all possible cases)
-  - List indexing
-  - List operations
-- List Methods
-  - Common list methods
-- Problem Solving and Dry Runs
-  - Reading different types of inputs
-  - Summing all numbers in a list
-  - Product of all numbers
-  - Calculating frequency count of values
-  - Calculating the sum of squares
-  - Printing squares
-  - Printing all combination pairs in a given list input
+# Day 5: List Methods and Algorithmic Problem Solving
+
+## 1. Advanced List Operations
+- Revisiting Indexing and Slicing (Positive, Negative, Steps)
+- List Methods deep dive (`.append()`, `.extend()`, `.insert()`, `.remove()`, `.pop()`, `.clear()`)
+- Finding and Counting (`.index()`, `.count()`)
+- Reordering (`.sort()`, `.reverse()`)
+
+## 2. Input Processing and Transformation
+- Reading space-separated inputs (`input().split()`)
+- Mapping string inputs to integers (`list(map(int, ...))`)
+
+## 3. Foundational Algorithms
+- Iterating to find Sum and Product
+- Frequency Counting (using Dictionaries)
+- Calculating Sum of Squares
+- Printing all Combination Pairs (Nested Loops)

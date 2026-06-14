@@ -1,41 +1,42 @@
 # Day 2: Python Control Flow and Loops
 
-This folder contains the Day 2 course materials for Python control flow, including conditional statements, loops, nested logic, and star pattern practice.
+Welcome to Day 2 of the Python Mastery Course! Today we give our code a "brain", allowing it to make decisions and repeat actions dynamically.
 
-## 🔗 Important Class Links
-- **Whiteboard (tldraw)**: [Day 2 Whiteboard](https://www.tldraw.com/f/RLJSfC57iulPX21Lupccl?d=v571.7977.1122.668.page)
-- **Feedback Form**: [Submit Feedback](https://forms.gle/FcysJrduSY2qK25U6)
+## 🎯 Today's Topics
 
-## Contents
+1. **Conditional Statements (`if`, `elif`, `else`)**
+   - Execute different code paths based on boolean conditions.
+2. **Nested Conditionals**
+   - Chain decisions to handle multiple complex cases cleanly.
+3. **Introduction to Loops**
+   - Understand the DRY principle and iteration.
+4. **The `for` Loop**
+   - Iterate over ranges and sequences.
+5. **The `while` Loop**
+   - Repeat code while a condition is true.
+6. **Nested Loops & Star Patterns**
+   - Use multi-dimensional loops to draw patterns in the console.
+7. **Loop Control Statements**
+   - Master `break` and `continue`.
 
-- `Topics.txt` - The list of Day 2 topics covered in class.
-- `Day2Notes_Conditional_Loops.txt` - Detailed Day 2 notes with examples and practice ideas.
-- `Day2ClassPlan.txt` - The class structure and lesson plan for the Day 2 session.
-- `Day2Examples.py` - Example Python code demonstrating conditionals, loops, nested logic, and patterns.
-- `Day2_StarPatterns.py` - Star pattern examples with common shapes and loop logic.
-- `Day2_Interview_Questions.txt` - 100 interview-style questions and answers for Day 2 topics.
+---
 
-## What you will learn
+## 📚 Learning Materials
 
-- How to use `if`, `elif`, and `else` statements for decision-making.
-- How to create nested conditional logic.
-- How to write `for` loops and `while` loops.
-- How and when to use nested loops.
-- How to build star patterns using loops and string repetition.
-- How to debug logic with dry-run techniques.
+- **📝 Notes:** [Day2_Detailed_Notes.md](Day2_Detailed_Notes.md) - Comprehensive, visual notes with Mermaid diagrams and dry runs.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
 
-## How to use these files
+## 🎓 Practice & Evaluation
 
-1. Read `Day2Notes_Conditional_Loops.txt` to understand the theory and examples.
-2. Open `Day2Examples.py` and run the code to see how conditionals and loops work.
-3. Use `Day2_StarPatterns.py` to explore star pattern examples and adapt them to create new patterns.
-4. Review `Day2_Interview_Questions.txt` to prepare for interview-style questions on Day 2 concepts.
-5. Use `Day2ClassPlan.txt` to follow a structured lesson order if you are teaching or revising the topic.
+- **🛠️ Practice Problems:** [Day2_Practice_Problems.py](Day2_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax.
+- **🧠 Quiz:** [Day2_Quiz.md](Day2_Quiz.md) - A 35-question test on today's concepts.
+- **🏆 Capstone Task:** [Day2_Task.md](Day2_Task.md) - Build a complete "Number Guessing Game"!
+- **💻 Leetcode Integration:** [Day2_Leetcode.py](Day2_Leetcode.py) - 3 real Leetcode problems carefully mapped to today's topics (with solutions!).
+- **❓ Interview Prep:** [Day2_Interview_Questions.txt](Day2_Interview_Questions.txt) - Essential interview questions for Day 2.
 
-## Practice challenges
+## 📂 Code Examples
 
-- Write a program to print numbers from 10 to 1 using a while loop.
-- Print each character of a name on a separate line using a for loop.
-- Build a multiplication table using nested loops.
-- Create a diamond star pattern using nested loops.
-- Solve FizzBuzz for numbers 1–30.
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges.
+
+---
+*Happy coding! Keep reviewing the dry runs to master how Python executes loop logic step-by-step.*

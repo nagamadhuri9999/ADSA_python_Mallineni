@@ -1,42 +1,42 @@
-# Day 5 Tasks: Data Analyzer & Two Sum
+# Day 5 Capstone Task: The Data Analyst
 
-## Task 1: The Data Analyzer
+## Objective
+Build a program that takes raw string input from a user, converts it into a list of numbers, and then performs two analytical operations: Frequency Counting and Pair Generation. This will test your knowledge of input parsing, dictionary manipulation, and nested loops.
 
-### Objective
-Combine your knowledge of lists, iteration, built-in methods, and frequency counting to build a miniature data analysis script.
+## Requirements
 
-### Instructions
-1. **Data Ingestion**: Prompt the user for a space-separated list of numbers and convert it to a list of integers.
-2. **Basic Analytics**: Calculate and print the **Sum**, **Product**, and **Average**.
-3. **Advanced Insights**: Use a dictionary to count how many times each number appears in the list (Frequency Count) and print the results.
-4. **Pair Generation**: Write a nested loop that generates all unique *pairs* of numbers from the list.
+1. **Input Processing:**
+   - Prompt the user to enter a list of space-separated numbers (e.g., `"1 2 2 3"`).
+   - Read this string, split it, and convert it into a list of integers.
 
----
+2. **Frequency Analysis:**
+   - Create a function `count_frequencies(nums)` that takes the integer list and returns a dictionary showing how many times each number appears.
+   - Use the `.get()` method to handle missing keys gracefully.
+   - Print the resulting dictionary.
 
-## Task 2: Two Sum (LeetCode Classic)
+3. **Combination Pairs:**
+   - Create a function `print_unique_pairs(nums)` that prints every unique pair of numbers in the list.
+   - Use nested loops. The inner loop must start at `i + 1` to prevent duplicate pairs (e.g., (1, 2) and (2, 1)) and self-pairing (e.g., (1, 1)).
 
-### Objective
-Apply nested loops and dictionaries to solve one of the most famous algorithmic interview questions.
+4. **Integration:**
+   - Combine these steps into a single script that runs sequentially.
 
-### Instructions
-Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
-- You may assume that each input would have exactly one solution.
-- You may not use the same element twice.
-- You can return the answer in any order.
-
-**Example 1:**
+## Example Output
 ```text
-Input: nums = [2, 7, 11, 15], target = 9
-Output: [0, 1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+Enter space-separated numbers: 1 2 2 3
+
+--- Frequency Analysis ---
+Number 1 appears 1 time(s)
+Number 2 appears 2 time(s)
+Number 3 appears 1 time(s)
+
+--- Unique Pairs ---
+(1, 2)
+(1, 2)
+(1, 3)
+(2, 2)
+(2, 3)
+(2, 3)
 ```
 
-**Example 2:**
-```text
-Input: nums = [3, 2, 4], target = 6
-Output: [1, 2]
-```
-
-**Challenge:** 
-1. Solve it using a nested loop (Brute Force - O(N^2)).
-2. **Bonus:** Solve it using a frequency/hash map in a single pass (O(N)).
+Good luck!

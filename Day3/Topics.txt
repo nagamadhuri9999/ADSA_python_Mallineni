@@ -1,31 +1,27 @@
-Day 3 Topics:
-- Loop Control Statements
-  - break
-  - continue
-  - pass
-- Error Handling
-  - IndexError
-- String Operations
-  - string indexing
-  - string slicing
-  - negative indexing
-  - negative slicing
-  - string concatenation
-  - string repetition
-- List Operations
-  - list indexing
-  - list slicing
-  - negative indexing
-  - negative slicing
-  - list concatenation
-- Functions
-  - syntax
-  - args and parameters
-  - positional arguments
-  - default arguments
-  - *args
-  - **kwargs
-- Variable Scope
-  - local and global scope
-- Recursion
-  - base cases and recursive steps
+# Day 3: Strings, Lists, and Functions
+
+## 1. Sequence Operations (Strings & Lists)
+- Indexing (Positive & Negative)
+- Slicing (`start:stop:step`)
+- Negative Slicing
+- Sequence Concatenation & Repetition
+- Common Sequence Methods
+- Exception: `IndexError`
+
+## 2. Functions Deep Dive
+- Definition & Syntax (`def`)
+- Parameters vs. Arguments
+- Positional & Keyword Arguments
+- Default Arguments
+- Arbitrary Arguments (`*args` and `**kwargs`)
+
+## 3. Variable Scope
+- Local Scope
+- Global Scope
+- The `global` keyword
+
+## 4. Recursion
+- Concept of a function calling itself
+- Base Cases (Stopping condition)
+- Recursive Steps
+- Call Stack visualization

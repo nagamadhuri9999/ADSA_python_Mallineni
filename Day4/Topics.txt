@@ -1,13 +1,18 @@
-Day 4 Topics:
-- String Methods and Problems
-  - Common string methods (lower, upper, split, join, replace, strip, find, count)
-  - String manipulation problems
-- Anagrams
-  - What is an anagram?
-  - Techniques to solve anagram problems (sorting, frequency counting)
-- Recursion in More Detail
-  - Review of base cases and recursive steps
-  - Call stack visualization
-- Recursion Dry Run and Mind Mapping
-  - How to trace a recursive function step by step
-  - Mind mapping a recursion tree (e.g., for Fibonacci)
+# Day 4: String Methods, Anagrams, and Recursion
+
+## 1. String Methods
+- Case transformation (`.lower()`, `.upper()`)
+- Splitting and Joining (`.split()`, `"".join()`)
+- Whitespace stripping (`.strip()`)
+- Search and Replace (`.find()`, `.count()`, `.replace()`)
+
+## 2. Algorithmic Problem Solving: Anagrams
+- What is an anagram?
+- Approach 1: Sorting (`sorted(s)`)
+- Approach 2: Frequency Counting (Hash Maps / Dictionaries)
+
+## 3. Advanced Recursion
+- Review: Base Cases and Recursive Steps
+- The Call Stack visualised
+- Mind Mapping the Recursion Tree
+- Classic Recursion Problems (Fibonacci, Factorial)

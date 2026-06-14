@@ -1,5 +1,20 @@
-Searching Algorithms
+# Day 6: Searching Algorithms and Big O Notation
 
-Linear Search and Binary search and its practice problems
+## 1. Introduction to Algorithmic Complexity (Big O)
+- What is Big O Notation?
+- Time Complexity vs Space Complexity
+- Common Time Complexities: O(1), O(log n), O(n), O(n^2)
 
-revise string methods and problemes solving and list methods
+## 2. Linear Search
+- Concept and implementation
+- Time complexity analysis (O(n))
+- Best case vs Worst case
+
+## 3. Binary Search
+- Concept: Divide and Conquer
+- Pre-requisite: The array MUST be sorted
+- Implementation using pointers (`left`, `right`, `mid`)
+- Time complexity analysis (O(log n))
+
+## 4. Review
+- Combining search algorithms with String and List methods.

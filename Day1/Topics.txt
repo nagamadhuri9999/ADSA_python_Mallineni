@@ -1,14 +1,48 @@
-What is Python?
-- Interview question: How would you explain Python to someone who has never programmed before?
-Why choose Python?
-- Interview question: Why is Python a popular choice for beginners and for data analysis?
-What are common uses of Python?
-- Interview question: Can you name three real-world applications where Python is commonly used?
-What is Python syntax?
-- Interview question: What are the basic syntax rules you must follow when writing Python code?
-What are variables in Python?
-- Interview question: How do you declare variables in Python, and how are they different from variables in other languages?
-What are data types in Python?
-- Interview question: What built-in data types does Python provide, and when would you use each?
-What are operators in Python?
-- Interview question: What categories of operators exist in Python, and give examples of each.
+1. What is Python?
+   - Definition and history (High-level, interpreted, created by Guido van Rossum)
+   - Real-world use cases (e.g., Instagram/Django)
+   - Key features: Interpreted, High-level, Readable (Indentation vs curly braces)
+   - Interview question: How would you explain Python to someone who has never programmed before?
+
+2. Why choose Python?
+   - Beginner-friendly (simple syntax)
+   - Versatile (Web, Data, AI, Automation)
+   - Huge ecosystem and libraries (Pandas, TensorFlow)
+   - Interview question: Why is Python a popular choice for beginners and for data analysis?
+
+3. What are common uses of Python?
+   - Web development, Data Analysis, AI/ML, Automation
+   - Real-world example: Automating Excel spreadsheets
+   - Interview question: Can you name three real-world applications where Python is commonly used?
+
+4. Basic Python Syntax
+   - Statements and code structure
+   - Indentation rules (4 spaces for code blocks)
+   - Comments (Single line using #)
+   - Interview question: What are the basic syntax rules you must follow when writing Python code?
+
+5. Variables in Python
+   - What is a variable? (Named memory container)
+   - Assignment operator (=)
+   - Naming conventions and rules (snake_case, reserved keywords)
+   - Dynamic typing (no need to declare type beforehand)
+   - Interview question: How do you declare variables in Python, and how are they different from variables in other languages?
+
+6. Data Types in Python
+   - Numeric Types: int (whole numbers), float (decimals)
+   - String Type: str (text enclosed in quotes)
+   - Boolean Type: bool (True/False)
+   - Collection Types: list (mutable sequence), tuple (immutable sequence), dict (key-value), set (unique items)
+   - Type checking and conversion: type(), int(), float()
+   - Interview question: What built-in data types does Python provide, and when would you use each?
+
+7. Operators in Python
+   - Arithmetic Operators: +, -, *, /, // (floor division), % (modulo)
+   - Comparison Operators: ==, !=, >, <, >=, <=
+   - Logical Operators: and, or, not
+   - Membership Operators: in, not in
+   - Interview question: What categories of operators exist in Python, and give examples of each.
+
+8. Practical Mini Project (Sales Analysis)
+   - Combining variables, data types, and operators
+   - Calculating totals, averages, and boolean goals

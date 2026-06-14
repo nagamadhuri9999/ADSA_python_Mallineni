@@ -3,75 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 6: Big O Notation | Python Course</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Day 6: Big O & Searching Algorithms</title>
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .markdown-body h2 { color: #38bdf8; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background-color: #1e293b; color: #e2e8f0; }
+        .quiz-option { cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #334155; }
+        .quiz-correct { background-color: #166534 !important; border-color: #22c55e !important; }
+        .quiz-wrong { background-color: #991b1b !important; border-color: #ef4444 !important; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="day-badge">Day 6</div>
-            <h1>Time & Space Complexity</h1>
-            <p class="subtitle">Master Big O Notation: the universal language of algorithm performance.</p>
-        </header>
+<body class="antialiased min-h-screen p-6">
 
-        <section class="glass-card">
-            <h2>Today's Topics</h2>
-            <ul>
-                <li>What is Big O Notation?</li>
-                <li>O(1) Constant Time</li>
-                <li>O(N) Linear Time</li>
-                <li>O(N^2) Quadratic Time</li>
-                <li>O(log N) Logarithmic Time</li>
-                <li>Space Complexity (Memory vs Time)</li>
-                <li>Dropping Constants and Non-Dominant Terms</li>
-            </ul>
-        </section>
+<div class="max-w-4xl mx-auto">
 
-        <section class="glass-card">
-            <h2>Key Concepts</h2>
-            
-            <h3>1. The Bottleneck Rules</h3>
-            <p>Big O only cares about the worst-case scenario and massive datasets.</p>
-            <ul>
-                <li><strong>O(2N) becomes O(N):</strong> Constants are ignored.</li>
-                <li><strong>O(N^2 + N) becomes O(N^2):</strong> Smaller, non-dominant terms are dropped.</li>
-            </ul>
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+            Day 6: Big O & Searching
+        </h1>
+        <p class="text-xl text-slate-400">Mastering Algorithmic Complexity.</p>
+    </header>
 
-            <h3>2. Visualizing Complexities</h3>
-            <pre><code># O(1) Constant
-def get_first(arr):
-    return arr[0]
+    <!-- Main Notes Section -->
+    <main class="glass-panel rounded-2xl p-8 mb-10 markdown-body shadow-2xl">
+        <h2>1. Big O Notation</h2>
+        <p>Big O describes the worst-case scenario: how the runtime grows as the input data gets massive.</p>
+        <ul>
+            <li><strong>O(1)</strong>: Constant Time (Instant lookup)</li>
+            <li><strong>O(log n)</strong>: Logarithmic Time (Binary Search)</li>
+            <li><strong>O(n)</strong>: Linear Time (Loops)</li>
+            <li><strong>O(n^2)</strong>: Quadratic Time (Nested Loops)</li>
+        </ul>
 
-# O(N) Linear
-def print_all(arr):
-    for a in arr: print(a)
+        <h2>2. Binary Search Dry Run</h2>
+        <p>Binary Search works by repeatedly halving the search space. <strong>The array must be sorted!</strong></p>
+        
+        <pre><code class="language-python">
+# Searching for 23
+arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+        </code></pre>
 
-# O(N^2) Quadratic
-def nested_loop(arr):
-    for i in arr:
-        for j in arr:
-            print(i, j)</code></pre>
-        </section>
+        <table class="table-auto mt-4">
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th><code>left</code></th>
+                    <th><code>right</code></th>
+                    <th><code>mid</code></th>
+                    <th><code>arr[mid]</code></th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>1</strong></td><td>0</td><td>9</td><td>4</td><td><code>16</code></td><td>16 < 23, discard left (left = mid + 1)</td></tr>
+                <tr><td><strong>2</strong></td><td>5</td><td>9</td><td>7</td><td><code>56</code></td><td>56 > 23, discard right (right = mid - 1)</td></tr>
+                <tr><td><strong>3</strong></td><td>5</td><td>6</td><td>5</td><td><code>23</code></td><td>Found! Return 5.</td></tr>
+            </tbody>
+        </table>
 
-        <section class="glass-card">
-            <h2>Resources & Practice</h2>
-            <p>Ready to test your Big O analytical skills? Jump into the practice sets!</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="Day6Examples.py" class="btn btn-primary">View Examples</a>
-                <a href="Day6_Quiz.md" class="btn">Take the Quiz</a>
-                <a href="Day6_Interview_Questions.txt" class="btn">100 Big O Q&A</a>
-                <a href="Day6_Practice_Problems.py" class="btn">100 Code Snippets</a>
+        <div class="my-6 bg-slate-900 rounded-lg p-4 flex justify-center">
+            <div class="mermaid">
+            graph TD
+                A["[2...16...91]"] -->|"mid=16 < 23"| B["Discard Left"]
+                A --> C["[23...56...91]"]
+                C -->|"mid=56 > 23"| D["Discard Right"]
+                C --> E["[23, 38]"]
+                E -->|"mid=23 == 23"| F((Found!))
             </div>
-        </section>
+        </div>
 
-        <nav>
-            <a href="../Day5/blog.html" class="btn">← Back to Day 5</a>
-            <a href="../Day7/blog.html" class="btn">Forward to Day 7 →</a>
-        </nav>
+    </main>
 
-        <footer>
-            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
-        </footer>
-    </div>
+    <!-- Interactive Quiz Section -->
+    <section class="glass-panel rounded-2xl p-8 mb-10 shadow-2xl">
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">Interactive Quiz</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the prerequisite for Binary Search?",
+            options: ["The array must be completely random.", "The array must contain only integers.", "The array must be sorted.", "The array must have an even length."],
+            correct: 2
+        },
+        {
+            question: "In Binary Search, if arr[mid] < target, what should happen next?",
+            options: ["right = mid - 1", "left = mid + 1", "left = mid - 1", "right = mid + 1"],
+            correct: 1
+        },
+        {
+            question: "What is the time complexity of Binary Search?",
+            options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+            correct: 2
+        }
+    ];
+
+    const quizContainer = document.getElementById('quiz-container');
+
+    quizData.forEach((q, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'mb-8 pb-8 border-b border-slate-700 last:border-0';
+        
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-xl font-semibold mb-4';
+        qTitle.textContent = `${index + 1}. ${q.question}`;
+        qBlock.appendChild(qTitle);
+
+        const optionsGrid = document.createElement('div');
+        optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+        q.options.forEach((opt, optIndex) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option text-left p-4 rounded-lg border border-slate-600 bg-slate-800 font-medium w-full';
+            btn.textContent = opt;
+            btn.onclick = () => {
+                Array.from(optionsGrid.children).forEach(b => b.disabled = true);
+                if (optIndex === q.correct) {
+                    btn.classList.add('quiz-correct');
+                } else {
+                    btn.classList.add('quiz-wrong');
+                    optionsGrid.children[q.correct].classList.add('quiz-correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
+        });
+
+        qBlock.appendChild(optionsGrid);
+        quizContainer.appendChild(qBlock);
+    });
+</script>
+
 </body>
 </html>

@@ -1,35 +1,37 @@
-#visualization Link: https://sorting-visualizer-wine-theta.vercel.app/
-# Day 8: Advanced Sorting Algorithms
+# Day 8: Advanced Sorting & Divide and Conquer
 
-Welcome to Day 8! Today we level up our algorithmic skills by diving into the Divide and Conquer paradigm, focusing on Merge Sort and Quick Sort, and comprehensively comparing all sorting algorithms learned so far.
+Welcome to Day 8! Yesterday we looked at simple O(n^2) algorithms. Today, we break the quadratic time barrier using the **Divide and Conquer** paradigm to achieve blazing fast O(n log n) sorting speeds.
 
-## What's Included:
-- **Topics.txt**: High-level overview of concepts.
-- **Day8ClassPlan.txt**: Structure for the 6-hour class.
-- **Day8Notes_Advanced_Sorting.txt**: Detailed theory on Merge Sort, Quick Sort, and complexity comparisons.
-- **Day8Examples.py**: Clean implementations of Merge Sort and Quick Sort.
-- **Day8_Practice_Problems.py**: Practice problems including popular LeetCode sorting challenges.
-- **Day8_Test_Driven_Practice.py**: Unit tests for advanced sorting practice.
-- **Day8_Interview_Questions.txt**: 15 conceptual and technical interview questions.
-- **Day8_Quiz.md**: Multiple-choice assessment.
-- **blog.html**: Daily summary for the student blog.
+## 🎯 Today's Topics
 
-## Day 8 Tasks: Implementation and Comparison
+1. **The Divide and Conquer Paradigm**
+   - Breaking problems into subproblems.
+   - Using recursion to solve smaller pieces.
+2. **Merge Sort**
+   - Splitting arrays and merging them in sorted order.
+   - Guaranteed O(n log n) time, but uses O(n) space.
+3. **Quick Sort**
+   - Partitioning around a Pivot element.
+   - O(n log n) average time, O(1) auxiliary space (excluding call stack).
 
-### Task 1: Sort Colors (Dutch National Flag)
-#### Objective
-Implement an in-place sort for an array containing only 0s, 1s, and 2s in `O(N)` time.
+---
 
-#### Instructions
-1. Open `Day8_Practice_Problems.py`.
-2. Review the `sort_colors` function.
-3. Understand how the 3-pointer approach works without calling the built-in `.sort()`.
+## 📚 Learning Materials
 
-### Task 2: Merge Intervals
-#### Objective
-Given an array of overlapping intervals, merge them into a consolidated list.
+- **📝 Notes:** [Day8_Detailed_Notes.md](Day8_Detailed_Notes.md) - Comprehensive, visual notes with Mermaid diagrams and dry runs.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
 
-#### Instructions
-1. Open `Day8_Practice_Problems.py`.
-2. Review the `merge_intervals` function.
-3. Notice why sorting the intervals by their start time is the necessary first step.
+## 🎓 Practice & Evaluation
+
+- **🛠️ Practice Problems:** [Day8_Practice_Problems.py](Day8_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax of recursive algorithms.
+- **🧠 Quiz:** [Day8_Quiz.md](Day8_Quiz.md) - A 35-question test on today's advanced concepts.
+- **🏆 Capstone Task:** [Day8_Task.md](Day8_Task.md) - Build "The E-commerce Sorter" using Merge Sort!
+- **💻 Leetcode Integration:** [Day8_Leetcode.py](Day8_Leetcode.py) - 2 real Leetcode problems carefully mapped to today's topics (with solutions!).
+- **❓ Interview Prep:** [Day8_Interview_Questions.txt](Day8_Interview_Questions.txt) - Essential interview questions for Day 8.
+
+## 📂 Code Examples
+
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges. Note: `sorting-visualizer/` is also available for deeper exploration!
+
+---
+*Happy coding! Understanding Recursion is the key to unlocking these advanced algorithms.*

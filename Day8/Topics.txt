@@ -1,9 +1,25 @@
-Day 8 Topics:
-- Advanced Sorting Algorithms Overview
-- Introduction to Recursion (Base Case, Recursive Case, Call Stack)
-- Recursion vs Iteration
-- The Divide and Conquer Paradigm
-- Merge Sort (Algorithm, Implementation, Complexity)
-- Quick Sort (Algorithm, Partitioning, Implementation, Complexity)
-- Comprehensive Sorting Complexity Comparison (Time & Space)
-- Stable vs. Unstable Sorting Methods
+# Day 8: Advanced Sorting & Divide and Conquer
+
+## 1. Recursion Review
+- Base Case vs Recursive Case.
+- Call Stack deep dive.
+
+## 2. The Divide and Conquer Paradigm
+- Break the problem into smaller subproblems.
+- Solve subproblems recursively.
+- Combine solutions.
+
+## 3. Merge Sort
+- Concept: Split array in halves, sort, and merge.
+- Implementation of the `merge()` helper.
+- Time Complexity (O(n log n)) and Space Complexity (O(n)).
+
+## 4. Quick Sort
+- Concept: Pick a pivot, partition the array, and sort recursively.
+- Implementation of the `partition()` helper.
+- Time Complexity (Best/Avg: O(n log n), Worst: O(n^2)).
+- Space Complexity (O(log n) for call stack).
+
+## 5. Sorting Complexity Comparison
+- Stable vs. Unstable sorts.
+- Choosing the right algorithm for the right dataset.

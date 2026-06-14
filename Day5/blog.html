@@ -3,106 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 5: Advanced Lists & Problem Solving | Python Course</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Day 5: List Methods & Algorithms</title>
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .markdown-body h2 { color: #38bdf8; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background-color: #1e293b; color: #e2e8f0; }
+        .quiz-option { cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #334155; }
+        .quiz-correct { background-color: #166534 !important; border-color: #22c55e !important; }
+        .quiz-wrong { background-color: #991b1b !important; border-color: #ef4444 !important; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="day-badge">Day 5</div>
-            <h1>Lists, Inputs & Algorithms</h1>
-            <p class="subtitle">Master advanced list methods, efficient input reading, and classic problem-solving patterns.</p>
-        </header>
+<body class="antialiased min-h-screen p-6">
 
-        <section class="glass-card">
-            <h2>Today's Topics</h2>
-            <ul>
-                <li>String and List Slicing Review</li>
-                <li>Comprehensive List Methods</li>
-                <li>Reading Competitive Programming Inputs</li>
-                <li>Iteration Problem Solving (Sums & Products)</li>
-                <li>Frequency Counting & Nested Loops for Pairs</li>
-            </ul>
-        </section>
+<div class="max-w-4xl mx-auto">
 
-        <section class="glass-card">
-            <h2>Key Concepts</h2>
-            
-            <h3>1. List Methods Deep Dive</h3>
-            <p>Python lists come with powerful built-in methods. Understanding which methods modify the list in-place versus which return a new object is crucial.</p>
-            <pre><code>nums = [10, 20, 30]
-nums.append(40)      # [10, 20, 30, 40]
-nums.insert(1, 15)   # [10, 15, 20, 30, 40]
-nums.extend([50, 60]) # Adds multiple elements
-nums.pop()           # Removes and returns last element</code></pre>
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+            Day 5: List Methods & Algorithms
+        </h1>
+        <p class="text-xl text-slate-400">Mastering Python's most versatile data structure.</p>
+    </header>
 
-            <h3>2. Efficient Input Reading</h3>
-            <p>For data analysis or competitive programming, reading inputs cleanly is a standard pattern.</p>
-            <pre><code># Read a space-separated list of numbers
-# Input: 1 2 3 4 5
-nums = list(map(int, input().split()))</code></pre>
-            
-            <h3>3. Frequency Counting</h3>
-            <p>Using dictionaries to count occurrences of elements in a list is a highly efficient O(N) operation.</p>
-            <pre><code>freq = {}
-for num in nums:
-    freq[num] = freq.get(num, 0) + 1</code></pre>
-        </section>
-
-        <section class="glass-card">
-            <h2>Detailed Quiz (5 MCQs)</h2>
-            <p>Test your knowledge on Lists and Problem Solving!</p>
-            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+    <!-- Main Notes Section -->
+    <main class="glass-panel rounded-2xl p-8 mb-10 markdown-body shadow-2xl">
+        <h2>1. List Memory References</h2>
+        <p>Lists are <strong>mutable</strong>. When you assign a list to a new variable, or pass it into a function, you are passing a <em>reference</em> to the memory address. Modifying the new variable modifies the original list!</p>
+        
+        <div class="my-6 bg-slate-900 rounded-lg p-4 flex justify-center">
+            <div class="mermaid">
+            graph LR
+                A[Variable: my_list] -->|Points to| B(Memory Address: 0x1A2B)
+                C[Function Param: lst] -->|Points to| B
+                B --> D["[1, 2, 3]"]
                 
-                <div>
-                    <h4>1. What is the difference between `.append()` and `.extend()`?</h4>
-                    <ul style="list-style-type: none; padding-left: 0;"><li>A) They are identical</li><li>B) `.append()` adds a single element; `.extend()` adds elements from an iterable</li><li>C) `.extend()` adds a single element; `.append()` adds elements from an iterable</li><li>D) `.append()` is for strings, `.extend()` is for lists</li></ul>
-                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b></p></details>
-                </div>
-
-                <div>
-                    <h4>2. What does `list[::-1]` do?</h4>
-                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Sorts the list in descending order</li><li>B) Returns a reversed copy of the list</li><li>C) Modifies the list in-place to reverse it</li><li>D) Returns the last element</li></ul>
-                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Slicing with a negative step reverses the sequence)</p></details>
-                </div>
-
-                <div>
-                    <h4>3. How do you remove the first occurrence of the value `20` from a list?</h4>
-                    <ul style="list-style-type: none; padding-left: 0;"><li>A) list.pop(20)</li><li>B) list.delete(20)</li><li>C) list.remove(20)</li><li>D) del list[20]</li></ul>
-                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`.remove()` removes by value, `.pop()` removes by index)</p></details>
-                </div>
-                
-                <div>
-                    <h4>4. When finding unique pairs in a list using nested loops, the inner loop index `j` usually starts at:</h4>
-                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 0</li><li>B) i</li><li>C) i + 1</li><li>D) len(list)</li></ul>
-                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Starting at `i+1` avoids duplicate pairs like (A,B) and (B,A))</p></details>
-                </div>
-
-                <div>
-                    <h4>5. What is the output of `map(int, ["1", "2", "3"])` when converted to a list?</h4>
-                    <ul style="list-style-type: none; padding-left: 0;"><li>A) ["1", "2", "3"]</li><li>B) [1, 2, 3]</li><li>C) Error</li><li>D) "123"</li></ul>
-                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b></p></details>
-                </div>
-
+                style B fill:#1e293b,stroke:#38bdf8
+                style D fill:#0f172a,stroke:#e2e8f0
             </div>
-        </section>
+        </div>
 
-        <section class="glass-card">
-            <h2>Resources & Practice</h2>
-            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
-            <a href="Day5Examples.py" class="btn btn-primary">View Examples</a>
-            <a href="Day5_Quiz.md" class="btn">Take the Quiz</a>
-            <a href="Day5_Interview_Questions.txt" class="btn">Interview Prep</a>
-        </section>
+        <h2>2. Combination Pairs Dry Run</h2>
+        <p>To generate unique pairs from a list, use nested loops where the inner loop starts at <code>i + 1</code>.</p>
+        
+        <pre><code class="language-python">
+letters = ["A", "B", "C", "D"]
+for i in range(len(letters)):
+    for j in range(i + 1, len(letters)):
+        print(f"({letters[i]}, {letters[j]})")
+        </code></pre>
 
-        <nav>
-            <a href="../Day4/blog.html" class="btn">← Back to Day 4</a>
-            <a href="../README.md" class="btn">Course Home →</a>
-        </nav>
+        <table class="table-auto mt-4">
+            <thead>
+                <tr>
+                    <th>Outer <code>i</code></th>
+                    <th>Inner <code>j</code></th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>i=0</code> ("A")</td><td><code>j=1</code> ("B")</td><td><code>(A, B)</code></td></tr>
+                <tr><td></td><td><code>j=2</code> ("C")</td><td><code>(A, C)</code></td></tr>
+                <tr><td></td><td><code>j=3</code> ("D")</td><td><code>(A, D)</code></td></tr>
+                <tr><td><code>i=1</code> ("B")</td><td><code>j=2</code> ("C")</td><td><code>(B, C)</code></td></tr>
+                <tr><td></td><td><code>j=3</code> ("D")</td><td><code>(B, D)</code></td></tr>
+                <tr><td><code>i=2</code> ("C")</td><td><code>j=3</code> ("D")</td><td><code>(C, D)</code></td></tr>
+            </tbody>
+        </table>
 
-        <footer>
-            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
-        </footer>
-    </div>
+        <h2>3. Processing Inputs</h2>
+        <p>A common interview pattern: converting a string of numbers into a list of integers.</p>
+        <pre><code class="language-python">
+# raw = "10 20 30"
+num_list = list(map(int, raw.split()))
+# Result: [10, 20, 30]
+        </code></pre>
+    </main>
+
+    <!-- Interactive Quiz Section -->
+    <section class="glass-panel rounded-2xl p-8 mb-10 shadow-2xl">
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">Interactive Quiz</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the difference between .append() and .extend()?",
+            options: [".append() adds multiple items; .extend() adds one.", ".append() modifies the list; .extend() returns a new list.", ".append() adds its argument as a single element; .extend() iterates over its argument and adds each element.", "There is no difference."],
+            correct: 2
+        },
+        {
+            question: "What happens if you assign lst2 = lst1 and then modify lst2?",
+            options: ["Only lst2 is modified.", "Both lst1 and lst2 are modified because they point to the same memory object.", "A TypeError is raised.", "Python automatically creates a copy."],
+            correct: 1
+        },
+        {
+            question: "What does lst.pop() do if no index is provided?",
+            options: ["Removes the first item.", "Removes a random item.", "Removes and returns the last item.", "Clears the list."],
+            correct: 2
+        }
+    ];
+
+    const quizContainer = document.getElementById('quiz-container');
+
+    quizData.forEach((q, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'mb-8 pb-8 border-b border-slate-700 last:border-0';
+        
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-xl font-semibold mb-4';
+        qTitle.textContent = `${index + 1}. ${q.question}`;
+        qBlock.appendChild(qTitle);
+
+        const optionsGrid = document.createElement('div');
+        optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+        q.options.forEach((opt, optIndex) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option text-left p-4 rounded-lg border border-slate-600 bg-slate-800 font-medium w-full';
+            btn.textContent = opt;
+            btn.onclick = () => {
+                Array.from(optionsGrid.children).forEach(b => b.disabled = true);
+                if (optIndex === q.correct) {
+                    btn.classList.add('quiz-correct');
+                } else {
+                    btn.classList.add('quiz-wrong');
+                    optionsGrid.children[q.correct].classList.add('quiz-correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
+        });
+
+        qBlock.appendChild(optionsGrid);
+        quizContainer.appendChild(qBlock);
+    });
+</script>
+
 </body>
 </html>

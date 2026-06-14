@@ -6,7 +6,7 @@
 
 # 1. Basic Variable Assignment
 # A variable is a container for storing data. Python infers the type automatically.
-name = "Supriya"  # String
+name = "riya"  # String
 age = 25          # Integer
 height = 5.6      # Float
 is_student = True # Boolean

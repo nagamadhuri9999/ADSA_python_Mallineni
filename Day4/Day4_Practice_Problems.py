@@ -1,1143 +1,205 @@
-# Day 4: 100 Practice Problems on String Methods, Anagrams & Recursion Trees
-# Predict the output or write the solution for each snippet.
+# Day 4 Practice Problems: String Methods, Anagrams, and Recursion
+# Fill in the TODOs in each problem. Check the bottom of the snippet for the solution.
 
-#----------------------------------------
-# CATEGORY 1: STRING METHODS (LOWER, UPPER, SPLIT, JOIN)
-#----------------------------------------
+def problem_1_string_lower():
+    # TODO: Convert the string "PyThOn" to fully lowercase.
+    pass
 
-def practice_snippet_1():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 1
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_2():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 2
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_3():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 3
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_4():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 4
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_5():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 5
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_6():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 6
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_7():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 7
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_8():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 8
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_9():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 9
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_10():
-    # Practice implementing: String Methods (lower, upper, split, join)
-    val = 10
-    # TODO: Write code applying String Methods (lower, upper, split, join)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 2: STRING METHODS (REPLACE, STRIP, FIND, COUNT)
-#----------------------------------------
-
-def practice_snippet_11():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 1
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_12():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 2
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_13():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 3
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_14():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 4
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_15():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 5
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_16():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 6
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_17():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 7
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_18():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 8
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_19():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 9
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_20():
-    # Practice implementing: String Methods (replace, strip, find, count)
-    val = 10
-    # TODO: Write code applying String Methods (replace, strip, find, count)
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 3: STRING MANIPULATION PROBLEMS
-#----------------------------------------
-
-def practice_snippet_21():
-    # Practice implementing: String Manipulation Problems
-    val = 1
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_22():
-    # Practice implementing: String Manipulation Problems
-    val = 2
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_23():
-    # Practice implementing: String Manipulation Problems
-    val = 3
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_24():
-    # Practice implementing: String Manipulation Problems
-    val = 4
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_25():
-    # Practice implementing: String Manipulation Problems
-    val = 5
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_26():
-    # Practice implementing: String Manipulation Problems
-    val = 6
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_27():
-    # Practice implementing: String Manipulation Problems
-    val = 7
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_28():
-    # Practice implementing: String Manipulation Problems
-    val = 8
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_29():
-    # Practice implementing: String Manipulation Problems
-    val = 9
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_30():
-    # Practice implementing: String Manipulation Problems
-    val = 10
-    # TODO: Write code applying String Manipulation Problems
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 4: WHAT IS AN ANAGRAM?
-#----------------------------------------
-
-def practice_snippet_31():
-    # Practice implementing: What is an Anagram?
-    val = 1
-    # TODO: Write code applying What is an Anagram?
-
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_32():
-    # Practice implementing: What is an Anagram?
-    val = 2
-    # TODO: Write code applying What is an Anagram?
+    # text = "PyThOn"
+    # print(text.lower())
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_33():
-    # Practice implementing: What is an Anagram?
-    val = 3
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_34():
-    # Practice implementing: What is an Anagram?
-    val = 4
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_35():
-    # Practice implementing: What is an Anagram?
-    val = 5
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_36():
-    # Practice implementing: What is an Anagram?
-    val = 6
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_37():
-    # Practice implementing: What is an Anagram?
-    val = 7
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_38():
-    # Practice implementing: What is an Anagram?
-    val = 8
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_39():
-    # Practice implementing: What is an Anagram?
-    val = 9
-    # TODO: Write code applying What is an Anagram?
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_40():
-    # Practice implementing: What is an Anagram?
-    val = 10
-    # TODO: Write code applying What is an Anagram?
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 5: ANAGRAM SOLVING VIA SORTING
-#----------------------------------------
-
-def practice_snippet_41():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 1
-    # TODO: Write code applying Anagram Solving via Sorting
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_42():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 2
-    # TODO: Write code applying Anagram Solving via Sorting
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_43():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 3
-    # TODO: Write code applying Anagram Solving via Sorting
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_44():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 4
-    # TODO: Write code applying Anagram Solving via Sorting
+def problem_2_string_upper():
+    # TODO: Convert the string "hello" to fully uppercase.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_45():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 5
-    # TODO: Write code applying Anagram Solving via Sorting
+    # text = "hello"
+    # print(text.upper())
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_46():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 6
-    # TODO: Write code applying Anagram Solving via Sorting
-
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_47():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 7
-    # TODO: Write code applying Anagram Solving via Sorting
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_48():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 8
-    # TODO: Write code applying Anagram Solving via Sorting
+def problem_3_string_strip():
+    # TODO: Remove the extra spaces from "   data   ".
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_49():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 9
-    # TODO: Write code applying Anagram Solving via Sorting
+    # text = "   data   "
+    # print(text.strip())
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_50():
-    # Practice implementing: Anagram Solving via Sorting
-    val = 10
-    # TODO: Write code applying Anagram Solving via Sorting
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 6: ANAGRAM SOLVING VIA FREQUENCY COUNTING
-#----------------------------------------
-
-def practice_snippet_51():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 1
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+def problem_4_string_replace():
+    # TODO: Replace "bad" with "good" in "This is a bad idea".
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_52():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 2
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+    # text = "This is a bad idea"
+    # print(text.replace("bad", "good"))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_53():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 3
-    # TODO: Write code applying Anagram Solving via Frequency Counting
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_54():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 4
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+def problem_5_string_split():
+    # TODO: Split "apple,banana,cherry" into a list using the comma as a delimiter.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_55():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 5
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+    # text = "apple,banana,cherry"
+    # print(text.split(","))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_56():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 6
-    # TODO: Write code applying Anagram Solving via Frequency Counting
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_57():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 7
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+def problem_6_string_join():
+    # TODO: Join the list ["A", "B", "C"] into a single string separated by dashes ("-").
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_58():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 8
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+    # items = ["A", "B", "C"]
+    # print("-".join(items))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_59():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 9
-    # TODO: Write code applying Anagram Solving via Frequency Counting
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_60():
-    # Practice implementing: Anagram Solving via Frequency Counting
-    val = 10
-    # TODO: Write code applying Anagram Solving via Frequency Counting
+def problem_7_string_find():
+    # TODO: Find the index of the word "fox" in "The quick brown fox".
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 7: RECURSION BASE CASES
-#----------------------------------------
-
-def practice_snippet_61():
-    # Practice implementing: Recursion Base Cases
-    val = 1
-    # TODO: Write code applying Recursion Base Cases
+    # text = "The quick brown fox"
+    # print(text.find("fox"))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_62():
-    # Practice implementing: Recursion Base Cases
-    val = 2
-    # TODO: Write code applying Recursion Base Cases
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_63():
-    # Practice implementing: Recursion Base Cases
-    val = 3
-    # TODO: Write code applying Recursion Base Cases
+def problem_8_string_count():
+    # TODO: Count how many times the letter "p" appears in "apple".
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_64():
-    # Practice implementing: Recursion Base Cases
-    val = 4
-    # TODO: Write code applying Recursion Base Cases
+    # text = "apple"
+    # print(text.count("p"))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_65():
-    # Practice implementing: Recursion Base Cases
-    val = 5
-    # TODO: Write code applying Recursion Base Cases
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_66():
-    # Practice implementing: Recursion Base Cases
-    val = 6
-    # TODO: Write code applying Recursion Base Cases
+def problem_9_is_digit():
+    # TODO: Check if the string "12345" consists only of digits using .isdigit().
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_67():
-    # Practice implementing: Recursion Base Cases
-    val = 7
-    # TODO: Write code applying Recursion Base Cases
+    # text = "12345"
+    # print(text.isdigit())
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_68():
-    # Practice implementing: Recursion Base Cases
-    val = 8
-    # TODO: Write code applying Recursion Base Cases
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_69():
-    # Practice implementing: Recursion Base Cases
-    val = 9
-    # TODO: Write code applying Recursion Base Cases
+def problem_10_anagram_sorting():
+    # TODO: Write a function that takes two strings and returns True if they are anagrams using sorted().
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_70():
-    # Practice implementing: Recursion Base Cases
-    val = 10
-    # TODO: Write code applying Recursion Base Cases
+    # def is_anagram(s1, s2):
+    #     return sorted(s1) == sorted(s2)
+    # print(is_anagram("listen", "silent"))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 8: RECURSIVE STEPS
-#----------------------------------------
-
-def practice_snippet_71():
-    # Practice implementing: Recursive Steps
-    val = 1
-    # TODO: Write code applying Recursive Steps
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_72():
-    # Practice implementing: Recursive Steps
-    val = 2
-    # TODO: Write code applying Recursive Steps
+def problem_11_anagram_frequency():
+    # TODO: Write an anagram checker using a dictionary to count frequencies instead of sorting.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_73():
-    # Practice implementing: Recursive Steps
-    val = 3
-    # TODO: Write code applying Recursive Steps
+    # def is_anagram_freq(s1, s2):
+    #     if len(s1) != len(s2): return False
+    #     counts = {}
+    #     for char in s1:
+    #         counts[char] = counts.get(char, 0) + 1
+    #     for char in s2:
+    #         if counts.get(char, 0) == 0: return False
+    #         counts[char] -= 1
+    #     return True
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_74():
-    # Practice implementing: Recursive Steps
-    val = 4
-    # TODO: Write code applying Recursive Steps
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_75():
-    # Practice implementing: Recursive Steps
-    val = 5
-    # TODO: Write code applying Recursive Steps
+def problem_12_basic_recursion():
+    # TODO: Write a recursive function 'print_down(n)' that prints from n down to 1.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_76():
-    # Practice implementing: Recursive Steps
-    val = 6
-    # TODO: Write code applying Recursive Steps
+    # def print_down(n):
+    #     if n <= 0: return
+    #     print(n)
+    #     print_down(n - 1)
+    # print_down(3)
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_77():
-    # Practice implementing: Recursive Steps
-    val = 7
-    # TODO: Write code applying Recursive Steps
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_78():
-    # Practice implementing: Recursive Steps
-    val = 8
-    # TODO: Write code applying Recursive Steps
+def problem_13_recursive_sum():
+    # TODO: Write a recursive function to find the sum of numbers from 1 to n.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_79():
-    # Practice implementing: Recursive Steps
-    val = 9
-    # TODO: Write code applying Recursive Steps
+    # def recursive_sum(n):
+    #     if n <= 1: return 1
+    #     return n + recursive_sum(n - 1)
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_80():
-    # Practice implementing: Recursive Steps
-    val = 10
-    # TODO: Write code applying Recursive Steps
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 9: CALL STACK VISUALIZATION
-#----------------------------------------
-
-def practice_snippet_81():
-    # Practice implementing: Call Stack Visualization
-    val = 1
-    # TODO: Write code applying Call Stack Visualization
+def problem_14_recursive_factorial():
+    # TODO: Write a recursive function to find the factorial of n (n!).
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_82():
-    # Practice implementing: Call Stack Visualization
-    val = 2
-    # TODO: Write code applying Call Stack Visualization
+    # def factorial(n):
+    #     if n == 1: return 1
+    #     return n * factorial(n - 1)
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_83():
-    # Practice implementing: Call Stack Visualization
-    val = 3
-    # TODO: Write code applying Call Stack Visualization
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_84():
-    # Practice implementing: Call Stack Visualization
-    val = 4
-    # TODO: Write code applying Call Stack Visualization
+def problem_15_recursive_fibonacci():
+    # TODO: Write a recursive function to find the nth Fibonacci number. (fib(0)=0, fib(1)=1)
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_85():
-    # Practice implementing: Call Stack Visualization
-    val = 5
-    # TODO: Write code applying Call Stack Visualization
+    # def fibonacci(n):
+    #     if n <= 1: return n
+    #     return fibonacci(n - 1) + fibonacci(n - 2)
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_86():
-    # Practice implementing: Call Stack Visualization
-    val = 6
-    # TODO: Write code applying Call Stack Visualization
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_87():
-    # Practice implementing: Call Stack Visualization
-    val = 7
-    # TODO: Write code applying Call Stack Visualization
+def problem_16_recursive_power():
+    # TODO: Write a recursive function to calculate base^exp (e.g., power(2, 3) = 8).
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_88():
-    # Practice implementing: Call Stack Visualization
-    val = 8
-    # TODO: Write code applying Call Stack Visualization
+    # def power(base, exp):
+    #     if exp == 0: return 1
+    #     return base * power(base, exp - 1)
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_89():
-    # Practice implementing: Call Stack Visualization
-    val = 9
-    # TODO: Write code applying Call Stack Visualization
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_90():
-    # Practice implementing: Call Stack Visualization
-    val = 10
-    # TODO: Write code applying Call Stack Visualization
+def problem_17_palindrome_checker():
+    # TODO: Write a function to check if a string is a palindrome. Use string methods to clean it first.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-#----------------------------------------
-# CATEGORY 10: RECURSION DRY RUN & MIND MAPPING
-#----------------------------------------
-
-def practice_snippet_91():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 1
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    # def is_palindrome(s):
+    #     cleaned = s.replace(" ", "").lower()
+    #     return cleaned == cleaned[::-1]
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_92():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 2
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_93():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 3
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+def problem_18_vowel_counter():
+    # TODO: Write a function that counts how many vowels are in a string using a loop and string methods.
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_94():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 4
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    # def count_vowels(s):
+    #     count = 0
+    #     for char in s.lower():
+    #         if char in "aeiou": count += 1
+    #     return count
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_95():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 5
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_96():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 6
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+def problem_19_title_case():
+    # TODO: Convert "python is fun" to "Python Is Fun" using .title().
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_97():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 7
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    # text = "python is fun"
+    # print(text.title())
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_98():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 8
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_99():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 9
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+def problem_20_starts_with():
+    # TODO: Check if "Data Science" starts with "Data" using .startswith().
+    pass
 
     # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
-
-def practice_snippet_100():
-    # Practice implementing: Recursion Dry Run & Mind Mapping
-    val = 10
-    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    # text = "Data Science"
+    # print(text.startswith("Data"))
 
-    # --- SOLUTION ---
-    # Advanced string methods and recursion concepts
-    s = str(val)
-    reversed_s = s[::-1]
-    return int(reversed_s) if reversed_s.isdigit() else 0
 
+if __name__ == "__main__":
+    print("Welcome to Day 4 Practice Problems!")
+    # problem_1_string_lower()

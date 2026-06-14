@@ -1,1243 +1,235 @@
-# Day 3: 100 Practice Problems on Strings, Lists, Functions & Scopes
-# Predict the output or write the solution for each snippet.
+# Day 3 Practice Problems: Strings, Lists, and Functions
+# Fill in the TODOs in each problem. Check the bottom of the snippet for the solution.
 
-#----------------------------------------
-# CATEGORY 1: LOOP CONTROL (BREAK, CONTINUE, PASS)
-#----------------------------------------
+def problem_1_string_indexing():
+    # TODO: Create a string 'word' = "Developer".
+    # TODO: Print the first and last characters using positive and negative indexing.
+    pass
 
-def practice_snippet_1():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 1
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_2():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 2
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_3():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 3
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_4():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 4
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_5():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 5
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_6():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 6
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_7():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 7
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_8():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 8
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_9():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 9
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_10():
-    # Practice implementing: Loop Control (break, continue, pass)
-    val = 10
-    # TODO: Write code applying Loop Control (break, continue, pass)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 2: ERROR HANDLING (INDEXERROR)
-#----------------------------------------
-
-def practice_snippet_11():
-    # Practice implementing: Error Handling (IndexError)
-    val = 1
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_12():
-    # Practice implementing: Error Handling (IndexError)
-    val = 2
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_13():
-    # Practice implementing: Error Handling (IndexError)
-    val = 3
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_14():
-    # Practice implementing: Error Handling (IndexError)
-    val = 4
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_15():
-    # Practice implementing: Error Handling (IndexError)
-    val = 5
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_16():
-    # Practice implementing: Error Handling (IndexError)
-    val = 6
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_17():
-    # Practice implementing: Error Handling (IndexError)
-    val = 7
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_18():
-    # Practice implementing: Error Handling (IndexError)
-    val = 8
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_19():
-    # Practice implementing: Error Handling (IndexError)
-    val = 9
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_20():
-    # Practice implementing: Error Handling (IndexError)
-    val = 10
-    # TODO: Write code applying Error Handling (IndexError)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 3: STRING & LIST INDEXING (POSITIVE)
-#----------------------------------------
-
-def practice_snippet_21():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 1
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_22():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 2
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_23():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 3
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_24():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 4
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_25():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 5
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_26():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 6
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_27():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 7
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_28():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 8
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_29():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 9
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_30():
-    # Practice implementing: String & List Indexing (Positive)
-    val = 10
-    # TODO: Write code applying String & List Indexing (Positive)
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 4: STRING & LIST SLICING
-#----------------------------------------
-
-def practice_snippet_31():
-    # Practice implementing: String & List Slicing
-    val = 1
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_32():
-    # Practice implementing: String & List Slicing
-    val = 2
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_33():
-    # Practice implementing: String & List Slicing
-    val = 3
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_34():
-    # Practice implementing: String & List Slicing
-    val = 4
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_35():
-    # Practice implementing: String & List Slicing
-    val = 5
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_36():
-    # Practice implementing: String & List Slicing
-    val = 6
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_37():
-    # Practice implementing: String & List Slicing
-    val = 7
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_38():
-    # Practice implementing: String & List Slicing
-    val = 8
-    # TODO: Write code applying String & List Slicing
-
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_39():
-    # Practice implementing: String & List Slicing
-    val = 9
-    # TODO: Write code applying String & List Slicing
+    # word = "Developer"
+    # print(word[0], word[-1])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_40():
-    # Practice implementing: String & List Slicing
-    val = 10
-    # TODO: Write code applying String & List Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 5: NEGATIVE INDEXING & SLICING
-#----------------------------------------
-
-def practice_snippet_41():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 1
-    # TODO: Write code applying Negative Indexing & Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_42():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 2
-    # TODO: Write code applying Negative Indexing & Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_43():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 3
-    # TODO: Write code applying Negative Indexing & Slicing
-
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_44():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 4
-    # TODO: Write code applying Negative Indexing & Slicing
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_45():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 5
-    # TODO: Write code applying Negative Indexing & Slicing
+def problem_2_list_indexing():
+    # TODO: Create a list 'nums' = [10, 20, 30, 40, 50].
+    # TODO: Print the third item (30) using indexing.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_46():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 6
-    # TODO: Write code applying Negative Indexing & Slicing
+    # nums = [10, 20, 30, 40, 50]
+    # print(nums[2])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_47():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 7
-    # TODO: Write code applying Negative Indexing & Slicing
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_48():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 8
-    # TODO: Write code applying Negative Indexing & Slicing
+def problem_3_string_slicing():
+    # TODO: You have text = "PythonProgramming".
+    # TODO: Extract and print the word "Python" using slicing.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_49():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 9
-    # TODO: Write code applying Negative Indexing & Slicing
+    # text = "PythonProgramming"
+    # print(text[0:6])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_50():
-    # Practice implementing: Negative Indexing & Slicing
-    val = 10
-    # TODO: Write code applying Negative Indexing & Slicing
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 6: STRING/LIST CONCATENATION & REPETITION
-#----------------------------------------
-
-def practice_snippet_51():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 1
-    # TODO: Write code applying String/List Concatenation & Repetition
+def problem_4_list_slicing():
+    # TODO: You have items = ["apple", "banana", "cherry", "date", "elderberry"].
+    # TODO: Extract and print ["banana", "cherry", "date"] using slicing.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_52():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 2
-    # TODO: Write code applying String/List Concatenation & Repetition
+    # items = ["apple", "banana", "cherry", "date", "elderberry"]
+    # print(items[1:4])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_53():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 3
-    # TODO: Write code applying String/List Concatenation & Repetition
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_54():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 4
-    # TODO: Write code applying String/List Concatenation & Repetition
+def problem_5_slicing_steps():
+    # TODO: You have numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+    # TODO: Use slicing with a step to print all odd numbers: [1, 3, 5, 7, 9].
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_55():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 5
-    # TODO: Write code applying String/List Concatenation & Repetition
+    # numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # print(numbers[1::2])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_56():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 6
-    # TODO: Write code applying String/List Concatenation & Repetition
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_57():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 7
-    # TODO: Write code applying String/List Concatenation & Repetition
+def problem_6_reverse_string():
+    # TODO: Use negative step slicing to print the reverse of "hello".
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_58():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 8
-    # TODO: Write code applying String/List Concatenation & Repetition
+    # word = "hello"
+    # print(word[::-1])
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_59():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 9
-    # TODO: Write code applying String/List Concatenation & Repetition
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_60():
-    # Practice implementing: String/List Concatenation & Repetition
-    val = 10
-    # TODO: Write code applying String/List Concatenation & Repetition
+def problem_7_basic_function():
+    # TODO: Define a function 'say_hello' that takes no parameters and prints "Hello, World!".
+    # TODO: Call the function.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 7: FUNCTION SYNTAX & ARGUMENTS
-#----------------------------------------
-
-def practice_snippet_61():
-    # Practice implementing: Function Syntax & Arguments
-    val = 1
-    # TODO: Write code applying Function Syntax & Arguments
+    # def say_hello():
+    #     print("Hello, World!")
+    # say_hello()
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_62():
-    # Practice implementing: Function Syntax & Arguments
-    val = 2
-    # TODO: Write code applying Function Syntax & Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_63():
-    # Practice implementing: Function Syntax & Arguments
-    val = 3
-    # TODO: Write code applying Function Syntax & Arguments
+def problem_8_function_with_parameters():
+    # TODO: Define a function 'multiply' that takes two parameters 'a' and 'b'.
+    # TODO: It should return the product of a and b. Call it with 5 and 4 and print the result.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_64():
-    # Practice implementing: Function Syntax & Arguments
-    val = 4
-    # TODO: Write code applying Function Syntax & Arguments
+    # def multiply(a, b):
+    #     return a * b
+    # print(multiply(5, 4))
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_65():
-    # Practice implementing: Function Syntax & Arguments
-    val = 5
-    # TODO: Write code applying Function Syntax & Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_66():
-    # Practice implementing: Function Syntax & Arguments
-    val = 6
-    # TODO: Write code applying Function Syntax & Arguments
+def problem_9_default_arguments():
+    # TODO: Define a function 'greet' with parameter 'name' and 'msg' which defaults to "Welcome".
+    # TODO: Print f"{msg}, {name}!". Call it once with only a name, and once with both.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_67():
-    # Practice implementing: Function Syntax & Arguments
-    val = 7
-    # TODO: Write code applying Function Syntax & Arguments
+    # def greet(name, msg="Welcome"):
+    #     print(f"{msg}, {name}!")
+    # greet("Alice")
+    # greet("Bob", "Good morning")
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_68():
-    # Practice implementing: Function Syntax & Arguments
-    val = 8
-    # TODO: Write code applying Function Syntax & Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_69():
-    # Practice implementing: Function Syntax & Arguments
-    val = 9
-    # TODO: Write code applying Function Syntax & Arguments
+def problem_10_args():
+    # TODO: Define a function 'sum_all' that takes *args.
+    # TODO: Use the built-in sum() function to return the sum of all passed numbers.
+    # TODO: Print sum_all(1, 2, 3, 4, 5).
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_70():
-    # Practice implementing: Function Syntax & Arguments
-    val = 10
-    # TODO: Write code applying Function Syntax & Arguments
+    # def sum_all(*args):
+    #     return sum(args)
+    # print(sum_all(1, 2, 3, 4, 5))
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 8: POSITIONAL VS DEFAULT ARGUMENTS
-#----------------------------------------
-
-def practice_snippet_71():
-    # Practice implementing: Positional vs Default Arguments
-    val = 1
-    # TODO: Write code applying Positional vs Default Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_72():
-    # Practice implementing: Positional vs Default Arguments
-    val = 2
-    # TODO: Write code applying Positional vs Default Arguments
+def problem_11_kwargs():
+    # TODO: Define a function 'print_info' that takes **kwargs.
+    # TODO: Iterate through kwargs.items() and print the key and value.
+    # TODO: Call it with name="John", age=30.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_73():
-    # Practice implementing: Positional vs Default Arguments
-    val = 3
-    # TODO: Write code applying Positional vs Default Arguments
+    # def print_info(**kwargs):
+    #     for key, value in kwargs.items():
+    #         print(f"{key}: {value}")
+    # print_info(name="John", age=30)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_74():
-    # Practice implementing: Positional vs Default Arguments
-    val = 4
-    # TODO: Write code applying Positional vs Default Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_75():
-    # Practice implementing: Positional vs Default Arguments
-    val = 5
-    # TODO: Write code applying Positional vs Default Arguments
+def problem_12_global_scope():
+    # TODO: Create a global variable 'counter' = 0.
+    # TODO: Define a function that uses the 'global' keyword to increment 'counter' by 1.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_76():
-    # Practice implementing: Positional vs Default Arguments
-    val = 6
-    # TODO: Write code applying Positional vs Default Arguments
+    # counter = 0
+    # def increment():
+    #     global counter
+    #     counter += 1
+    # increment()
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_77():
-    # Practice implementing: Positional vs Default Arguments
-    val = 7
-    # TODO: Write code applying Positional vs Default Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_78():
-    # Practice implementing: Positional vs Default Arguments
-    val = 8
-    # TODO: Write code applying Positional vs Default Arguments
+def problem_13_list_concatenation():
+    # TODO: You have list1 = [1, 2] and list2 = [3, 4].
+    # TODO: Combine them into list3 without using the append method (use +).
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_79():
-    # Practice implementing: Positional vs Default Arguments
-    val = 9
-    # TODO: Write code applying Positional vs Default Arguments
+    # list1 = [1, 2]
+    # list2 = [3, 4]
+    # list3 = list1 + list2
+    # print(list3)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_80():
-    # Practice implementing: Positional vs Default Arguments
-    val = 10
-    # TODO: Write code applying Positional vs Default Arguments
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 9: *ARGS AND **KWARGS
-#----------------------------------------
-
-def practice_snippet_81():
-    # Practice implementing: *args and **kwargs
-    val = 1
-    # TODO: Write code applying *args and **kwargs
+def problem_14_string_repetition():
+    # TODO: Use the '*' operator to print "Ha" 5 times consecutively.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_82():
-    # Practice implementing: *args and **kwargs
-    val = 2
-    # TODO: Write code applying *args and **kwargs
+    # print("Ha" * 5)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_83():
-    # Practice implementing: *args and **kwargs
-    val = 3
-    # TODO: Write code applying *args and **kwargs
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_84():
-    # Practice implementing: *args and **kwargs
-    val = 4
-    # TODO: Write code applying *args and **kwargs
+def problem_15_function_calling_function():
+    # TODO: Define 'square(x)' that returns x*x.
+    # TODO: Define 'sum_of_squares(x, y)' that returns square(x) + square(y).
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_85():
-    # Practice implementing: *args and **kwargs
-    val = 5
-    # TODO: Write code applying *args and **kwargs
+    # def square(x):
+    #     return x * x
+    # def sum_of_squares(x, y):
+    #     return square(x) + square(y)
+    # print(sum_of_squares(3, 4))
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_86():
-    # Practice implementing: *args and **kwargs
-    val = 6
-    # TODO: Write code applying *args and **kwargs
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_87():
-    # Practice implementing: *args and **kwargs
-    val = 7
-    # TODO: Write code applying *args and **kwargs
+def problem_16_return_vs_print():
+    # TODO: Define 'add_print(a, b)' that prints a+b but returns None.
+    # TODO: Define 'add_return(a, b)' that returns a+b.
+    # Note the difference when you try to assign their results to a variable!
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_88():
-    # Practice implementing: *args and **kwargs
-    val = 8
-    # TODO: Write code applying *args and **kwargs
+    # def add_print(a, b):
+    #     print(a + b)
+    # def add_return(a, b):
+    #     return a + b
+    # res1 = add_print(2, 2)   # res1 is None
+    # res2 = add_return(2, 2)  # res2 is 4
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_89():
-    # Practice implementing: *args and **kwargs
-    val = 9
-    # TODO: Write code applying *args and **kwargs
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_90():
-    # Practice implementing: *args and **kwargs
-    val = 10
-    # TODO: Write code applying *args and **kwargs
+def problem_17_recursive_countdown():
+    # TODO: Define a recursive function 'countdown(n)'.
+    # TODO: Base case: if n <= 0, print "Blastoff!".
+    # TODO: Recursive step: print n, then call countdown(n - 1).
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-#----------------------------------------
-# CATEGORY 10: VARIABLE SCOPE & RECURSION BASICS
-#----------------------------------------
-
-def practice_snippet_91():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 1
-    # TODO: Write code applying Variable Scope & Recursion Basics
+    # def countdown(n):
+    #     if n <= 0:
+    #         print("Blastoff!")
+    #     else:
+    #         print(n)
+    #         countdown(n - 1)
+    # countdown(3)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_92():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 2
-    # TODO: Write code applying Variable Scope & Recursion Basics
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_93():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 3
-    # TODO: Write code applying Variable Scope & Recursion Basics
+def problem_18_string_immutability():
+    # TODO: Strings are immutable. Try to change text = "Cat" to "Bat" using indexing (text[0] = "B").
+    # Watch it throw a TypeError. Then do it the right way using string concatenation or slicing.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_94():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 4
-    # TODO: Write code applying Variable Scope & Recursion Basics
+    # text = "Cat"
+    # # text[0] = "B"  # Throws TypeError
+    # text = "B" + text[1:]
+    # print(text)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_95():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 5
-    # TODO: Write code applying Variable Scope & Recursion Basics
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_96():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 6
-    # TODO: Write code applying Variable Scope & Recursion Basics
+def problem_19_list_mutability():
+    # TODO: Lists ARE mutable. Create nums = [1, 2, 3].
+    # TODO: Change the first element to 99 using indexing. Print nums.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_97():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 7
-    # TODO: Write code applying Variable Scope & Recursion Basics
+    # nums = [1, 2, 3]
+    # nums[0] = 99
+    # print(nums)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_98():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 8
-    # TODO: Write code applying Variable Scope & Recursion Basics
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_99():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 9
-    # TODO: Write code applying Variable Scope & Recursion Basics
+def problem_20_slice_assignment():
+    # TODO: You have nums = [1, 2, 3, 4, 5].
+    # TODO: Replace the sublist [2, 3] with [8, 9] using slice assignment.
+    pass
 
     # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
-
-def practice_snippet_100():
-    # Practice implementing: Variable Scope & Recursion Basics
-    val = 10
-    # TODO: Write code applying Variable Scope & Recursion Basics
+    # nums = [1, 2, 3, 4, 5]
+    # nums[1:3] = [8, 9]
+    # print(nums)
 
-    # --- SOLUTION ---
-    # Strings, Lists, and Functions logic
-    my_list = [val, val*2, val*3]
-    my_list.append(100)
-    sliced = my_list[1:]
-    return sliced
 
+if __name__ == "__main__":
+    print("Welcome to Day 3 Practice Problems!")
+    # problem_1_string_indexing()

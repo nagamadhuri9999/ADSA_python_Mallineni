@@ -1,26 +1,17 @@
-Day 7 Topics:
-- Space Complexity Basics
-  - O(1) constant space
-  - Auxiliary vs Input space
-- Searching Algorithms
-  - Binary Search review
-- Sorting Algorithms
-  - Bubble Sort
-  - Selection Sort
-  - Insertion Sort
-- Time and Space Complexity of Sorting Algorithms
+# Day 7: Space Complexity & Sorting Algorithms
 
+## 1. Space Complexity
+- Understanding Auxiliary Space vs Input Space.
+- O(1) Constant Space (In-place algorithms).
+- O(n) Linear Space (Creating new arrays/data structures).
 
-problems:
-find min ,find max,find second min ,second max,
-find 3 max and 3 min ,
-print even index values,
-print square index values,print cube index values 
-print square indeex+1 values ,
-find even index max and odd max .
-check whether list is sorted or not:
+## 2. Array/List Operations & Traversal
+- Finding Max, Min, Second Max, Second Min.
+- Index-based extraction (Even indices, square/cube indices).
+- Validation: Checking if an array is sorted.
 
-binary search problems in leetcode 
-704,35,69
-
-sorting based leetcode easy questions links
+## 3. Elementary Sorting Algorithms
+- **Bubble Sort:** Repeatedly swapping adjacent elements (O(n^2)).
+- **Selection Sort:** Finding the minimum element and placing it at the front (O(n^2)).
+- **Insertion Sort:** Building a sorted array one element at a time (O(n^2)).
+- Time and Space Complexity Analysis of sorting algorithms.

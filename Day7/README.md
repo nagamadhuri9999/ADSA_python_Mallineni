@@ -1,48 +1,38 @@
 # Day 7: Space Complexity & Sorting Algorithms
 
-Welcome to Day 7! Today we transition from Searching algorithms into Space Complexity evaluation and the three classic O(N^2) sorting algorithms.
+Welcome to Day 7! Today we learn how to measure the memory our programs use (Space Complexity) and explore the foundational algorithms for arranging data in order (Sorting).
 
-## What's Included:
-- **Topics.txt**: High-level overview of concepts.
-- **Day7ClassPlan.txt**: Structure for the 6-hour class.
-- **Day7Notes_Searching_Sorting.txt**: Detailed theory on space complexity and sorting.
-- **Day7Examples.py**: Implementations of Binary Search, Bubble, Selection, and Insertion Sort.
-- **Day7_Task_Solution.py**: Solutions to the day's tasks.
-- **Day7_Test_Driven_Practice.py**: Unit tests for sorting and searching.
-- **Day7_Practice_Problems.py**: Practice problems.
-- **practice_examples.py**: Programs for Day 7 topics.
-- **Day7_Interview_Questions.txt**: Interview questions.
-- **Day7_Quiz.md**: Multiple-choice assessment.
-- **blog.html**: Daily summary for the student blog.
+## 🎯 Today's Topics
 
-## Day 7 Tasks: Array Operations, Searching, and Sorting
+1. **Space Complexity**
+   - Auxiliary Space vs Input Space.
+   - O(1) Constant Space (In-place algorithms).
+2. **Elementary Sorting Algorithms**
+   - Bubble Sort (O(n^2))
+   - Selection Sort (O(n^2))
+   - Insertion Sort (O(n^2))
+3. **Array Manipulation**
+   - Finding Max, Min, Second Max.
+   - Extracting elements by specific index properties.
 
-### 1. Array Manipulation Problems
-Write Python programs to solve the following array operations:
-- Find the minimum and maximum values in a list.
-- Find the second minimum and second maximum values.
-- Find the 3 maximum and 3 minimum values.
-- Print values at even indices.
-- Print values at indices that are perfect squares (0, 1, 4, 9, ...).
-- Print values at indices that are perfect cubes (0, 1, 8, 27, ...).
-- Print values at `(index * index) + 1` indices.
-- Find the maximum value among elements at even indices and the maximum value among elements at odd indices.
-- Check whether a given list is sorted or not.
+---
 
-### 2. Binary Search Practice (LeetCode)
-Solve the following Binary Search problems on LeetCode:
-- [704. Binary Search](https://leetcode.com/problems/binary-search/)
-- [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
-- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
-- [278. First Bad Version](https://leetcode.com/problems/first-bad-version/)
-- [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
-- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+## 📚 Learning Materials
 
-### 3. Sorting Practice (LeetCode Easy)
-Solve the following Sorting-based easy problems on LeetCode:
-- [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
-- [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [169. Majority Element](https://leetcode.com/problems/majority-element/)
-- [268. Missing Number](https://leetcode.com/problems/missing-number/)
-- [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+- **📝 Notes:** [Day7_Detailed_Notes.md](Day7_Detailed_Notes.md) - Comprehensive, visual notes with Mermaid diagrams and dry runs.
+- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual dry runs, and interactive quiz. Open in your browser!
+
+## 🎓 Practice & Evaluation
+
+- **🛠️ Practice Problems:** [Day7_Practice_Problems.py](Day7_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax.
+- **🧠 Quiz:** [Day7_Quiz.md](Day7_Quiz.md) - A 35-question test on today's concepts.
+- **🏆 Capstone Task:** [Day7_Task.md](Day7_Task.md) - Build "The Leaderboard Organizer" using Insertion Sort!
+- **💻 Leetcode Integration:** [Day7_Leetcode.py](Day7_Leetcode.py) - 3 real Leetcode problems carefully mapped to today's topics (with solutions!).
+- **❓ Interview Prep:** [Day7_Interview_Questions.txt](Day7_Interview_Questions.txt) - Essential interview questions for Day 7.
+
+## 📂 Code Examples
+
+Check out the [examples/](examples/) folder for hands-on scripts and debugging challenges. Note: `sorting-visualizer/` is also available for deeper exploration!
+
+---
+*Happy coding! Keep reviewing the dry runs to master how sorting algorithms modify arrays in-place.*
