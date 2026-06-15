@@ -1,102 +1,91 @@
-# Day 10 Detailed Notes: Introduction to Linked Lists
+# Day 10 Detailed Notes: Understanding Stacks
 
-Welcome to Day 10! We are transitioning from simple contiguous data structures (Arrays/Lists) to dynamic, node-based structures. Today, we conquer **Linked Lists**.
-
----
-
-## 1. Linked Lists vs Arrays
-
-In an Array, elements are stored right next to each other in memory (contiguous). This makes it very fast to access elements by index (`arr[5]`), but very slow to insert elements at the beginning, because every other element must be shifted to the right.
-
-A **Linked List** is different. Elements (called **Nodes**) are scattered randomly in memory. Each node holds its data AND a "pointer" (or reference) to the next node in the list.
-
-### Pros and Cons
-| Feature | Arrays | Linked Lists |
-| :--- | :--- | :--- |
-| **Access by Index** | Fast `O(1)` | Slow `O(n)` |
-| **Insert at Beginning** | Slow `O(n)` | Fast `O(1)` |
-| **Memory Allocation** | Contiguous (fixed size chunks) | Dynamic (creates nodes as needed) |
+Welcome to Day 10! Today we dive into one of the most elegant and commonly used data structures in computer science: **The Stack**.
 
 ---
 
-## 2. The Node Structure
+## 1. The LIFO Principle
 
-To build a Linked List, we must first build a **Node**. In Python, we use Object-Oriented Programming (Classes) for this.
+A Stack operates on a **Last In, First Out (LIFO)** principle.
+Imagine a stack of plates at a buffet. When a clean plate is added, it goes on the **top** of the pile. When someone needs a plate, they take the one off the **top**. The last plate added is the first one removed.
 
-```python
-class Node:
-    def __init__(self, data):
-        self.data = data    # The value the node holds
-        self.next = None    # The pointer to the next node
-```
-
-When you create a node: `node1 = Node(5)`, it contains `5` and its `next` pointer points to `None` (meaning it's the end of the line).
+Many systems use stacks implicitly:
+- The **"Undo"** button in your text editor (reverses the most recent action).
+- Your web browser's **"Back"** button.
+- The **Call Stack** in programming (which handles recursion!).
 
 ---
 
-## 3. Building a Singly Linked List
+## 2. Core Stack Operations
 
-A Singly Linked List is a chain of nodes where each node points only to the **next** node. We manage the whole list by keeping track of the very first node, called the **Head**.
+A standard stack has four primary operations. In a well-implemented stack, all of these operations take **O(1)** Constant Time!
 
-```python
-class LinkedList:
-    def __init__(self):
-        self.head = None   # The list is initially empty
-```
+1. **`push(item)`**: Adds an item to the top of the stack.
+2. **`pop()`**: Removes and returns the item from the top of the stack.
+3. **`peek()`** (or `top()`): Returns the item at the top *without* removing it.
+4. **`isEmpty()`**: Returns True if the stack has no items, False otherwise.
 
-### Visualizing the Chain
+### Visualizing a Stack
 
 ```mermaid
-graph LR
-    A["Head"] --> B["[Data: 10 | Next]"]
-    B --> C["[Data: 20 | Next]"]
-    C --> D["[Data: 30 | Next]"]
-    D --> E["None"]
+graph TD
+    subgraph "Pushing onto Stack"
+    A[Empty Stack] --> B[Push 10]
+    B --> C[Push 20]
+    C --> D[Push 30]
+    end
+    
+    subgraph "The resulting structure"
+    E[Top: 30] --> F[20]
+    F --> G[10]
+    G --> H[Bottom]
+    end
 ```
 
 ---
 
-## 4. Basic Operations
+## 3. Implementing Stacks in Python
 
-### A. Traversal (Printing the List)
-To walk through a Linked List, we start at the `head` and use a temporary pointer (`current`) to hop from node to node until we hit `None`.
-
-```python
-def display(self):
-    current = self.head
-    while current is not None:
-        print(current.data, end=" -> ")
-        current = current.next
-    print("None")
-```
-- **Time Complexity:** O(n)
-
-### B. Insertion at the Head
-Inserting at the beginning is incredibly fast. We just make a new node, point it to the current head, and then update the head!
+In Python, we don't need a special `Stack` library. The built-in Python `list` is perfectly optimized to act as a stack!
+- To `push()`, we use `.append()`.
+- To `pop()`, we use `.pop()`.
+- To `peek()`, we use `stack[-1]`.
 
 ```python
-def insert_at_beginning(self, data):
-    new_node = Node(data)
-    new_node.next = self.head  # 1. Point new node to the old head
-    self.head = new_node       # 2. Update head to be the new node
-```
-- **Time Complexity:** O(1) Constant Time!
+stack = []
 
-### C. Insertion at the Tail (End)
-To insert at the end, we have to traverse the whole list to find the last node, then point its `next` to our new node.
+# Push elements
+stack.append('A')
+stack.append('B')
+stack.append('C')
+print(stack)  # Output: ['A', 'B', 'C']
 
-```python
-def insert_at_end(self, data):
-    new_node = Node(data)
-    
-    if self.head is None:      # If the list is empty
-        self.head = new_node
-        return
-        
-    current = self.head
-    while current.next is not None:  # Stop AT the last node
-        current = current.next
-        
-    current.next = new_node    # Link the last node to the new node
+# Peek at the top element
+print(stack[-1])  # Output: 'C'
+
+# Pop elements
+top_element = stack.pop()
+print(top_element)  # Output: 'C'
+print(stack)        # Output: ['A', 'B']
+
+# Check if empty
+print(len(stack) == 0) # Output: False
 ```
-- **Time Complexity:** O(n) Linear Time. *(Note: If we kept a `tail` pointer in our class, this could be O(1)!)*
+
+*Note: Be careful NEVER to use `.pop(0)` or `.insert(0, item)` to simulate a stack using lists. Modifying the beginning of a Python list is O(n) because it shifts all elements. Always add/remove from the right end (the top)!*
+
+---
+
+## 4. Why are Stacks so powerful?
+
+Stacks are incredible for "Simulation" and "Matching" problems.
+
+### Example: Validating Parentheses
+If you have a string like `"({[]})"`, how do you know if the brackets are closed in the correct order?
+Using a stack!
+1. When you see an opening bracket `(`, `{`, or `[`, you **push** it onto the stack.
+2. When you see a closing bracket `)`, `}`, or `]`, you check the top of the stack. If it matches the corresponding opening bracket, you **pop** it off.
+3. If the stack is empty at the end, the string is valid!
+
+### Example: Monotonic Stacks
+Sometimes you want a stack to remain perfectly sorted. For example, a "Monotonic Decreasing Stack" ensures that every element is strictly smaller than the one below it. When a new, larger element wants to be pushed, it aggressively `pops` all smaller elements off the stack first. This is incredibly useful for finding the "Next Greater Element" in an array in O(n) time!

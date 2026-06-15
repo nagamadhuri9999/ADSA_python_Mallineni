@@ -1,72 +1,8 @@
-# Day 10 Leetcode Problems: Introduction to Linked Lists
-# These problems test your ability to traverse a Linked List.
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# Day 10 Leetcode Problems: Stacks
+# These problems teach Stack Basics, Push/Pop, Simulation, Monotonic Stacks, and Index-based Stacks.
 
 # ==================================================
-# Problem 1: Leetcode 1290 - Convert Binary Number in a Linked List to Integer
-# Difficulty: Easy
-# ==================================================
-# Given `head` which is a reference node to a singly-linked list.
-# The value of each node in the linked list is either 0 or 1.
-# The linked list holds the binary representation of a number.
-# Return the decimal value of the number in the linked list.
-
-def getDecimalValue(head: ListNode) -> int:
-    # We traverse the linked list and shift our result bitwise
-    # (or multiply by 2) for each new digit we encounter.
-    
-    num = 0
-    current = head
-    while current:
-        num = num * 2 + current.val
-        current = current.next
-        
-    return num
-
-# Dry Run for list: 1 -> 0 -> 1 (which is binary for 5)
-# num = 0
-# Node(1): num = 0 * 2 + 1 = 1
-# Node(0): num = 1 * 2 + 0 = 2
-# Node(1): num = 2 * 2 + 1 = 5
-# Return 5.
-
-
-# ==================================================
-# Problem 2: Leetcode 876 - Middle of the Linked List
-# Difficulty: Easy
-# ==================================================
-# Given the head of a singly linked list, return the middle node of the linked list.
-# If there are two middle nodes, return the second middle node.
-
-def middleNode(head: ListNode) -> ListNode:
-    # Approach 1: Count all nodes (O(n)), then traverse to count // 2.
-    # Approach 2: "Tortoise and Hare" (Fast & Slow Pointers).
-    # The fast pointer moves 2 steps, slow moves 1 step. 
-    # When fast reaches the end, slow is exactly in the middle!
-    
-    slow = head
-    fast = head
-    
-    while fast and fast.next:
-        slow = slow.next          # moves 1 step
-        fast = fast.next.next     # moves 2 steps
-        
-    return slow
-
-# Dry Run for list: 1 -> 2 -> 3 -> 4 -> 5 -> None
-# Init: slow=1, fast=1
-# Step 1: slow=2, fast=3
-# Step 2: slow=3, fast=5
-# Step 3: fast.next is None. Loop ends.
-# Return slow (Node 3).
-
-
-# ==================================================
-# Problem 3: Valid Parentheses (Easy)
+# Problem 1: Valid Parentheses (Easy)
 # ==================================================
 # Opening brackets go into stack. Closing brackets must match top.
 def isValid(s: str) -> bool:
@@ -81,7 +17,7 @@ def isValid(s: str) -> bool:
     return len(stack) == 0
 
 # ==================================================
-# Problem 4: Baseball Game (Easy)
+# Problem 2: Baseball Game (Easy)
 # ==================================================
 # Integer -> Push, C -> Remove last, D -> Double last, + -> Sum last two
 def calPoints(operations: list[str]) -> int:
@@ -94,7 +30,7 @@ def calPoints(operations: list[str]) -> int:
     return sum(stack)
 
 # ==================================================
-# Problem 5: Backspace String Compare (Easy)
+# Problem 3: Backspace String Compare (Easy)
 # ==================================================
 # Character -> Push, # -> Pop
 def backspaceCompare(s: str, t: str) -> bool:
@@ -108,7 +44,7 @@ def backspaceCompare(s: str, t: str) -> bool:
     return build(s) == build(t)
 
 # ==================================================
-# Problem 6: Remove Outermost Parentheses (Easy)
+# Problem 4: Remove Outermost Parentheses (Easy)
 # ==================================================
 def removeOuterParentheses(s: str) -> str:
     result = []
@@ -123,7 +59,7 @@ def removeOuterParentheses(s: str) -> str:
     return "".join(result)
 
 # ==================================================
-# Problem 7: Make The String Great (Easy)
+# Problem 5: Make The String Great (Easy)
 # ==================================================
 # Remove adjacent uppercase/lowercase pair.
 def makeGood(s: str) -> str:
@@ -135,7 +71,7 @@ def makeGood(s: str) -> str:
     return "".join(stack)
 
 # ==================================================
-# Problem 8: Removing Stars From a String (Medium but Easy)
+# Problem 6: Removing Stars From a String (Medium but Easy)
 # ==================================================
 def removeStars(s: str) -> str:
     stack = []
@@ -145,7 +81,7 @@ def removeStars(s: str) -> str:
     return "".join(stack)
 
 # ==================================================
-# Problem 9: Next Greater Element I (Easy)
+# Problem 7: Next Greater Element I (Easy)
 # ==================================================
 # Pattern: Monotonic decreasing stack.
 def nextGreaterElement(nums1: list[int], nums2: list[int]) -> list[int]:
@@ -160,7 +96,7 @@ def nextGreaterElement(nums1: list[int], nums2: list[int]) -> list[int]:
     return [nge[num] for num in nums1]
 
 # ==================================================
-# Problem 10: Daily Temperatures (Medium)
+# Problem 8: Daily Temperatures (Medium)
 # ==================================================
 # Pattern: Store indexes in a monotonic stack.
 def dailyTemperatures(temp: list[int]) -> list[int]:
@@ -174,7 +110,7 @@ def dailyTemperatures(temp: list[int]) -> list[int]:
     return result
 
 # ==================================================
-# Problem 11: Evaluate Reverse Polish Notation (Medium)
+# Problem 9: Evaluate Reverse Polish Notation (Medium)
 # ==================================================
 def evalRPN(tokens: list[str]) -> int:
     stack = []
@@ -191,7 +127,7 @@ def evalRPN(tokens: list[str]) -> int:
     return stack[0]
 
 # ==================================================
-# Problem 12: Decode String (Medium)
+# Problem 10: Decode String (Medium)
 # ==================================================
 def decodeString(s: str) -> str:
     stack = []
@@ -211,14 +147,5 @@ def decodeString(s: str) -> str:
     return curr
 
 if __name__ == "__main__":
-    # Test Problem 1 (Linked List)
-    ll1 = ListNode(1, ListNode(0, ListNode(1)))
-    print("Decimal Value (101):", getDecimalValue(ll1))
-    
-    # Test Problem 2 (Linked List)
-    ll2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-    print("Middle Node (1->2->3->4->5):", middleNode(ll2).val)
-    
-    # Test Stack Problems
-    print("Valid Parentheses '()[]{}':", isValid("()[]{}"))
-    print("Daily Temps [73,74,75,71,69,72,76,73]:", dailyTemperatures([73,74,75,71,69,72,76,73]))
+    print("Test Valid Parentheses '()[]{}':", isValid("()[]{}"))
+    print("Test Daily Temps [73,74,75,71,69,72,76,73]:", dailyTemperatures([73,74,75,71,69,72,76,73]))

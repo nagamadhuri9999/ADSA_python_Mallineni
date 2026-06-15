@@ -1,270 +1,262 @@
-# Day 10 Practice Problems: Introduction to Linked Lists
+# Day 10 Practice Problems: Stacks
 # Fill in the TODOs in each problem. Check the bottom of the snippet for the solution.
 
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
 # ==========================================
-# Problems 1-10: Basic Setup & Traversal
+# Problems 1-10: Stack Basics and Mechanics
 # ==========================================
 
-def problem_1_create_node():
-    # TODO: Create a Node holding the value 42 and print its data.
+def problem_1_create_stack():
+    # TODO: Create an empty stack (using a Python list) and push 'A', 'B', 'C' to it.
     pass
 
     # --- SOLUTION ---
-    # node = Node(42)
-    # print(node.data)
+    # stack = []
+    # stack.append('A')
+    # stack.append('B')
+    # stack.append('C')
+    # print(stack)
 
 
-def problem_2_link_two_nodes():
-    # TODO: Create two nodes (val 10, val 20). Link the first to the second.
+def problem_2_pop_stack():
+    # TODO: Given `stack = [1, 2, 3]`, pop the top element and store it in a variable.
     pass
 
     # --- SOLUTION ---
-    # n1 = Node(10)
-    # n2 = Node(20)
-    # n1.next = n2
+    # stack = [1, 2, 3]
+    # top_val = stack.pop()
+    # print(top_val, stack)
 
 
-def problem_3_create_linked_list():
-    # TODO: Initialize an empty LinkedList object. Check if its head is None.
+def problem_3_peek_stack():
+    # TODO: Given `stack = [10, 20, 30]`, access the top element WITHOUT removing it.
     pass
 
     # --- SOLUTION ---
-    # ll = LinkedList()
-    # print(ll.head is None)
+    # stack = [10, 20, 30]
+    # top_val = stack[-1]
+    # print(top_val, stack)
 
 
-def problem_4_manual_list_creation():
-    # TODO: Create a LinkedList, set head to Node(1), link head.next to Node(2).
+def problem_4_check_empty():
+    # TODO: Write a function `is_empty(stack)` that returns True if empty, False otherwise.
     pass
 
     # --- SOLUTION ---
-    # ll = LinkedList()
-    # ll.head = Node(1)
-    # ll.head.next = Node(2)
+    # def is_empty(stack):
+    #     return len(stack) == 0
 
 
-def problem_5_traverse_and_print():
-    # TODO: Given a LinkedList `ll`, write a while loop to print all node data.
+def problem_5_reverse_string_with_stack():
+    # TODO: Use a stack to reverse the string "hello".
     pass
 
     # --- SOLUTION ---
-    # current = ll.head
-    # while current is not None:
-    #     print(current.data)
-    #     current = current.next
+    # s = "hello"
+    # stack = []
+    # for char in s:
+    #     stack.append(char)
+    # rev = ""
+    # while stack:
+    #     rev += stack.pop()
+    # print(rev)
 
 
-def problem_6_count_nodes():
-    # TODO: Given a LinkedList `ll`, traverse it and return the total number of nodes.
+def problem_6_clear_stack():
+    # TODO: Pop elements from `stack = [1, 2, 3, 4]` using a while loop until it's empty.
     pass
 
     # --- SOLUTION ---
-    # current = ll.head
-    # count = 0
-    # while current is not None:
-    #     count += 1
-    #     current = current.next
-    # return count
+    # stack = [1, 2, 3, 4]
+    # while stack:
+    #     stack.pop()
 
 
-def problem_7_search_node():
-    # TODO: Write a function that returns True if `target` exists in the LinkedList.
+def problem_7_stack_size():
+    # TODO: Write a function to return the number of elements in a stack.
     pass
 
     # --- SOLUTION ---
-    # def search(ll, target):
-    #     current = ll.head
-    #     while current:
-    #         if current.data == target: return True
-    #         current = current.next
-    #     return False
+    # def get_size(stack):
+    #     return len(stack)
 
 
-def problem_8_get_tail():
-    # TODO: Traverse to the last node of the list and return its data. Return None if empty.
+def problem_8_bottom_element():
+    # TODO: Without destroying the stack, return the bottom-most element of `stack = [5, 6, 7]`.
     pass
 
     # --- SOLUTION ---
-    # def get_tail_data(ll):
-    #     if not ll.head: return None
-    #     current = ll.head
-    #     while current.next: # Stop AT the last node
-    #         current = current.next
-    #     return current.data
+    # stack = [5, 6, 7]
+    # bottom = stack[0] # List indexing gives us this for free in Python!
 
 
-def problem_9_sum_nodes():
-    # TODO: Return the sum of all node values in a LinkedList of integers.
+def problem_9_search_stack():
+    # TODO: Return True if `target` is in the stack, False otherwise.
     pass
 
     # --- SOLUTION ---
-    # def sum_list(ll):
-    #     total = 0
-    #     current = ll.head
-    #     while current:
-    #         total += current.data
-    #         current = current.next
-    #     return total
+    # def search(stack, target):
+    #     return target in stack
 
 
-def problem_10_find_max():
-    # TODO: Return the maximum value in a LinkedList.
+def problem_10_pop_n_elements():
+    # TODO: Pop `n` elements off the top of the stack. Handle cases where `n > len(stack)`.
     pass
 
     # --- SOLUTION ---
-    # def find_max(ll):
-    #     if not ll.head: return None
-    #     max_val = ll.head.data
-    #     current = ll.head.next
-    #     while current:
-    #         if current.data > max_val: max_val = current.data
-    #         current = current.next
-    #     return max_val
+    # def pop_n(stack, n):
+    #     for _ in range(min(n, len(stack))):
+    #         stack.pop()
 
 
 # ==========================================
-# Problems 11-20: Insertions & Modifications
+# Problems 11-20: Advanced Stack Applications
 # ==========================================
 
-def problem_11_insert_at_head():
-    # TODO: Add a method to LinkedList class: `def insert_head(self, data):`
+def problem_11_valid_parentheses_simple():
+    # TODO: Write a simple checker that returns True if a string has an equal number of '(' and ')'.
+    # (Note: This doesn't check order, just counts)
     pass
 
     # --- SOLUTION ---
-    # def insert_head(self, data):
-    #     new_node = Node(data)
-    #     new_node.next = self.head
-    #     self.head = new_node
+    # def simple_check(s):
+    #     count = 0
+    #     for ch in s:
+    #         if ch == '(': count += 1
+    #         elif ch == ')': count -= 1
+    #     return count == 0
 
 
-def problem_12_insert_at_tail():
-    # TODO: Add a method to LinkedList class: `def insert_tail(self, data):`
+def problem_12_remove_adjacent_duplicates():
+    # TODO: Given a string like "abbaca", remove adjacent duplicates to get "ca". Use a stack.
     pass
 
     # --- SOLUTION ---
-    # def insert_tail(self, data):
-    #     new_node = Node(data)
-    #     if not self.head:
-    #         self.head = new_node
-    #         return
-    #     current = self.head
-    #     while current.next:
-    #         current = current.next
-    #     current.next = new_node
+    # def remove_duplicates(s):
+    #     stack = []
+    #     for ch in s:
+    #         if stack and stack[-1] == ch:
+    #             stack.pop()
+    #         else:
+    #             stack.append(ch)
+    #     return "".join(stack)
 
 
-def problem_13_insert_after_node():
-    # TODO: Given a specific Node object `prev_node` and `data`, insert a new node right after it.
+def problem_13_decimal_to_binary():
+    # TODO: Use a stack to convert an integer `n` to a binary string. 
+    # (Hint: append `n % 2` to stack, then `n = n // 2`, then pop all).
     pass
 
     # --- SOLUTION ---
-    # def insert_after(prev_node, data):
-    #     if not prev_node: return
-    #     new_node = Node(data)
-    #     new_node.next = prev_node.next
-    #     prev_node.next = new_node
-
-
-def problem_14_delete_head():
-    # TODO: Remove the head node from the LinkedList and return its data.
-    pass
-
-    # --- SOLUTION ---
-    # def delete_head(self):
-    #     if not self.head: return None
-    #     val = self.head.data
-    #     self.head = self.head.next
-    #     return val
-
-
-def problem_15_delete_tail():
-    # TODO: Traverse to the end and remove the last node. (Hint: stop at the SECOND to last node).
-    pass
-
-    # --- SOLUTION ---
-    # def delete_tail(self):
-    #     if not self.head: return None
-    #     if not self.head.next:
-    #         val = self.head.data
-    #         self.head = None
-    #         return val
-    #     current = self.head
-    #     while current.next.next: # Stop at second to last
-    #         current = current.next
-    #     val = current.next.data
-    #     current.next = None
-    #     return val
-
-
-def problem_16_build_from_list():
-    # TODO: Given a Python list `[1, 2, 3]`, build a LinkedList holding these values in order.
-    pass
-
-    # --- SOLUTION ---
-    # def build_ll(arr):
-    #     ll = LinkedList()
-    #     for val in reversed(arr): # Insert at head is O(1)
-    #         ll.insert_head(val)
-    #     return ll
-
-
-def problem_17_convert_to_list():
-    # TODO: Traverse a LinkedList and append all values into a standard Python list, returning it.
-    pass
-
-    # --- SOLUTION ---
-    # def to_list(ll):
-    #     res = []
-    #     current = ll.head
-    #     while current:
-    #         res.append(current.data)
-    #         current = current.next
+    # def to_binary(n):
+    #     if n == 0: return "0"
+    #     stack = []
+    #     while n > 0:
+    #         stack.append(str(n % 2))
+    #         n //= 2
+    #     res = ""
+    #     while stack:
+    #         res += stack.pop()
     #     return res
 
 
-def problem_18_clear_list():
-    # TODO: Remove all nodes from the LinkedList (in Python, just remove the head reference!).
+def problem_14_min_stack_concept():
+    # TODO: Create a tuple-based stack `[(val, current_min)]` to track the minimum element in O(1) time.
     pass
 
     # --- SOLUTION ---
-    # def clear(self):
-    #     self.head = None # Garbage collector handles the rest
+    # stack = []
+    # val = 5
+    # current_min = val if not stack else min(val, stack[-1][1])
+    # stack.append((val, current_min))
 
 
-def problem_19_replace_value():
-    # TODO: Traverse the list and replace all occurrences of `old_val` with `new_val`.
+def problem_15_monotonic_increasing_stack():
+    # TODO: Build a stack where every pushed element forces strictly LARGER elements to pop.
     pass
 
     # --- SOLUTION ---
-    # def replace(ll, old_val, new_val):
-    #     current = ll.head
-    #     while current:
-    #         if current.data == old_val:
-    #             current.data = new_val
-    #         current = current.next
+    # def build_mono(arr):
+    #     stack = []
+    #     for num in arr:
+    #         while stack and stack[-1] > num:
+    #             stack.pop()
+    #         stack.append(num)
+    #     return stack
 
 
-def problem_20_print_formatted():
-    # TODO: Print the list exactly like "1 -> 2 -> 3 -> None".
+def problem_16_browser_history():
+    # TODO: Simulate visiting URLs. Push URLs to a stack. Write a function to go "back".
     pass
 
     # --- SOLUTION ---
-    # def print_ll(ll):
-    #     current = ll.head
-    #     while current:
-    #         print(f"{current.data} -> ", end="")
-    #         current = current.next
-    #     print("None")
+    # history = []
+    # history.append("google.com")
+    # history.append("youtube.com")
+    # current_page = history.pop() if history else None
+
+
+def problem_17_evaluate_postfix_simple():
+    # TODO: Given tokens `['2', '3', '+']`, use a stack to evaluate it to `5`.
+    pass
+
+    # --- SOLUTION ---
+    # tokens = ['2', '3', '+']
+    # stack = []
+    # for t in tokens:
+    #     if t == '+':
+    #         stack.append(stack.pop() + stack.pop())
+    #     else:
+    #         stack.append(int(t))
+    # print(stack[0])
+
+
+def problem_18_sort_stack():
+    # TODO: Sort a stack using a temporary secondary stack.
+    pass
+
+    # --- SOLUTION ---
+    # def sort_stack(stack):
+    #     temp_stack = []
+    #     while stack:
+    #         curr = stack.pop()
+    #         while temp_stack and temp_stack[-1] > curr:
+    #             stack.append(temp_stack.pop())
+    #         temp_stack.append(curr)
+    #     return temp_stack
+
+
+def problem_19_next_greater_element_brute():
+    # TODO: Given an array, find the next greater element for each item using a brute-force O(n^2) loop.
+    pass
+
+    # --- SOLUTION ---
+    # def nge_brute(arr):
+    #     res = [-1] * len(arr)
+    #     for i in range(len(arr)):
+    #         for j in range(i+1, len(arr)):
+    #             if arr[j] > arr[i]:
+    #                 res[i] = arr[j]
+    #                 break
+    #     return res
+
+
+def problem_20_implement_stack_using_class():
+    # TODO: Write a CustomStack class with push, pop, and peek methods.
+    pass
+
+    # --- SOLUTION ---
+    # class CustomStack:
+    #     def __init__(self):
+    #         self.items = []
+    #     def push(self, val):
+    #         self.items.append(val)
+    #     def pop(self):
+    #         if not self.is_empty(): return self.items.pop()
+    #     def peek(self):
+    #         if not self.is_empty(): return self.items[-1]
+    #     def is_empty(self):
+    #         return len(self.items) == 0
 
 
 if __name__ == "__main__":
-    print("Welcome to Day 10 Practice Problems!")
+    print("Welcome to Day 10 Practice Problems (Stacks)!")

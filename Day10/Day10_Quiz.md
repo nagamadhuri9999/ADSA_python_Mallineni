@@ -1,257 +1,255 @@
-# Day 10: Introduction to Linked Lists Quiz
+# Day 10: Introduction to Stacks Quiz
 
 Test your knowledge of Day 10 concepts! Choose the best answer for each question.
 
 ---
 
-### 1. What is a Linked List?
-A) A sequence of elements stored in contiguous memory locations.
-B) A linear collection of data elements where each element points to the next.
-C) A built-in Python data type that is faster than a list.
-D) A 2D grid of numbers.
+### 1. What does the acronym LIFO stand for?
+A) Last In, First Out
+B) List In, File Out
+C) Last Item, Final Object
+D) Leave In, Find Out
 
-### 2. In a Linked List, what is a "Node"?
-A) The very last element.
-B) An object containing both data and a pointer to the next element.
-C) A variable that stores the length of the list.
-D) A syntax error.
+### 2. Which real-world example best represents a Stack?
+A) A line of people waiting for a bus.
+B) A stack of cafeteria plates.
+C) A dictionary of words.
+D) A web of connected cities.
 
-### 3. What does the "head" of a Linked List point to?
-A) The largest element.
-B) The last node.
-C) The first node in the sequence.
-D) `None` (always).
+### 3. Which operation adds an item to the top of a stack?
+A) Push
+B) Pop
+C) Peek
+D) Enqueue
 
-### 4. What does the `next` pointer of the LAST node in a singly linked list point to?
-A) The head node.
-B) The previous node.
-C) `None` (or null).
-D) Itself.
+### 4. Which operation removes and returns the item from the top of a stack?
+A) Push
+B) Pop
+C) Peek
+D) Dequeue
 
-### 5. Why might you choose a Linked List over a standard Array/List?
-A) To get faster O(1) access to elements by index.
-B) To save memory space (Linked Lists use less memory than Arrays).
-C) For efficient O(1) insertions/deletions at the beginning of the sequence.
-D) Because Python forces you to.
+### 5. What does the `peek()` or `top()` operation do?
+A) Removes the top item.
+B) Adds an item to the bottom.
+C) Returns the top item without removing it.
+D) Clears the entire stack.
 
-### 6. What is the time complexity of accessing the 100th element in a Linked List?
+### 6. What is the time complexity of the `push` operation in a standard stack?
 A) O(1)
 B) O(log n)
 C) O(n)
 D) O(n^2)
 
-### 7. What is the time complexity of accessing the 100th element in an Array?
+### 7. What is the time complexity of the `pop` operation in a standard stack?
 A) O(1)
 B) O(log n)
 C) O(n)
 D) O(n^2)
 
-### 8. How do you instantiate a Node with data `5` using `node = Node(5)`?
-A) You must import the Node library.
-B) You must define a `class Node:` with an `__init__` method.
-C) It is a built-in Python command.
-D) You cast an integer to a Node.
+### 8. In Python, what built-in data structure is typically used to implement a Stack?
+A) tuple
+B) dictionary
+C) list
+D) set
 
-### 9. What happens if you lose the reference to the `head` node of a Linked List?
-A) The list automatically recreates it.
-B) You can easily find it by traversing backwards from the tail.
-C) You lose access to the entire list, and it may be garbage collected.
-D) Python throws an immediate error.
+### 9. Which Python list method is used to simulate a `push` operation?
+A) `.add()`
+B) `.push()`
+C) `.append()`
+D) `.insert(0, item)`
 
-### 10. To traverse a Linked List, what is the standard loop condition?
-A) `for i in range(len(list)):`
-B) `while current is not None:`
-C) `while True:`
-D) `while current.next == head:`
+### 10. Which Python list method is used to simulate a `pop` operation?
+A) `.remove()`
+B) `.pop()`
+C) `.delete()`
+D) `.pop(0)`
 
-### 11. During traversal, how do you move to the next node?
-A) `current = current + 1`
-B) `current += current.next`
-C) `current = current.next`
-D) `current.next()`
+### 11. How do you `peek` at the top item of a stack implemented as a Python list?
+A) `stack.peek()`
+B) `stack[0]`
+C) `stack[-1]`
+D) `stack.top()`
 
-### 12. If `ll` is an empty LinkedList, what is the value of `ll.head`?
-A) `0`
-B) `False`
-C) `None`
-D) `[]`
+### 12. Why is it a bad idea to use `.insert(0, item)` to push onto a Python list stack?
+A) It causes a syntax error.
+B) It takes O(n) time because all other elements must be shifted.
+C) It deletes the list.
+D) It only works on strings.
 
-### 13. What is the Time Complexity to insert a new node at the VERY BEGINNING (Head) of a Linked List?
+### 13. If you push 'A', then 'B', then 'C' onto an empty stack, what will the first `pop()` return?
+A) 'A'
+B) 'B'
+C) 'C'
+D) None
+
+### 14. If you push 1, 2, 3, pop once, push 4, and pop again, what is returned by the last pop?
+A) 1
+B) 2
+C) 3
+D) 4
+
+### 15. What is the main characteristic of a Monotonic Increasing Stack?
+A) It only holds integers.
+B) Elements are always in strictly increasing order from bottom to top.
+C) It cannot be popped.
+D) It never grows larger than 5 elements.
+
+### 16. In a Valid Parentheses problem, when you encounter a closing bracket `)`, what should you do?
+A) Push it onto the stack.
+B) Check if the stack is empty. If not, pop the top and check if it's an `(`.
+C) Delete the stack.
+D) Ignore it.
+
+### 17. If a string is "()[]{}", will the stack be empty at the very end of processing?
+A) Yes
+B) No
+
+### 18. If a string is "([)]", what happens when you process the `)`?
+A) You pop `[`, they don't match, so it's invalid.
+B) You pop `(`, they match, so it's valid.
+C) You push `)`.
+D) The program crashes.
+
+### 19. What does the "Call Stack" do in most programming languages?
+A) Makes phone calls over the internet.
+B) Keeps track of active functions and where they should return when finished.
+C) Stores the source code.
+D) Deletes unused variables.
+
+### 20. If Function A calls Function B, which function is at the top of the Call Stack?
+A) Function A
+B) Function B
+C) Neither
+D) The main program
+
+### 21. What happens if the Call Stack grows too large (e.g., infinite recursion)?
+A) Stack Overflow
+B) Stack Underflow
+C) Out of Bounds Error
+D) Syntax Error
+
+### 22. What is Reverse Polish Notation (RPN)?
+A) A way to write numbers backwards.
+B) A mathematical notation in which operators follow their operands (e.g., `3 4 +`).
+C) A sorting algorithm.
+D) A database format.
+
+### 23. How do you evaluate an RPN expression using a Stack?
+A) Push operators, pop numbers.
+B) Push numbers. When you see an operator, pop two numbers, apply the operator, and push the result.
+C) You can't use a stack for RPN.
+D) Sort the expression first.
+
+### 24. For the RPN expression `5 1 2 + 4 * + 3 -`, what is pushed onto the stack first?
+A) `+`
+B) `5`
+C) `3`
+D) `-`
+
+### 25. What does the Backspace String Compare problem demonstrate?
+A) That keyboards are unreliable.
+B) That stacks are perfect for simulating typing where a character (like `#`) "undoes" or pops the previous character.
+C) That arrays are faster than stacks.
+D) How to encrypt passwords.
+
+### 26. To reverse a string using a stack, what do you do?
+A) Push all characters onto the stack, then pop them all off into a new string.
+B) Pop all characters.
+C) Sort the stack.
+D) Count the stack length.
+
+### 27. What is "Stack Underflow"?
+A) Pushing too many items.
+B) Popping from an empty stack.
+C) A memory leak.
+D) Using floats instead of integers.
+
+### 28. In Python, what error occurs if you call `.pop()` on an empty list?
+A) ValueError
+B) TypeError
+C) IndexError: pop from empty list
+D) KeyError
+
+### 29. Can a Stack be implemented using a Linked List?
+A) Yes, by keeping a pointer to the head and performing O(1) insertions/deletions at the head.
+B) No, Stacks must be arrays.
+C) Yes, but it takes O(n) time for every operation.
+D) Only in C++.
+
+### 30. Which real-world software feature is NOT typically implemented with a Stack?
+A) Browser history (Back button)
+B) Undo mechanism in a text editor
+C) A printer queue (first to click print, first to get paper)
+D) Call Stack for recursion
+
+### 31. If you need to find the "Next Greater Element" for every item in an array in O(n) time, what type of stack is best?
+A) A randomized stack.
+B) A monotonic decreasing stack.
+C) A string stack.
+D) A binary tree.
+
+### 32. In the "Daily Temperatures" problem, what do you typically store in the stack?
+A) The actual temperature values.
+B) The indices of the temperatures, so you can calculate how many days passed.
+C) The string "hot" or "cold".
+D) Nothing.
+
+### 33. If you push items 1, 2, 3 into a stack, how many pops does it take to empty it?
+A) 1
+B) 2
+C) 3
+D) 4
+
+### 34. What is the Space Complexity of a Stack containing `N` items?
 A) O(1)
-B) O(log n)
-C) O(n)
-D) O(n^2)
+B) O(log N)
+C) O(N)
+D) O(N^2)
 
-### 14. What are the correct steps to insert `new_node` at the Head?
-A) `self.head = new_node` then `new_node.next = self.head`
-B) `new_node.next = self.head` then `self.head = new_node`
-C) `self.head.next = new_node`
-D) `new_node = self.head`
-
-### 15. Why is the order of operations crucial when inserting at the Head?
-A) It isn't; Python handles it automatically.
-B) If you overwrite `self.head` first, you lose the reference to the rest of the list.
-C) It prevents memory leaks.
-D) It makes the code run faster.
-
-### 16. What is the Time Complexity to insert a new node at the END (Tail) of a singly linked list (assuming no `tail` pointer exists)?
-A) O(1)
-B) O(log n)
-C) O(n)
-D) O(n^2)
-
-### 17. How do you find the last node in a Linked List?
-A) Check if `current.next is None`.
-B) Check if `current is None`.
-C) Use `ll[-1]`.
-D) Check if `current.data == 0`.
-
-### 18. If you have a `tail` pointer in your LinkedList class, what becomes the Time Complexity of inserting at the end?
-A) O(1)
-B) O(n)
-C) O(log n)
-D) O(n^2)
-
-### 19. What is a "Memory Leak" in the context of Linked Lists (in languages without garbage collection like C++)?
-A) When water gets into the RAM.
-B) When you delete a node from the list but forget to free its allocated memory.
-C) When the list gets too long.
-D) When `current.next` points to `None`.
-
-### 20. Does Python suffer from memory leaks in the same way C++ does for Linked Lists?
-A) Yes, exactly the same.
-B) No, Python has a Garbage Collector that cleans up unreferenced objects.
-C) Python doesn't use memory.
-D) Only if the list is longer than 1000 nodes.
-
-### 21. How do you delete the head node of a Linked List?
-A) `del self.head`
-B) `self.head = self.head.next`
-C) `self.head.next = None`
-D) `self.head = None`
-
-### 22. What happens if you try to traverse a list and do `print(current.data)` when `current` is `None`?
-A) It prints `None`.
-B) It throws an `AttributeError: 'NoneType' object has no attribute 'data'`.
-C) It skips the print statement.
-D) It loops back to the head.
-
-### 23. Arrays use contiguous memory. What does this mean?
-A) The memory blocks are scattered everywhere.
-B) The memory blocks are located right next to each other sequentially.
-C) The memory changes size constantly.
-D) The memory is stored on the hard drive.
-
-### 24. A Singly Linked List allows traversal in how many directions?
-A) One (Forward only)
-B) Two (Forward and Backward)
-C) Random access
-D) Circular
-
-### 25. If a node's `next` pointer accidentally points to a previous node in the list, what happens during traversal?
-A) The list prints backwards.
-B) It creates an infinite loop (a cycle).
-C) It automatically fixes itself.
-D) The program deletes the node.
-
-### 26. Which operation is generally FASTER in an Array than a Linked List?
-A) Inserting at the beginning.
-B) Deleting the first element.
-C) Accessing the 50th element.
-D) Growing the size dynamically.
-
-### 27. When deleting the LAST node in a singly linked list, why must you stop at the second-to-last node?
-A) Because you need to update the second-to-last node's `next` pointer to `None`.
-B) Because the last node is protected.
-C) To save time.
-D) You don't have to; you can stop at the last node.
-
-### 28. How do you stop a traversal loop AT the last node (not after it)?
-A) `while current is not None:`
-B) `while current.next is not None:`
-C) `while current.data is not None:`
-D) `while current == tail:`
-
-### 29. Can a Linked List hold different data types in Python (e.g., Node(5) -> Node("Hello") -> Node(True))?
-A) Yes, because Python is dynamically typed.
-B) No, Linked Lists must hold homogeneous data.
-C) Only if you import a special library.
-D) Yes, but only in arrays.
-
-### 30. What does the `__init__` method do in the `Node` class?
-A) Deletes the node.
-B) Initializes the object's attributes (`data` and `next`) when created.
-C) Prints the node.
-D) Links it to the head.
-
-### 31. If you want to insert a node `new_node` AFTER a given node `prev_node`, what is the correct order of operations?
-A) `prev_node.next = new_node` then `new_node.next = prev_node.next`
-B) `new_node.next = prev_node.next` then `prev_node.next = new_node`
-C) `prev_node = new_node`
-D) `new_node.next = None`
-
-### 32. In the above question, what happens if you do step A instead of step B?
-A) It works perfectly.
-B) `new_node.next` will point to itself, and you lose the rest of the list!
-C) The list is reversed.
-D) A Syntax Error occurs.
-
-### 33. What is the Space Complexity of a Linked List containing `n` elements?
-A) O(1)
-B) O(log n)
-C) O(n)
-D) O(n^2)
-
-### 34. What is a major disadvantage of Linked Lists regarding memory?
-A) They use no memory.
-B) Every element requires extra memory to store the `next` pointer.
-C) They require a single massive contiguous block of RAM.
-D) They can only hold integers.
-
-### 35. If you write `node1 = Node(1)` and `node2 = node1`, what happens?
-A) Two separate nodes are created with value 1.
-B) `node2` points to the EXACT SAME object in memory as `node1`.
-C) `node2` becomes the `next` of `node1`.
-D) An error occurs.
+### 35. Does a Stack allow you to access the middle element in O(1) time?
+A) Yes, via `stack.mid()`.
+B) No, a strict Stack only allows access to the top element.
+C) Yes, via indexing.
+D) Only if the stack length is odd.
 
 ---
 <details>
 <summary><b>Click here to view the answers</b></summary>
 
-1. **B) A linear collection of data elements where each element points to the next.**
-2. **B) An object containing both data and a pointer to the next element.**
-3. **C) The first node in the sequence.**
-4. **C) `None` (or null).**
-5. **C) For efficient O(1) insertions/deletions at the beginning of the sequence.**
-6. **C) O(n)**
+1. **A) Last In, First Out**
+2. **B) A stack of cafeteria plates.**
+3. **A) Push**
+4. **B) Pop**
+5. **C) Returns the top item without removing it.**
+6. **A) O(1)**
 7. **A) O(1)**
-8. **B) You must define a `class Node:` with an `__init__` method.**
-9. **C) You lose access to the entire list, and it may be garbage collected.**
-10. **B) `while current is not None:`**
-11. **C) `current = current.next`**
-12. **C) `None`**
-13. **A) O(1)**
-14. **B) `new_node.next = self.head` then `self.head = new_node`**
-15. **B) If you overwrite `self.head` first, you lose the reference to the rest of the list.**
-16. **C) O(n)**
-17. **A) Check if `current.next is None`.**
-18. **A) O(1)**
-19. **B) When you delete a node from the list but forget to free its allocated memory.**
-20. **B) No, Python has a Garbage Collector that cleans up unreferenced objects.**
-21. **B) `self.head = self.head.next`**
-22. **B) It throws an `AttributeError: 'NoneType' object has no attribute 'data'`.**
-23. **B) The memory blocks are located right next to each other sequentially.**
-24. **A) One (Forward only)**
-25. **B) It creates an infinite loop (a cycle).**
-26. **C) Accessing the 50th element.**
-27. **A) Because you need to update the second-to-last node's `next` pointer to `None`.**
-28. **B) `while current.next is not None:`**
-29. **A) Yes, because Python is dynamically typed.**
-30. **B) Initializes the object's attributes (`data` and `next`) when created.**
-31. **B) `new_node.next = prev_node.next` then `prev_node.next = new_node`**
-32. **B) `new_node.next` will point to itself, and you lose the rest of the list!**
-33. **C) O(n)**
-34. **B) Every element requires extra memory to store the `next` pointer.**
-35. **B) `node2` points to the EXACT SAME object in memory as `node1`.**
+8. **C) list**
+9. **C) `.append()`**
+10. **B) `.pop()`**
+11. **C) `stack[-1]`**
+12. **B) It takes O(n) time because all other elements must be shifted.**
+13. **C) 'C'**
+14. **D) 4**
+15. **B) Elements are always in strictly increasing order from bottom to top.**
+16. **B) Check if the stack is empty. If not, pop the top and check if it's an `(`.**
+17. **A) Yes**
+18. **A) You pop `[`, they don't match, so it's invalid.**
+19. **B) Keeps track of active functions and where they should return when finished.**
+20. **B) Function B**
+21. **A) Stack Overflow**
+22. **B) A mathematical notation in which operators follow their operands.**
+23. **B) Push numbers. When you see an operator, pop two numbers, apply the operator, and push the result.**
+24. **B) `5`**
+25. **B) That stacks are perfect for simulating typing where a character (like `#`) "undoes" or pops the previous character.**
+26. **A) Push all characters onto the stack, then pop them all off into a new string.**
+27. **B) Popping from an empty stack.**
+28. **C) IndexError: pop from empty list**
+29. **A) Yes, by keeping a pointer to the head and performing O(1) insertions/deletions at the head.**
+30. **C) A printer queue (first to click print, first to get paper)**
+31. **B) A monotonic decreasing stack.**
+32. **B) The indices of the temperatures, so you can calculate how many days passed.**
+33. **C) 3**
+34. **C) O(N)**
+35. **B) No, a strict Stack only allows access to the top element.**
 
 </details>

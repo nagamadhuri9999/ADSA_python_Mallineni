@@ -1,18 +1,23 @@
-# Day 10: Introduction to Linked Lists
+# Day 10: Introduction to Stacks
 
-## 1. Linked Lists vs Arrays
-- Memory allocation (contiguous vs dynamic).
-- Pros and cons of Linked Lists.
+## 1. Stack Fundamentals
+- LIFO (Last In, First Out) principle.
+- Mental models: A stack of plates, a back button in a browser.
 
-## 2. The Node Structure
-- Building blocks of a Linked List.
-- Classes and Objects in Python (`__init__`, `self`).
+## 2. Basic Operations
+- `push()`: Adding to the top.
+- `pop()`: Removing from the top.
+- `peek()` / `top()`: Viewing the top without removing.
+- `isEmpty()`: Checking if the stack is empty.
 
-## 3. Singly Linked Lists
-- Initializing the Head.
-- Traversing a Linked List.
+## 3. Implementation in Python
+- Using Python's built-in `list` as a stack.
+- `append()` vs `push()`.
+- `pop()` mechanics.
+- Time Complexities (O(1) operations).
 
-## 4. Basic Operations
-- Insertion at the Head.
-- Insertion at the Tail.
-- Calculating the length of a Linked List.
+## 4. Powerful Applications
+- String Reversals.
+- Validating Parentheses.
+- Evaluating Postfix / Reverse Polish Notation.
+- Monotonic Stacks (Next Greater Element).
