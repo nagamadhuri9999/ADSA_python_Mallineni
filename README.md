@@ -1,4 +1,5 @@
 ##prompt for linkedin post:
+
 i am starting 30days coding challenge,
 today is my day1,
 today i have solved problem on quick sort,
