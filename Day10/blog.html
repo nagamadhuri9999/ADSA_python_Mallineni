@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10: Introduction to Linked Lists</title>
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .markdown-body h2 { color: #38bdf8; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background-color: #1e293b; color: #e2e8f0; }
+        .quiz-option { cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #334155; }
+        .quiz-correct { background-color: #166534 !important; border-color: #22c55e !important; }
+        .quiz-wrong { background-color: #991b1b !important; border-color: #ef4444 !important; }
+    </style>
+</head>
+<body class="antialiased min-h-screen p-6">
+
+<div class="max-w-4xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-500 mb-4">
+            Day 10: Linked Lists
+        </h1>
+        <p class="text-xl text-slate-400">Nodes, Pointers, and Dynamic Memory.</p>
+    </header>
+
+    <!-- Main Notes Section -->
+    <main class="glass-panel rounded-2xl p-8 mb-10 markdown-body shadow-2xl">
+        <h2>1. The Node Structure</h2>
+        <p>Unlike Arrays where elements sit next to each other, Linked List elements (Nodes) are scattered in memory. A Node stores data AND a pointer to the next Node.</p>
+
+        <pre><code class="language-python">
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        </code></pre>
+
+        <h2>2. Visualizing a Linked List</h2>
+        <p>The entire list is controlled by a single reference to the first node, called the <strong>Head</strong>.</p>
+        
+        <div class="my-6 bg-slate-900 rounded-lg p-4 flex justify-center">
+            <div class="mermaid">
+            graph LR
+                A["Head Pointer"] --> B["[Data: 10 | Next]"]
+                B --> C["[Data: 20 | Next]"]
+                C --> D["[Data: 30 | Next]"]
+                D --> E["None"]
+            </div>
+        </div>
+
+        <h2>3. Traversal</h2>
+        <p>To print or search a Linked List, we must "walk" through it node by node using a loop. We cannot jump straight to index 5!</p>
+
+        <pre><code class="language-python">
+current = head
+while current is not None:
+    print(current.data)
+    current = current.next
+        </code></pre>
+
+        <h2>4. Insertions</h2>
+        <p>Inserting at the Head is extremely fast <strong>O(1)</strong> because we don't need to shift any existing elements!</p>
+        <pre><code class="language-python">
+new_node = Node(5)
+new_node.next = self.head  # Point new node to old head
+self.head = new_node       # Update the head pointer
+        </code></pre>
+
+    </main>
+
+    <!-- Interactive Quiz Section -->
+    <section class="glass-panel rounded-2xl p-8 mb-10 shadow-2xl">
+        <h2 class="text-3xl font-bold text-emerald-400 mb-6">Interactive Quiz</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the time complexity to insert a new node at the VERY BEGINNING (Head) of a Linked List?",
+            options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+            correct: 0
+        },
+        {
+            question: "What does the `next` pointer of the LAST node in a singly linked list point to?",
+            options: ["The head node.", "The previous node.", "None (or null).", "Itself."],
+            correct: 2
+        },
+        {
+            question: "During traversal, how do you move to the next node?",
+            options: ["current = current + 1", "current += current.next", "current = current.next", "current.next()"],
+            correct: 2
+        }
+    ];
+
+    const quizContainer = document.getElementById('quiz-container');
+
+    quizData.forEach((q, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'mb-8 pb-8 border-b border-slate-700 last:border-0';
+        
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-xl font-semibold mb-4';
+        qTitle.textContent = `${index + 1}. ${q.question}`;
+        qBlock.appendChild(qTitle);
+
+        const optionsGrid = document.createElement('div');
+        optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+        q.options.forEach((opt, optIndex) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option text-left p-4 rounded-lg border border-slate-600 bg-slate-800 font-medium w-full';
+            btn.textContent = opt;
+            btn.onclick = () => {
+                Array.from(optionsGrid.children).forEach(b => b.disabled = true);
+                if (optIndex === q.correct) {
+                    btn.classList.add('quiz-correct');
+                } else {
+                    btn.classList.add('quiz-wrong');
+                    optionsGrid.children[q.correct].classList.add('quiz-correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
+        });
+
+        qBlock.appendChild(optionsGrid);
+        quizContainer.appendChild(qBlock);
+    });
+</script>
+
+</body>
+</html>

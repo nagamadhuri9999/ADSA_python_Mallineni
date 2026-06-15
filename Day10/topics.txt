@@ -1,0 +1,18 @@
+# Day 10: Introduction to Linked Lists
+
+## 1. Linked Lists vs Arrays
+- Memory allocation (contiguous vs dynamic).
+- Pros and cons of Linked Lists.
+
+## 2. The Node Structure
+- Building blocks of a Linked List.
+- Classes and Objects in Python (`__init__`, `self`).
+
+## 3. Singly Linked Lists
+- Initializing the Head.
+- Traversing a Linked List.
+
+## 4. Basic Operations
+- Insertion at the Head.
+- Insertion at the Tail.
+- Calculating the length of a Linked List.
