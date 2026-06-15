@@ -1,4 +1,4 @@
-#Day10 quiz LInk: 
+#Day10 quiz LInk: https://forms.gle/JQvizYeHcmodzig6A
 
 #Daily FeedBack Form Link: https://forms.gle/cg1ipBgTk3aHcaFm6
 
