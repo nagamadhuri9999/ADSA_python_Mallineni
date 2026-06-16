@@ -1,0 +1,24 @@
+# Day 12: Circular Queues and Deques
+
+## 1. Circular Queues
+- Definition and why we need them (overcoming array-based queue limitations).
+- Modulo arithmetic for circular increment.
+- Implementing Circular Queue using Arrays.
+- `enQueue()`, `deQueue()`, `Front()`, `Rear()`, `isEmpty()`, `isFull()` operations.
+- Time and Space Complexity.
+
+## 2. Deques (Double Ended Queues)
+- Definition and properties.
+- Operations: `insertFront()`, `insertLast()`, `deleteFront()`, `deleteLast()`.
+- Implementation using `collections.deque` in Python.
+- Applications of Deques (Sliding Window Maximum, Palindrome checking).
+
+## 3. Linked List Implementations
+- Implementing a Circular Queue using a Circular Linked List.
+- Implementing a Deque using a Doubly Linked List.
+- Comparing Array vs Linked List implementations.
+
+## 4. Real-world Applications
+- Memory management (Ring buffers).
+- CPU Scheduling.
+- Traffic light systems.
