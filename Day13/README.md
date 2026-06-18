@@ -6,6 +6,9 @@ Welcome to Day 13! Today we dive into algorithmic problem-solving using **Linked
 We are applying our Linked List knowledge to solve classic LeetCode problems. These problems frequently appear in top-tier tech interviews.
 
 ## 💻 LeetCode Implementations
+- **[Day13_Basic_LinkedList_Problems.py](Day13_Basic_LinkedList_Problems.py)** - A massive collection of **50+ foundational Linked List functions**, including:
+  - Finding Min, Max, Sum, Product, and Average of a Linked List.
+  - 50 diverse operations (Reversing, Removing Duplicates, Segregating Even/Odd, Rotations, Cycle Detection, etc).
 - **[Day13_Leetcode.py](Day13_Leetcode.py)** - Contains optimal Python solutions for the following problems:
   1. **Reverse Linked List** (LeetCode 206) - *O(N) Time, O(1) Space*
   2. **Merge Two Sorted Lists** (LeetCode 21) - *O(N+M) Time, O(1) Space*
