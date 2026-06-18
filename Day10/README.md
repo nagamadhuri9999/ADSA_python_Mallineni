@@ -24,6 +24,7 @@ Welcome to Day 10! Today is all about understanding the **Stack**, one of the mo
 
 ## 🎓 Practice & Evaluation
 
+- **🛠️ 50 Sorting Coding Problems:** [Day10_50_Sorting_Coding_Problems.py](Day10_50_Sorting_Coding_Problems.py) - 50 Python implementations of core sorting algorithms and LeetCode problems!
 - **🛠️ Practice Problems:** [Day10_Practice_Problems.py](Day10_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax of list-based stacks.
 - **🧠 Quiz:** [Day10_Quiz.md](Day10_Quiz.md) - A 35-question test on LIFO, time complexities, and monotonic concepts.
 - **🏆 Capstone Task:** [Day10_Task.md](Day10_Task.md) - Build a "Text Editor Undo Simulator"!
