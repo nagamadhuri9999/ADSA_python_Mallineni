@@ -89,5 +89,10 @@ This repository is structured by day. Each day acts as a progressive module comp
 - Complete Python representations of Circular Queues using both Arrays and purely Linked Lists.
 - Real-world algorithms: Sliding Window Maximum and Palindrome verification.
 
+### Day 13: Linked Lists Algorithm Mastery
+- Focus on pointer manipulation and traversal techniques.
+- Algorithms implemented: Two-pointer technique (Fast & Slow pointers), Floyd's Tortoise and Hare.
+- Classic LeetCode solutions: Reverse Linked List, Merge Sorted Lists, Cycle Detection, and Nth Node Removal.
+
 ---
 *Built with ❤️ for rapid Python proficiency.*
