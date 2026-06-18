@@ -18,7 +18,9 @@ Welcome to Day 10! Today is all about understanding the **Stack**, one of the mo
 ## 📚 Learning Materials
 
 - **📝 Notes:** [Day10_Detailed_Notes.md](Day10_Detailed_Notes.md) - Comprehensive notes on Stack architecture and operations.
-- **🖥️ Interactive UI:** [blog.html](blog.html) - A dynamic web interface embedding today's notes, visual diagrams, and an interactive quiz. Open in your browser!
+- **📖 50 Sorting Q&A:** [Day10_50_Sorting_QA.md](Day10_50_Sorting_QA.md) - A definitive collection of 50 crucial interview questions and answers exclusively on Sorting algorithms!
+- **📖 Read the full Blog:** [Day 10 Blog Post](blog.html) - Open in your browser!
+- **🔍 Extra Practice:** Check out more stack problems on [LeetCode](https://leetcode.com/tag/stack/) or [HackerRank](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks).
 
 ## 🎓 Practice & Evaluation
 
