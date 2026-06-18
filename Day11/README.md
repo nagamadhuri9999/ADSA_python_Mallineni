@@ -35,6 +35,8 @@ We have built a premium, interactive Next.js application to perfectly visualize 
 
 ## 🎓 Practice & Evaluation
 
+- **🛠️ 50 Stack Problems:** [Day11_50_Stack_Problems.py](Day11_50_Stack_Problems.py) - A massive collection of 50 core stack algorithms and applications!
+- **🛠️ 50 Queue Problems:** [Day11_50_Queue_Problems.py](Day11_50_Queue_Problems.py) - A massive collection of 50 core queue algorithms and applications!
 - **🛠️ Practice Problems:** [Day11_Practice_Problems.py](Day11_Practice_Problems.py) - Hands-on coding exercises.
 - **🧠 Quiz:** [Day11_Quiz.md](Day11_Quiz.md) - Test your understanding of both structures.
 - **🏆 Capstone Task:** [Day11_Task.md](Day11_Task.md) - Build a "Printer Spooler Simulator" and the "Valid Parentheses Checker"!
