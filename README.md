@@ -1,15 +1,167 @@
-Git commands:
-git config user.name  "githubusername"
+# Git Setup & Push Commands
 
-git config user.email "gitemail"
+## Configure Git Username
 
-git remote remove origin 
+```bash
+git config --global user.name "githubusername"
+```
+
+Example:
+
+```bash
+git config --global user.name "venkatesh7975"
+```
+
+---
+
+## Configure Git Email
+
+```bash
+git config --global user.email "gitemail"
+```
+
+Example:
+
+```bash
+git config --global user.email "yourmail@gmail.com"
+```
+
+---
+
+## Verify Configuration
+
+```bash
+git config --global --list
+```
+
+---
+
+## Remove Existing Remote
+
+```bash
+git remote remove origin
+```
+
+---
+
+# Push Local Project to GitHub
+
+## Initialize Git Repository
+
+```bash
 git init
+```
+
+## Add All Files
+
+```bash
 git add .
+```
+
+## Create Commit
+
+```bash
 git commit -m "Initial commit"
+```
+
+## Rename Branch to Main
+
+```bash
 git branch -M main
+```
+
+## Add GitHub Repository
+
+```bash
 git remote add origin repository-url
+```
+
+Example:
+
+```bash
+git remote add origin https://github.com/username/repository-name.git
+```
+
+## Push Code to GitHub
+
+```bash
 git push -u origin main
+```
+
+---
+
+# Check Connected Remote Repository
+
+```bash
+git remote -v
+```
+
+---
+
+# Clone Existing Repository
+
+```bash
+git clone repository-url
+```
+
+Example:
+
+```bash
+git clone https://github.com/username/repository-name.git
+```
+
+---
+
+# Pull Latest Changes
+
+```bash
+git pull origin main
+```
+
+---
+
+# Push New Changes
+
+```bash
+git add .
+git commit -m "Updated project"
+git push origin main
+```
+
+---
+
+# Useful Git Commands
+
+## Check Status
+
+```bash
+git status
+```
+
+## View Commit History
+
+```bash
+git log --oneline
+```
+
+## Create New Branch
+
+```bash
+git checkout -b branch-name
+```
+
+## Switch Branch
+
+```bash
+git checkout branch-name
+```
+
+## Merge Branch
+
+```bash
+git merge branch-name
+```
+
 
 
 
