@@ -22,6 +22,7 @@ Welcome to Day 12! Today we advance our queue knowledge by focusing on two speci
 - **📝 Topics:** [Topics.txt](Topics.txt) - Quick overview of today's curriculum.
 - **📖 Detailed Notes:** [Day12_Detailed_Notes.md](Day12_Detailed_Notes.md) - Comprehensive theoretical notes on Circular Queues and Deques.
 - **🎤 Interview Prep:** [Day12_Interview_Questions.md](Day12_Interview_Questions.md) - Crucial Q&A to help you ace your technical interviews.
+- **💯 100 Interview Q&A:** [Day12_100_Interview_QA.md](Day12_100_Interview_QA.md) - The ultimate compilation of 100 interview questions on Circular Queues and Deques.
 - **🧩 Circular Queue & Deque (Linked List Variants):** [LinkedList_Implementations.py](LinkedList_Implementations.py) - How to build Circular Queues and Deques using purely Linked Lists!
 - **🔗 Singly Linked List:** [SinglyLinkedList.py](SinglyLinkedList.py) - Fundamental node creation, insertion, and deletion.
 - **🔗 Doubly Linked List:** [DoublyLinkedList.py](DoublyLinkedList.py) - Forward and backward traversal with prev/next pointers.

@@ -16,5 +16,8 @@ We are applying our Linked List knowledge to solve classic LeetCode problems. Th
   4. **Middle of the Linked List** (LeetCode 876) - *Fast & Slow Pointer approach*
   5. **Remove Nth Node From End of List** (LeetCode 19) - *One-pass optimal approach*
 
+## 🎤 Interview Preparation
+- **💯 100 Interview Q&A:** [Day13_100_Interview_QA.md](Day13_100_Interview_QA.md) - The ultimate compilation of 100 interview questions covering all aspects of Linked Lists.
+
 ---
 *Keep practicing! Pointer manipulation is the key to mastering Linked Lists.*
