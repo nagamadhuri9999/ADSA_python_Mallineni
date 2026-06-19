@@ -1,3 +1,17 @@
+Git commands:
+git config user.name  "githubusername"
+
+git config user.email "gitemail"
+
+git remote remove origin 
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin repository-url
+git push -u origin main
+
+
 
 ## 🔗 Important Program Links
 - **Daily Quiz Link:** Day13: https://forms.gle/eqS9nVHZCpRuRHXA8
