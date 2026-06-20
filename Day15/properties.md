@@ -4,9 +4,9 @@
 
 For any binary tree (including BST):
 
-[
+
 \text{Max Nodes at Level } i = 2^i
-]
+
 
 | Level | Max Nodes |
 | ----- | --------- |
@@ -19,17 +19,17 @@ For any binary tree (including BST):
 
 ## 2. Maximum Nodes in a BST of Height `h`
 
-[
+
 \text{Max Nodes} = 2^{h+1} - 1
-]
+
 
 Example:
 
 Height = 3
 
-[
+
 2^4 - 1 = 15
-]
+
 
 ---
 
@@ -37,17 +37,17 @@ Height = 3
 
 A skewed BST has the minimum number of nodes.
 
-[
+
 \text{Min Nodes} = h + 1
-]
+
 
 Example:
 
 Height = 4
 
-[
+
 4 + 1 = 5
-]
+
 
 ---
 
@@ -55,9 +55,9 @@ Height = 4
 
 For any BST:
 
-[
+
 \text{Edges} = N - 1
-]
+
 
 Where:
 
@@ -75,9 +75,9 @@ Edges = 9
 
 For any BST:
 
-[
+
 \text{NULL Links} = N + 1
-]
+
 
 Example:
 
@@ -91,37 +91,37 @@ NULL Links = 8
 
 For a complete BST:
 
-[
+
 h = \lfloor \log_2 N \rfloor
-]
+
 
 Example:
 
-[
-N = 15
-]
 
-[
+N = 15
+
+
+
 h = \lfloor \log_2 15 \rfloor = 3
-]
+
 
 ---
 
 ## 7. Minimum Possible Height for N Nodes
 
-[
+
 h = \lceil \log_2 (N + 1) \rceil - 1
-]
+
 
 Example:
 
-[
-N = 31
-]
 
-[
+N = 31
+
+
+
 h = 4
-]
+
 
 ---
 
@@ -131,15 +131,15 @@ A Perfect BST has all levels completely filled.
 
 ### Total Nodes
 
-[
+
 \text{Nodes} = 2^{h+1} - 1
-]
+
 
 ### Leaf Nodes
 
-[
+
 \text{Leaf Nodes} = 2^h
-]
+
 
 ---
 
@@ -167,9 +167,9 @@ A Complete BST satisfies:
 
 For every node:
 
-[
+
 |Height(Left) - Height(Right)| \le 1
-]
+
 
 Examples:
 
@@ -182,9 +182,9 @@ Examples:
 
 For every node:
 
-[
+
 Left\ Subtree < Root < Right\ Subtree
-]
+
 
 Example:
 
@@ -231,21 +231,21 @@ Inorder:
 
 ### Best Case (Perfect BST)
 
-[
+
 h = O(\log N)
-]
+
 
 ### Average Case
 
-[
+
 h = O(\log N)
-]
+
 
 ### Worst Case (Skewed BST)
 
-[
+
 h = O(N)
-]
+
 
 Example:
 
