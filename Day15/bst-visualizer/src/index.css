@@ -1,0 +1,269 @@
+:root {
+  /* Premium Dark Theme Palette (Default) */
+  --bg-primary: #0f172a; /* Slate 900 */
+  --bg-secondary: #1e293b; /* Slate 800 */
+  --bg-panel: rgba(30, 41, 59, 0.7);
+  
+  --text-primary: #f8fafc; /* Slate 50 */
+  --text-secondary: #94a3b8; /* Slate 400 */
+  
+  /* Accent Colors */
+  --accent-primary: #3b82f6; /* Blue 500 */
+  --accent-hover: #2563eb; /* Blue 600 */
+  
+  /* Animation/Tree Node Colors */
+  --node-default: #334155; /* Slate 700 */
+  --node-current: #22c55e; /* Green 500 */
+  --node-new: #3b82f6; /* Blue 500 */
+  --node-compare: #eab308; /* Yellow 500 */
+  --node-recursive: #a855f7; /* Purple 500 */
+  --node-delete: #ef4444; /* Red 500 */
+  
+  /* Borders & Shadows */
+  --border-color: #334155;
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='light'] {
+  --bg-primary: #f8fafc; /* Slate 50 */
+  --bg-secondary: #ffffff; /* White */
+  --bg-panel: rgba(255, 255, 255, 0.8);
+  
+  --text-primary: #0f172a; /* Slate 900 */
+  --text-secondary: #475569; /* Slate 600 */
+  
+  --node-default: #cbd5e1; /* Slate 300 */
+  --border-color: #e2e8f0;
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Glassmorphism Panel Utilities */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: var(--glass-shadow);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* 4-Panel Grid Architecture */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+  grid-template-rows: 1fr;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.center-canvas {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+}
+
+/* Call Stack Styling */
+.stack-frame {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.stack-frame.active {
+  background: rgba(59, 130, 246, 0.2);
+  border-left-color: var(--node-recursive);
+  transform: translateX(4px);
+}
+
+/* Tree Rendering Utilities */
+.tree-node {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tree-node circle {
+  transition: fill 0.5s ease, stroke 0.5s ease;
+}
+.tree-edge {
+  transition: stroke 0.5s ease, opacity 0.5s ease;
+}
+
+/* Controls Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 16px;
+}
+
+.controls-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+button:hover {
+  background-color: var(--border-color);
+}
+button:active {
+  transform: scale(0.97);
+}
+button.primary {
+  background-color: var(--accent-primary);
+}
+button.primary:hover {
+  background-color: var(--accent-hover);
+}
+
+input[type="text"] {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 150px;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Code highlighting */
+.code-line {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+  white-space: pre;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.code-line.active {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-left: 3px solid var(--accent-primary);
+}
+
+/* Resizable Panels styling */
+.resize-handle {
+  width: 8px;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resize-handle:hover,
+.resize-handle[data-resize-handle-state="drag"] {
+  background-color: var(--accent-primary);
+  opacity: 0.5;
+}
+
+.resize-handle.horizontal {
+  height: 8px;
+  width: 100%;
+  cursor: row-resize;
+}
