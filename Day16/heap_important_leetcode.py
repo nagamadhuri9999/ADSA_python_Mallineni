@@ -114,36 +114,3 @@ class MedianFinder:
             return -self.small[0]
         return (-self.small[0] + self.large[0]) / 2.0
 
-
-if __name__ == "__main__":
-    print("=========================================")
-    print("    IMPORTANT HEAP PROBLEMS TESTS        ")
-    print("=========================================")
-    
-    print("\n1. Kth Largest Element:")
-    print("   Input: [3,2,1,5,6,4], k=2")
-    print("   Result:", findKthLargest([3,2,1,5,6,4], 2)) # Expected 5
-    
-    print("\n2. Top K Frequent Elements:")
-    print("   Input: [1,1,1,2,2,3], k=2")
-    print("   Result:", topKFrequent([1,1,1,2,2,3], 2)) # Expected [1, 2] or [2, 1]
-    
-    print("\n3. Last Stone Weight:")
-    print("   Input: [2,7,4,1,8,1]")
-    print("   Result:", lastStoneWeight([2,7,4,1,8,1])) # Expected 1
-    
-    print("\n4. Merge K Sorted Lists:")
-    l1 = build_linked_list([1,4,5])
-    l2 = build_linked_list([1,3,4])
-    l3 = build_linked_list([2,6])
-    merged = mergeKLists([l1, l2, l3])
-    print("   Input: [1->4->5], [1->3->4], [2->6]")
-    print("   Result:", print_linked_list(merged)) # Expected 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
-    
-    print("\n5. Find Median from Data Stream:")
-    mf = MedianFinder()
-    mf.addNum(1)
-    mf.addNum(2)
-    print("   After adding [1, 2], Median:", mf.findMedian()) # Expected 1.5
-    mf.addNum(3)
-    print("   After adding [3], Median:", mf.findMedian()) # Expected 2

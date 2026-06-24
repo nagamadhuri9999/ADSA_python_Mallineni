@@ -58,19 +58,3 @@ def pickGifts(gifts, k):
         
     # Return the sum of all remaining gifts (making them positive again)
     return -sum(max_heap)
-
-if __name__ == "__main__":
-    print("====================================")
-    print("          MAX HEAP TESTS            ")
-    print("====================================")
-    
-    print("\n--- Problem 1: Last Stone Weight ---")
-    stones = [2, 7, 4, 1, 8, 1]
-    print(f"Stones: {stones}")
-    print("Result:", lastStoneWeight(stones)) # Expected: 1
-    
-    print("\n--- Problem 2: Take Gifts From the Richest Pile ---")
-    gifts = [25, 64, 9, 4, 100]
-    k = 4
-    print(f"Gifts: {gifts}, k: {k}")
-    print("Result:", pickGifts(gifts, k)) # Expected: 29

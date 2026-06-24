@@ -8,14 +8,14 @@
 # Approach: Use a dictionary (Hash Map) to store numbers we have seen so far and their indices.
 # For each number, calculate its complement (target - num). If the complement is in the dictionary, we found our pair.
 
-def twoSum(nums, target):
-    num_to_index = {}
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_to_index:
-            return [num_to_index[complement], i]
-        num_to_index[num] = i
-    return []
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+    hash_map={}
+
+    for i in range(len(nums)):
+        compliment=target-nums[i]
+        if compliment in hash_map:
+            return [hash_map[compliment],i]
+        hash_map[nums[i]]=i
 
 # Problem 2: Contains Duplicate (LeetCode 217)
 # Difficulty: Easy
@@ -42,12 +42,10 @@ def isAnagram(s, t):
     if len(s) != len(t):
         return False
         
-    char_counts = {}
-    
+    char_counts = {}  
     # Build frequency map for 's'
     for char in s:
-        char_counts[char] = char_counts.get(char, 0) + 1
-        
+        char_counts[char] = char_counts.get(char, 0) + 1      
     # Check against 't'
     for char in t:
         if char not in char_counts or char_counts[char] == 0:
@@ -55,26 +53,3 @@ def isAnagram(s, t):
         char_counts[char] -= 1
         
     return True
-
-if __name__ == "__main__":
-    print("====================================")
-    print("          HASHING TESTS             ")
-    print("====================================")
-    
-    print("\n--- Problem 1: Two Sum ---")
-    nums = [2, 7, 11, 15]
-    target = 9
-    print(f"Nums: {nums}, Target: {target}")
-    print("Result:", twoSum(nums, target)) # Expected: [0, 1]
-    
-    print("\n--- Problem 2: Contains Duplicate ---")
-    nums1 = [1, 2, 3, 1]
-    nums2 = [1, 2, 3, 4]
-    print(f"Nums: {nums1} -> Result: {containsDuplicate(nums1)}") # Expected: True
-    print(f"Nums: {nums2} -> Result: {containsDuplicate(nums2)}") # Expected: False
-    
-    print("\n--- Problem 3: Valid Anagram ---")
-    s1, t1 = "anagram", "nagaram"
-    s2, t2 = "rat", "car"
-    print(f"s: '{s1}', t: '{t1}' -> Result: {isAnagram(s1, t1)}") # Expected: True
-    print(f"s: '{s2}', t: '{t2}' -> Result: {isAnagram(s2, t2)}") # Expected: False
