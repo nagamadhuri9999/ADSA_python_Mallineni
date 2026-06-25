@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+:root {
+  /* Light Theme Colors (Premium, clean look) */
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #475569;
+  --text-h: #0f172a;
+  --border: #e2e8f0;
+  
+  /* Accents */
+  --accent: #6366f1; /* Indigo */
+  --accent-light: #e0e7ff;
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --warning: #f59e0b;
+  --warning-light: #fef3c7;
+  
+  /* Glass */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+.dark {
+  /* Dark Theme Colors (Deep, vibrant, sleek) */
+  --bg: #0b0f19;
+  --panel: #111827;
+  --text: #94a3b8;
+  --text-h: #f1f5f9;
+  --border: #1e293b;
+  
+  /* Accents */
+  --accent: #8b5cf6; /* Purple */
+  --accent-light: rgba(139, 92, 246, 0.15);
+  --success: #10b981;
+  --success-light: rgba(16, 185, 129, 0.15);
+  --warning: #f59e0b;
+  --warning-light: rgba(245, 158, 11, 0.15);
+
+  /* Glass */
+  --glass-bg: rgba(17, 24, 39, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+}
+
+/* Text Colors */
+.text-foreground { color: var(--text); }
+.text-foreground-h { color: var(--text-h); }
+.text-accent { color: var(--accent); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+
+/* Background Colors */
+.bg-background { background-color: var(--bg); }
+.bg-panel { background-color: var(--panel); }
+.bg-accent { background-color: var(--accent); }
+
+/* Background Opacity Colors */
+.bg-accent-light { background-color: var(--accent-light); }
+.bg-success-light { background-color: var(--success-light); }
+.bg-warning-light { background-color: var(--warning-light); }
+
+/* Borders */
+.border-border { border-color: var(--border); }
+.border-accent { border-color: var(--accent); }
+
+/* Glow effects */
+.glow-accent {
+  box-shadow: 0 0 15px var(--accent-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-h);
+}
