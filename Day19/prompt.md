@@ -1,5 +1,7 @@
 # Build an Interactive Dynamic Programming (DP) Visualization Platform
 
+**Live Visualization Link:** [https://dp-visualizer-seven.vercel.app](https://dp-visualizer-seven.vercel.app)
+
 Build a **modern educational website** that teaches **Dynamic Programming** through **highly interactive visualizations**, **step-by-step execution**, **animations**, and **algorithm simulations**.
 
 The website should feel like a combination of **VisuAlgo**, **Python Tutor**, **AlgoMonster**, and **LeetCode Explore**, but significantly more interactive and beginner friendly. The objective is to make students understand **why every DP state changes**, not just show the final answer.
